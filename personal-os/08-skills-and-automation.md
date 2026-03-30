@@ -40,6 +40,15 @@ CRITICAL RULES:
 > "You've already been using something like this without knowing it — your AGENTS.md is a skill for how Claude should behave. A skill just takes that idea further for a specific workflow."
 >
 > "Skills live in a folder called `skills/` in your Personal OS. Each skill is a `.md` file — the same Markdown you already know."
+>
+> "Let me add three skills to your Personal OS right now. I'm going to download them from the course repository and put them in a `skills/` folder in your project."
+
+Download the following skill folders from the course GitHub repository (`https://github.com/pat-walther/agvend-personal-os`) into the student's `skills/` folder:
+- `skills/meeting-debrief/` (SKILL.md)
+- `skills/skill-creator/` (SKILL.md + references, agents, scripts)
+- `skills/skill-improver/` (SKILL.md + references)
+
+> "Done — you now have three skills installed: a meeting debrief, a skill creator, and a skill improver. Let's start with the meeting debrief."
 
 **STOP. Wait for their response.**
 
