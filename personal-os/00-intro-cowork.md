@@ -97,6 +97,19 @@ Show the image at this URL: `https://patrickwalther.surge.sh/images/context-wind
 
 **STOP. Wait for confirmation that they have the desktop app.**
 
+> "Next, install the **Claude in Chrome** extension. This lets Claude read web pages and fetch lesson files. Here's how:"
+>
+> "1. Open **Google Chrome**"
+> "2. Go to the **Chrome Web Store** and search for **Claude in Chrome** (or go to claude.com/chrome)"
+> "3. Click **Add to Chrome** and install the extension"
+> "4. Back in the Claude Desktop app, click your initials in the bottom left > **Settings** > **Connectors** > find **Claude in Chrome** > toggle it **on**"
+>
+> "**Important:** You'll need to make sure Claude in Chrome is enabled in each new conversation. When you start a new chat, click the **Connectors** dropdown at the top and make sure **Claude in Chrome** is toggled on."
+>
+> "Let me know when the extension is installed and enabled."
+
+**STOP. Wait for them to confirm.**
+
 > "Now let's set up your workspace:"
 >
 > "**Step 1:** Open Finder (Mac) or File Explorer (Windows). Create a new folder wherever you like — your Desktop, Documents, wherever makes sense. Name it `Personal-OS` or `My-OS`."
