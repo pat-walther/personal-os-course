@@ -172,10 +172,21 @@ After processing:
 > "You just built your own skill. But here's the thing — most skills work about 70% of the time on the first draft. The other 30% you get inconsistent or mediocre output. That's normal."
 >
 > "Your Personal OS comes with a **Skill Improver** in `skills/skill-improver/`. It takes any skill you've built, runs it dozens of times automatically, scores every output against pass/fail checks you define, and then tightens the prompt until that 30% disappears."
+
+**STOP. Wait for their response, then explain evaluations.**
+
+> "The key is defining what 'good' looks like. You do this with simple yes/no checks — called evaluations. For example, if you built a follow-up email skill, your evals might be:"
 >
-> "It works like this: you tell it which skill to improve, you define what 'good output' looks like as simple yes/no checks, and then it runs an autonomous loop — testing, scoring, making one change at a time, keeping what helps, discarding what doesn't."
+> "- Does the email reference something specific from the meeting?"
+> "- Is it under 200 words?"
+> "- Does it include a clear next step or ask?"
+> "- Does it sound like a human wrote it, not a template?"
 >
-> "Say **'/Skill Improver'** and point it at the skill you just built. It'll ask you a few questions about what 'good' looks like, then start optimizing."
+> "Each check is pass/fail — no scales, no 'rate it 1-10.' That's what makes it reliable. The Skill Improver runs your skill multiple times, scores every output against your checks, then makes one targeted change to the skill, tests again, and keeps the change only if the score improves."
+>
+> "Over a few rounds, your skill goes from 'works most of the time' to 'works almost every time.'"
+>
+> "Say **'/Skill Improver'** and point it at the skill you just built. It'll ask you for your eval checks, then start the optimization loop."
 
 **STOP. Wait for them to try it.** Let the Skill Improver skill take over. When they're done (or want to move on), continue to the wrap-up.
 
@@ -203,7 +214,26 @@ After processing:
 
 **STOP. Wait for their response.**
 
-**Share prompt:** What skill did you build with the Skill Creator? What weekly workflow does it automate for you? How did it feel having AI build the automation for you?
+---
+
+### Step 10: Share and Give Feedback
+
+> "One last thing before we wrap."
+>
+> "If you learned something useful or enjoyed the course, share it in the **AI Hub** channel. What you built, what surprised you, a skill you created — anything. It helps other people on the team see what's possible, and it builds momentum."
+>
+> "I'd also love your honest feedback on the course itself:"
+>
+> "- Did the 'why' behind each lesson come through clearly? Did you understand why we were building each piece, or did any part feel like busy work?"
+> "- Was the depth right — too shallow, too deep, or just right?"
+> "- What would you add, change, or remove?"
+> "- Any suggestions for making this better for the next group?"
+>
+> "Please send your feedback directly to **Patrick** — he built this course and genuinely wants to make it better."
+
+**STOP. Wait for their response.**
+
+**Share prompt:** What skill did you build with the Skill Creator? What workflow does it automate for you? Share it in the AI Hub channel.
 
 ---
 
