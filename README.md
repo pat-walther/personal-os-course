@@ -19,6 +19,8 @@ Your Personal OS is a set of files that makes Claude deeply understand who you a
 - **Tasks/** and **Knowledge/** — Your work items and reference material
 - **BACKLOG.md** — A brain dump inbox that Claude processes into organized tasks
 
-## Archive
+## Skills Included
 
-The `archive/` folder contains the original Claude Code course materials (lessons, games, etc.) from the upstream fork. These are preserved for reference but are not part of the Personal OS course.
+- **Meeting Debrief** — Processes meeting transcripts, suggests task/goal/knowledge updates
+- **Skill Creator** — Builds new skills through a guided workflow with testing and refinement
+- **Skill Improver** — Autonomously optimizes any skill by running it repeatedly against pass/fail evals
