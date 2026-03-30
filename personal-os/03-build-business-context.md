@@ -35,9 +35,41 @@ CRITICAL RULES:
 
 ---
 
-### Step 2: The Interview
+### Step 2: Load the AgVend Company Context
 
-Now conduct the full business context interview. Ask ONE question at a time. Go deep before moving on. Challenge vague answers. Adapt questions based on their specific role (sales, CS, marketing, leadership) — skip questions that don't apply.
+> "Before we start the interview, let me load AgVend's shared company knowledge base. This way I'll have real company context — goals, products, partners, competitive intel — so I can ask you smarter questions and reference real things during our conversation."
+
+Ask the student: "Have you been granted access to the AgVend GitHub organization yet?"
+
+**If yes — pull the AgVend OS into your project:**
+
+> "Great. Let me pull the key AgVend OS files into your Knowledge/ folder using the Chrome extension."
+
+Use the Claude in Chrome connector to fetch the following files from GitHub and save them into the student's `Knowledge/agvend-os/` folder:
+- `https://raw.githubusercontent.com/agvend/agvend_os/main/agents.md` → save as `Knowledge/agvend-os/agents.md`
+- `https://raw.githubusercontent.com/agvend/agvend_os/main/GOALS.md` → save as `Knowledge/agvend-os/GOALS.md`
+
+Then use the Chrome connector to browse `https://github.com/agvend/agvend_os/tree/main/Knowledge` and list the subfolders. For each subfolder (Business, Company, Engineering, Industry, Marketing, Partners, People, Platform, Product, Sales), fetch the key files and save them into corresponding subfolders under `Knowledge/agvend-os/Knowledge/`.
+
+> "Done — I've pulled the AgVend OS into your Knowledge/ folder. Now I have company context to work with during the interview. This will make your Business.md much richer."
+>
+> "**Important:** AgVend OS is a **read-only** resource. It's maintained centrally. If you notice something outdated, flag it to the team — don't edit these files directly."
+
+**STOP. Wait for them to confirm.**
+
+**If no (or still waiting):**
+
+> "No problem — I'm adding a basic AgVend company overview to your Knowledge/ folder for now. When your GitHub access comes through, we can pull the full knowledge base."
+
+Copy the template from `templates/agvend-context.md` into the student's `Knowledge/` folder.
+
+**STOP. Wait for acknowledgment, then continue to the interview.**
+
+---
+
+### Step 3: The Interview
+
+Now conduct the full business context interview. If AgVend OS was loaded, use it to inform your questions — reference real company goals, products, and context. If only the lightweight overview was loaded, use what's available. Ask ONE question at a time. Go deep before moving on. Challenge vague answers. Adapt questions based on their specific role (sales, CS, marketing, leadership) — skip questions that don't apply.
 
 **The Basics:**
 
@@ -94,7 +126,7 @@ Don't force the uncomfortable questions if the student isn't there yet. Accept w
 
 ---
 
-### Step 7: Draft the Business Context
+### Step 4: Draft the Business Context
 
 > "Great conversation. I'm going to draft your Business.md now — a comprehensive view of your professional context. Give me a moment."
 
@@ -130,37 +162,9 @@ Write it in their voice. Be specific — use actual account names, competitor na
 
 ---
 
-### Step 8: The AgVend Context
+### Step 5: Two Layers of Context
 
-> "Remember in Lesson 0 we mentioned AgVend OS — the shared company knowledge base on GitHub? Let's check on that."
-
-Ask the student: "Have you been granted access to the AgVend GitHub organization yet?"
-
-**If yes — pull the AgVend OS into your project:**
-
-> "Great. Let me pull the key AgVend OS files into your Knowledge/ folder using the Chrome extension."
-
-Use the Claude in Chrome connector to fetch the following files from GitHub and save them into the student's `Knowledge/agvend-os/` folder:
-- `https://raw.githubusercontent.com/agvend/agvend_os/main/agents.md` → save as `Knowledge/agvend-os/agents.md`
-- `https://raw.githubusercontent.com/agvend/agvend_os/main/GOALS.md` → save as `Knowledge/agvend-os/GOALS.md`
-
-Then use the Chrome connector to browse `https://github.com/agvend/agvend_os/tree/main/Knowledge` and list the subfolders. For each subfolder (Business, Company, Engineering, Industry, Marketing, Partners, People, Platform, Product, Sales), fetch the key files and save them into corresponding subfolders under `Knowledge/agvend-os/Knowledge/`.
-
-> "Done — I've pulled the AgVend OS into your Knowledge/ folder. You now have company context, partner profiles, product docs, and more. Claude can read all of it when you ask work-related questions."
->
-> "**Important:** AgVend OS is a **read-only** resource. It's maintained centrally. If you notice something outdated, flag it to the team — don't edit these files directly."
-
-**STOP. Wait for them to confirm.**
-
-**If no (or still waiting):**
-
-> "No problem — I'm adding a basic AgVend company overview to your Knowledge/ folder for now. When your GitHub access comes through, you can connect it and Claude will have the full company knowledge base."
-
-Copy the template from `templates/agvend-context.md` into the student's `Knowledge/` folder.
-
-**Either way, explain the two-layer model:**
-
-> "You now have two layers of business context: the **company-level** AgVend context (either from GitHub or the overview file) and your **personal** Business.md. Your Business.md is about YOU — your role, your accounts, your challenges. The AgVend context is about the COMPANY. Claude reads both."
+> "You now have two layers of business context: the **company-level** AgVend context (the files we loaded at the start) and your **personal** Business.md. Your Business.md is about YOU — your role, your accounts, your challenges. The AgVend context is about the COMPANY. Claude reads both."
 
 ---
 
