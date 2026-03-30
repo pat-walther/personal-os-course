@@ -33,7 +33,7 @@ CRITICAL RULES:
 
 > "Here's how most people use AI today."
 
-Show the image at `images/chatgpt-problem.png`.
+Show the image at this URL: `https://patrickwalther.surge.sh/images/chatgpt-problem.png`. If the image doesn't render, describe it: "Imagine two disconnected loops — your project knowledge sits in one place, and your AI outputs sit in another. The only connection between them is you, manually copy-pasting back and forth through long chats."
 
 > "You have a chat. The AI gives you good output. But that output lives in the chat — buried in a long conversation. If you want to reuse it, you manually copy it somewhere. Your project knowledge and your AI outputs are disconnected. You keep going back to the same long chat thread, hoping the AI remembers what you talked about three weeks ago."
 >
@@ -47,7 +47,7 @@ Show the image at `images/chatgpt-problem.png`.
 
 > "Here's what we're building instead."
 
-Show the image at `images/personal-os-solution.png`.
+Show the image at this URL: `https://patrickwalther.surge.sh/images/personal-os-solution.png`. If the image doesn't render, describe it: "Now imagine one tight loop — your project knowledge and your short chats are part of the same system. The valuable output goes back into your files automatically."
 
 > "Instead of long chats that you keep going back to, we're going to build a set of files that ARE your knowledge. Your chats become short and disposable — you use them to get work done, and the valuable output goes back into your files. The knowledge lives in documents that continuously get better, not in chat history that gets buried."
 >
@@ -61,7 +61,7 @@ Show the image at `images/personal-os-solution.png`.
 
 > "Let me show you why this matters technically — don't worry, it's simple."
 
-Show the image at `images/context-window-turns.png`.
+Show the image at this URL: `https://patrickwalther.surge.sh/images/context-window-turns.png`. If the image doesn't render, describe it: "Picture three columns — Turn 1, Turn 2, Turn 3. Each turn, the input gets bigger because it includes everything from before. By Turn 3, the input is so large it fills the context window, and the output gets truncated."
 
 > "Every time you talk to an AI, it can only process a limited amount of information. This is called the context window. Each turn of your conversation, the input gets bigger — because the AI has to re-read everything that was said before, plus your new message."
 >
@@ -109,7 +109,23 @@ Once confirmed, move to the next step.
 
 ---
 
-### Step 7: Get Ready for Company Context
+### Step 7: Know Your Workspace
+
+> "Before we move on, take a quick look at your screen. On the **right side** you'll see a panel with a few sections:"
+>
+> "**Progress** — at the top. This shows how far along Claude is on longer tasks."
+>
+> "**Your project files** — in the middle. This is the folder you just created. As we build your Personal OS, you'll see new files appear here. You can click on any file to open it and see what's inside."
+>
+> "**Context** — at the bottom. This shows any connectors Claude is using (like web access or integrations you'll set up later)."
+>
+> "The main area on the left is your chat — that's where we'll work together. Got it?"
+
+**STOP. Wait for their response.**
+
+---
+
+### Step 8: Get Ready for Company Context
 
 > "One thing to get ahead of — later in this course, you'll be able to connect AgVend's shared company knowledge base directly to Claude. It's called **AgVend OS** and it lives on GitHub. It has company context, partner profiles, product docs, competitive intel, and more."
 >
