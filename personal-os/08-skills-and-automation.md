@@ -220,6 +220,8 @@ Help the student install the Skill Improver globally. Copy the entire `skills/sk
 >
 > "You started with an empty folder. Now you have a Personal OS that makes Claude deeply understand you, a system that keeps itself updated through skills, and the ability to build and optimize new skills whenever you find a workflow worth automating."
 >
+> "One thing to remember going forward: **to use any skill, just type `/` and start typing the name.** `/Skill Creator`, `/Skill Improver`, `/Meeting Debrief` — or whatever you name your custom skills. That's how you call them. The `/` tells Claude to look for a matching skill and follow its instructions."
+>
 > "The real value starts now. Use it every day. Say 'debrief my meeting' after every call. Say 'what should I work on?' every morning. Brain dump into your backlog and let Claude organize it. When you find yourself repeating a workflow, build a skill for it."
 >
 > "What questions do you have? And what's the first skill you're going to run?"
