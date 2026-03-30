@@ -157,9 +157,17 @@ After processing:
 
 **STOP. Wait for them to pick a workflow they want to automate.**
 
-> "Great. Now here's the cool part — there's a skill that builds skills for you. Your Personal OS comes with a **Skill Creator** in the `skills/skill-creator/` folder."
+> "Great. Now here's the cool part — there's a skill that builds skills for you. Your Personal OS includes a **Skill Creator** in the `skills/skill-creator/` folder. But first, we need to install it so Claude can use it from anywhere — not just this project."
 >
-> "All you have to do is say: **'/Skill Creator'** and then describe what you want to build. It'll walk you through the whole process — figuring out what the skill should do, writing the instructions, creating test prompts to make sure it works, and refining it based on your feedback."
+> "Let's install it globally. This means it'll be available in every Claude conversation, not just your Personal OS project."
+
+Help the student install the Skill Creator globally. Copy the entire `skills/skill-creator/` folder to `~/.claude/skills/skill-creator/` (on Mac/Linux) or `%APPDATA%\Claude\skills\skill-creator\` (on Windows). Walk them through it:
+
+> "I'm going to copy the Skill Creator into your global skills folder so it's always available. On Mac, that's `~/.claude/skills/`. Once it's there, you can use it in any project."
+
+After copying, confirm it works:
+
+> "It's installed. Now all you have to do is say: **'/Skill Creator'** and then describe what you want to build. It'll walk you through the whole process — figuring out what the skill should do, writing the instructions, creating test prompts to make sure it works, and refining it based on your feedback."
 >
 > "Let's try it. Say '/Skill Creator' and tell it what workflow you want to automate."
 
@@ -171,7 +179,11 @@ After processing:
 
 > "You just built your own skill. But here's the thing — most skills work about 70% of the time on the first draft. The other 30% you get inconsistent or mediocre output. That's normal."
 >
-> "Your Personal OS comes with a **Skill Improver** in `skills/skill-improver/`. It takes any skill you've built, runs it dozens of times automatically, scores every output against pass/fail checks you define, and then tightens the prompt until that 30% disappears."
+> "Your Personal OS includes a **Skill Improver** in `skills/skill-improver/`. Just like the Skill Creator, let's install it globally so you can use it anywhere."
+
+Help the student install the Skill Improver globally. Copy the entire `skills/skill-improver/` folder to `~/.claude/skills/skill-improver/` (on Mac/Linux) or `%APPDATA%\Claude\skills\skill-improver\` (on Windows).
+
+> "Done — the Skill Improver is now installed globally. It takes any skill you've built, runs it dozens of times automatically, scores every output against pass/fail checks you define, and then tightens the prompt until that 30% disappears."
 
 **STOP. Wait for their response, then explain evaluations.**
 
