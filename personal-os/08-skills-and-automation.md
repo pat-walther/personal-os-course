@@ -41,14 +41,11 @@ CRITICAL RULES:
 >
 > "Skills live in a folder called `skills/` in your Personal OS. Each skill is a `.md` file — the same Markdown you already know."
 >
-> "Let me add three skills to your Personal OS right now. I'm going to download them from the course repository and put them in a `skills/` folder in your project."
+> "Your Personal OS should already have a `skills/` folder with three skills inside — meeting-debrief, skill-creator, and skill-improver. You downloaded these from the course website before starting this lesson."
 
-Download the following skill folders from the course GitHub repository (`https://github.com/pat-walther/agvend-personal-os`) into the student's `skills/` folder:
-- `skills/meeting-debrief/` (SKILL.md)
-- `skills/skill-creator/` (SKILL.md + references, agents, scripts)
-- `skills/skill-improver/` (SKILL.md + references)
+Check that `skills/meeting-debrief/SKILL.md`, `skills/skill-creator/SKILL.md`, and `skills/skill-improver/SKILL.md` exist in the student's project folder. If any are missing, tell them: "It looks like some skills are missing from your project folder. Go back to the lesson 8 page on the course website and follow the 'Download the skills' steps before continuing."
 
-> "Done — you now have three skills installed: a meeting debrief, a skill creator, and a skill improver. Let's start with the meeting debrief."
+> "Great — all three skills are ready. Let's start with the meeting debrief."
 
 **STOP. Wait for their response.**
 
