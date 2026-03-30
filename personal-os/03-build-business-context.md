@@ -43,15 +43,105 @@ Ask the student: "Have you been granted access to the AgVend GitHub organization
 
 **If yes — pull the AgVend OS into your project:**
 
-> "Great. Let me pull the key AgVend OS files into your Knowledge/ folder using the Chrome extension."
+> "Great. Let me pull the AgVend OS files into your Knowledge/ folder. This will take a few minutes — I need to fetch each file individually. Sit tight."
 
-Use the Claude in Chrome connector to fetch the following files from GitHub and save them into the student's `Knowledge/agvend-os/` folder:
-- `https://raw.githubusercontent.com/agvend/agvend_os/main/agents.md` → save as `Knowledge/agvend-os/agents.md`
-- `https://raw.githubusercontent.com/agvend/agvend_os/main/GOALS.md` → save as `Knowledge/agvend-os/GOALS.md`
+CRITICAL: You MUST fetch ALL files listed below. Do NOT skip files, do NOT summarize, do NOT stop partway through. Fetch every single file using the Claude in Chrome connector and save it to the corresponding local path. Work through the list systematically, one batch at a time.
 
-Then use the Chrome connector to browse `https://github.com/agvend/agvend_os/tree/main/Knowledge` and list the subfolders. For each subfolder (Business, Company, Engineering, Industry, Marketing, Partners, People, Platform, Product, Sales), fetch the key files and save them into corresponding subfolders under `Knowledge/agvend-os/Knowledge/`.
+Base URL: `https://raw.githubusercontent.com/agvend/agvend_os/main/`
+Save everything under the student's `Knowledge/agvend-os/` folder.
 
-> "Done — I've pulled the AgVend OS into your Knowledge/ folder. Now I have company context to work with during the interview. This will make your Business.md much richer."
+**Root files (fetch first):**
+- `agents.md` → `Knowledge/agvend-os/agents.md`
+- `CLAUDE.md` → `Knowledge/agvend-os/CLAUDE.md`
+- `GOALS.md` → `Knowledge/agvend-os/GOALS.md`
+
+**Business/ (5 files):**
+- `Knowledge/Business/Nexus-Strategy.md`
+- `Knowledge/Business/OKRs-Q1-2026.md`
+- `Knowledge/Business/Partner-Success.md`
+- `Knowledge/Business/Revenue-Operations.md`
+- `Knowledge/Business/Sales-Pipeline.md`
+
+**Company/ (1 file):**
+- `Knowledge/Company/Company-Overview.md`
+
+**Engineering/ (1 file):**
+- `Knowledge/Engineering/Engineering-Overview.md`
+
+**Industry/ (2 files):**
+- `Knowledge/Industry/Competitive-Landscape.md`
+- `Knowledge/Industry/Competitive-Pulse/2026-03-27.md`
+
+**Marketing/ (3 files):**
+- `Knowledge/Marketing/Community-Events-Strategy.md`
+- `Knowledge/Marketing/Marketing-Operations.md`
+- `Knowledge/Marketing/Positioning-Framework.md`
+
+**Partners/ (39 files — fetch ALL of them, do not skip):**
+- `Knowledge/Partners/Ag-Partners-Coop.md`
+- `Knowledge/Partners/Ag-Valley-Coop.md`
+- `Knowledge/Partners/AgState.md`
+- `Knowledge/Partners/AgroPlus.md`
+- `Knowledge/Partners/Agtegra.md`
+- `Knowledge/Partners/Atticus.md`
+- `Knowledge/Partners/Braungardt-Ag.md`
+- `Knowledge/Partners/CFE.md`
+- `Knowledge/Partners/CHS.md`
+- `Knowledge/Partners/CVA.md`
+- `Knowledge/Partners/Crystal-Valley.md`
+- `Knowledge/Partners/Five-Star-Coop.md`
+- `Knowledge/Partners/Frontier-Cooperative.md`
+- `Knowledge/Partners/GreenPoint-Ag.md`
+- `Knowledge/Partners/Growmark-Grain.md`
+- `Knowledge/Partners/Hawks-Agro.md`
+- `Knowledge/Partners/Heritage-Cooperative.md`
+- `Knowledge/Partners/Keystone-Cooperative.md`
+- `Knowledge/Partners/Kokomo-Grain.md`
+- `Knowledge/Partners/Legacy-Cooperative.md`
+- `Knowledge/Partners/MFA.md`
+- `Knowledge/Partners/MKC.md`
+- `Knowledge/Partners/Midway-Coop.md`
+- `Knowledge/Partners/NEW-Coop.md`
+- `Knowledge/Partners/NuWay-KH-Coop.md`
+- `Knowledge/Partners/Parallel-Ag.md`
+- `Knowledge/Partners/Premier-Companies.md`
+- `Knowledge/Partners/Pro-Coop.md`
+- `Knowledge/Partners/ProPoint-Cooperative.md`
+- `Knowledge/Partners/REDSTAR.md`
+- `Knowledge/Partners/Richardson-Pioneer.md`
+- `Knowledge/Partners/River-Valley-Coop.md`
+- `Knowledge/Partners/Sturgeon-Valley.md`
+- `Knowledge/Partners/Tri-Ag.md`
+- `Knowledge/Partners/Tyree-Ag.md`
+- `Knowledge/Partners/Valley-Ag.md`
+- `Knowledge/Partners/Valley-Farmers-Supply.md`
+- `Knowledge/Partners/Valley-United.md`
+- `Knowledge/Partners/Valley-Wide-Coop.md`
+
+**People/ (1 file):**
+- `Knowledge/People/Team-Roster.md`
+
+**Platform/ (1 file):**
+- `Knowledge/Platform/ERP-Integrations.md`
+
+**Product/ (8 files):**
+- `Knowledge/Product/AI-Philosophy.md`
+- `Knowledge/Product/CRM-Plus.md`
+- `Knowledge/Product/Energy-Package.md`
+- `Knowledge/Product/Goose-AI.md`
+- `Knowledge/Product/Grower-Portal-Survey-Insights.md`
+- `Knowledge/Product/Loyalty-Rewards.md`
+- `Knowledge/Product/Product-Operations.md`
+- `Knowledge/Product/Program-Management.md`
+
+**Sales/ (3 files):**
+- `Knowledge/Sales/Business-Development.md`
+- `Knowledge/Sales/GTM-Playbook.md`
+- `Knowledge/Sales/Sales-Operations.md`
+
+After fetching all files, count them. You should have 67 files total. If any are missing, go back and fetch them.
+
+> "Done — I've pulled the complete AgVend OS into your Knowledge/ folder: 67 files covering company strategy, all 39 partner profiles, product docs, sales playbooks, and more. Now I have real company context to work with during the interview."
 >
 > "**Important:** AgVend OS is a **read-only** resource. It's maintained centrally. If you notice something outdated, flag it to the team — don't edit these files directly."
 
