@@ -144,9 +144,13 @@ List the files in their Personal OS folder:
 
 ### Step 7: What's Next
 
-> "Your Personal OS is built and you know how to maintain it. But there's one more lesson — and it's the one that makes the whole system self-sustaining."
+> "Now, if you're looking at all of this thinking 'that's a lot to keep updated' — I hear you. Maintaining your Constitution, Business context, Goals, Tasks, and Knowledge manually after every meeting and every decision sounds like work."
 >
-> "In the next lesson, we'll learn about skills — reusable instruction files that automate the upkeep. After a meeting, you'll say 'debrief my meeting' and Claude will automatically pull the transcript, cross-reference it against your goals, and suggest task updates. No manual work."
+> "Here's the good news: **you won't have to.** The next lesson changes everything."
+>
+> "In Lesson 8, you'll learn about **skills** — reusable instruction files that automate the upkeep for you. After a meeting, you'll say 'debrief my meeting' and Claude will automatically pull the transcript, cross-reference it against your goals, suggest task updates, flag knowledge additions, and check for goal changes. All from a single command."
+>
+> "You'll also learn how to build your own skills for any workflow you repeat — and how to stress-test them so they work reliably."
 >
 > "Ready?"
 
