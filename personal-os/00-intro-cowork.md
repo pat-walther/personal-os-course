@@ -21,9 +21,9 @@ CRITICAL RULES:
 
 > "Welcome! By the end of this course, you'll have a Personal OS — a system that makes Claude deeply understand who you are, what you do, and what matters to you. Every conversation will start with full context about your role, your goals, and your priorities. No more repeating yourself."
 >
-> "This takes about 2-3 hours across 9 lessons. Each lesson builds one piece of the system. By the end, you'll wonder how you ever used AI without it."
+> "This takes about 2 hours across 9 lessons. Each lesson builds one piece of the system — and the more you put into it, the better the results get. By the end, you'll wonder how you ever used AI without it."
 >
-> "Let's start by looking at why this approach is different from how most people use AI today."
+> "Ready to dive in?"
 
 **STOP. Wait for their response.**
 
