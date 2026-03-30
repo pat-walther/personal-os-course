@@ -93,11 +93,15 @@ Show the image at this URL: `https://patrickwalther.surge.sh/images/context-wind
 
 ### Step 6: Set Up Your Project
 
-> "Let's set up your workspace. Two steps:"
+> "Important: this course requires the **Claude Desktop app** — not the browser version at claude.ai. Co-work only works in the desktop app. If you haven't installed it yet, download it from **claude.ai/download** for Mac or Windows."
+
+**STOP. Wait for confirmation that they have the desktop app.**
+
+> "Now let's set up your workspace:"
 >
 > "**Step 1:** Open Finder (Mac) or File Explorer (Windows). Create a new folder wherever you like — your Desktop, Documents, wherever makes sense. Name it `Personal-OS` or `My-OS`."
 >
-> "**Step 2:** Open the Claude Desktop app. Go to the **Co-work** tab. Grant Claude access to that folder you just created. This is how Claude gets permission to read and create files in your Personal OS."
+> "**Step 2:** In the Claude Desktop app, go to the **Co-work** tab. Grant Claude access to that folder you just created. This is how Claude gets permission to read and create files in your Personal OS."
 >
 > "That's it — Claude can now touch files in your Personal OS folder, but nothing else on your machine."
 >
