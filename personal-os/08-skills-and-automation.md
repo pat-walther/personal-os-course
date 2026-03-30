@@ -125,16 +125,33 @@ After processing:
 
 ### Step 7: Build Your Own Skill
 
-> "The meeting debrief is just one example. Think about the workflows you repeat every week. Each one could be a skill."
+> "The meeting debrief is just one example. Think bigger — any workflow where you're doing the same steps over and over could be a skill. And it doesn't have to be complicated. If you can explain it to a new hire, you can turn it into a skill."
 >
-> "Some ideas:"
+> "Think about what you actually do every week. For example:"
 >
-> "- **Weekly review** — every Friday, Claude checks your tasks, flags stale ones, reviews goal progress, and suggests priorities for next week"
-> "- **Daily priorities** — every morning, Claude reads your tasks and goals and suggests your top 3 for the day"
-> "- **Competitive intel** — paste an article or news about a competitor, Claude updates your Knowledge/ and flags implications for your accounts"
-> "- **Email drafter** — give Claude a topic and audience, it drafts an email using your voice and Business context"
+> "**Sales:**"
+> "- Pull pipeline data from your CRM and draft a weekly forecast summary for leadership"
+> "- Research a prospect before a call — pull their company info, recent news, and prep talking points"
+> "- After a demo, generate a personalized follow-up email based on what was discussed"
 >
-> "Which of these sounds most useful to you? Or is there something else you do every week that follows a pattern?"
+> "**Customer Success:**"
+> "- Pull a partner's usage data and draft a QBR agenda with talking points tailored to their account"
+> "- Generate onboarding check-in emails based on where the customer is in their adoption journey"
+> "- Flag at-risk accounts by reviewing recent support tickets and engagement patterns"
+>
+> "**Marketing:**"
+> "- Take a product update or feature release and write release comms — email, Slack announcement, and social post"
+> "- Pull data from a spreadsheet in Google Drive and turn it into a market-facing email or one-pager"
+> "- Repurpose a webinar transcript into a blog post, social clips, and a customer email"
+>
+> "**General:**"
+> "- Read your JIRA board and draft a status update for your team or manager"
+> "- Prep for a 1:1 by pulling recent tasks, wins, and blockers into a quick agenda"
+> "- Take rough notes from a customer conversation and turn them into a structured account brief in Knowledge/"
+>
+> "The pattern is always the same: you take information from one place, process it, and produce something in another place. That's exactly what a skill automates."
+>
+> "What's a workflow you repeat that feels like it should be faster?"
 
 **STOP. Wait for them to pick a workflow they want to automate.**
 
