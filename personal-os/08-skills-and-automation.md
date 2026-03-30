@@ -149,7 +149,9 @@ After processing:
 > "- Prep for a 1:1 by pulling recent tasks, wins, and blockers into a quick agenda"
 > "- Take rough notes from a customer conversation and turn them into a structured account brief in Knowledge/"
 >
-> "The pattern is always the same: you take information from one place, process it, and produce something in another place. That's exactly what a skill automates."
+> "Here's the thing to understand: a skill is just a Markdown file that describes what Claude should do. That's it. There's no code, no programming, no technical setup. You write instructions in plain English, and Claude follows them."
+>
+> "As long as you can connect the data sources — Fireflies for meetings, GitHub for docs, Google Drive for spreadsheets, your CRM, JIRA, whatever — you can automate almost any workflow you do repeatedly. The skill is just the recipe. Claude is the chef."
 >
 > "What's a workflow you repeat that feels like it should be faster?"
 
