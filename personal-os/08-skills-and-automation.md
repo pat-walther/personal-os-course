@@ -41,11 +41,15 @@ CRITICAL RULES:
 >
 > "Skills live in a folder called `skills/` in your Personal OS. Each skill is a `.md` file — the same Markdown you already know."
 >
-> "Your Personal OS should already have a `skills/` folder with three skills inside — meeting-debrief, skill-creator, and skill-improver. You downloaded these from the course website before starting this lesson."
+> "Let me add three skills to your Personal OS right now."
 
-Check that `skills/meeting-debrief/SKILL.md`, `skills/skill-creator/SKILL.md`, and `skills/skill-improver/SKILL.md` exist in the student's project folder. If any are missing, tell them: "It looks like some skills are missing from your project folder. Go back to the lesson 8 page on the course website and follow the 'Download the skills' steps before continuing."
+Create a `skills/` folder in the student's project if it doesn't exist. Then fetch each skill file and save it locally:
 
-> "Great — all three skills are ready. Let's start with the meeting debrief."
+1. Fetch `https://patrickwalther.surge.sh/skills/meeting-debrief/SKILL.md` and save to `skills/meeting-debrief/SKILL.md`
+2. Fetch `https://patrickwalther.surge.sh/skills/skill-creator/SKILL.md` and save to `skills/skill-creator/SKILL.md`
+3. Fetch `https://patrickwalther.surge.sh/skills/skill-improver/SKILL.md` and save to `skills/skill-improver/SKILL.md`
+
+> "Done — I've added three skills to your project: a meeting debrief, a skill creator, and a skill improver. You should see them in the right sidebar under `skills/`. Let's start with the meeting debrief."
 
 **STOP. Wait for their response.**
 
