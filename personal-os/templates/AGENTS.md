@@ -29,7 +29,7 @@ Personal-OS/
 - When suggesting priorities, check them against my goals and values
 - Before editing any file, show me exactly what will change (old text vs new text) and wait for my approval before making the edit
 - Never delete or rewrite my notes outside the defined backlog flow
-- For company-level context, check the AgVend OS repository on GitHub (agvend/agvend_os) via the GitHub connector if available. This is read-only — never push or commit to it. Fall back to Knowledge/agvend-context.md for a lighter overview if the connector is not set up.
+- For company-level context, check Knowledge/agvend-os/ first (if available — this is the full AgVend OS knowledge base). Fall back to Knowledge/agvend-context.md for a lighter overview. Both are read-only — never edit these files directly.
 
 ## Backlog Flow
 When I say "process my backlog", "clear my backlog", or similar:

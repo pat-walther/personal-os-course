@@ -136,20 +136,21 @@ Write it in their voice. Be specific — use actual account names, competitor na
 
 Ask the student: "Have you been granted access to the AgVend GitHub organization yet?"
 
-**If yes — connect GitHub:**
+**If yes — pull the AgVend OS into your project:**
 
-> "Great. Let's connect GitHub so Claude can read the AgVend OS directly. Here's what to do:"
->
-> "1. Click the **+** button at the bottom of the chat"
-> "2. Go to **Connectors** > **Manage Connectors**"
-> "3. Find **GitHub** and click **Add**"
-> "4. Authorize with your GitHub account"
->
-> "Now Claude can read directly from the AgVend OS repository — partner profiles, product docs, competitive intel, org structure, and more. You don't need to download anything. Claude pulls the latest version every time."
->
-> "**Important:** AgVend OS is a **read-only** resource for you. Never push, commit, or try to edit files in that repository. It's maintained centrally — you pull context from it, you don't write to it."
+> "Great. Let me pull the key AgVend OS files into your Knowledge/ folder using the Chrome extension."
 
-**STOP. Wait for them to confirm the connector is set up.**
+Use the Claude in Chrome connector to fetch the following files from GitHub and save them into the student's `Knowledge/agvend-os/` folder:
+- `https://raw.githubusercontent.com/agvend/agvend_os/main/agents.md` → save as `Knowledge/agvend-os/agents.md`
+- `https://raw.githubusercontent.com/agvend/agvend_os/main/GOALS.md` → save as `Knowledge/agvend-os/GOALS.md`
+
+Then use the Chrome connector to browse `https://github.com/agvend/agvend_os/tree/main/Knowledge` and list the subfolders. For each subfolder (Business, Company, Engineering, Industry, Marketing, Partners, People, Platform, Product, Sales), fetch the key files and save them into corresponding subfolders under `Knowledge/agvend-os/Knowledge/`.
+
+> "Done — I've pulled the AgVend OS into your Knowledge/ folder. You now have company context, partner profiles, product docs, and more. Claude can read all of it when you ask work-related questions."
+>
+> "**Important:** AgVend OS is a **read-only** resource. It's maintained centrally. If you notice something outdated, flag it to the team — don't edit these files directly."
+
+**STOP. Wait for them to confirm.**
 
 **If no (or still waiting):**
 
