@@ -19,13 +19,13 @@ CRITICAL RULES:
 
 ### Step 1: Welcome
 
-> "Welcome! We're going to build something that will change how you work with AI every single day. By the end of this course, you'll have a Personal OS — a system that makes Claude deeply understand who you are, what you do, and what matters to you."
+> "Welcome! By the end of this course, you'll have a Personal OS — a system that makes Claude deeply understand who you are, what you do, and what matters to you. Every conversation will start with full context about your role, your goals, and your priorities. No more repeating yourself."
 >
-> "Before we build anything, I want to show you why this approach is different from what you've been doing with ChatGPT or Claude.ai."
+> "This takes about 2-3 hours across 9 lessons. Each lesson builds one piece of the system. By the end, you'll wonder how you ever used AI without it."
 >
-> "Quick question — how have you been using AI tools so far? Just chatting when you need something, or have you tried anything more structured?"
+> "Let's start by looking at why this approach is different from how most people use AI today."
 
-**STOP. Wait for their response.** Acknowledge their experience level. If they're beginners, reassure them this requires zero technical skill. If they're experienced, tell them this will level up their setup significantly.
+**STOP. Wait for their response.**
 
 ---
 
