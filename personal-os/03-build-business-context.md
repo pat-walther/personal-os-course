@@ -37,123 +37,23 @@ CRITICAL RULES:
 
 ### Step 2: Load the AgVend Company Context
 
-> "Before we start the interview, let me load AgVend's shared company knowledge base. This way I'll have real company context — goals, products, partners, competitive intel — so I can ask you smarter questions and reference real things during our conversation."
-
-Ask the student: "Have you been granted access to the AgVend GitHub organization yet?"
-
-**If yes — pull the AgVend OS into your project:**
-
-> "Great. Let me pull the AgVend OS files into your Knowledge/ folder. This will take a few minutes — I need to fetch each file individually. Sit tight."
-
-CRITICAL: You MUST fetch ALL files listed below. Do NOT skip files, do NOT summarize, do NOT stop partway through. Fetch every single file using the Claude in Chrome connector and save it to the corresponding local path. Work through the list systematically, one batch at a time.
-
-Base URL: `https://raw.githubusercontent.com/agvend/agvend_os/main/`
-Save everything under the student's `Knowledge/agvend-os/` folder.
-
-**Root files (fetch first):**
-- `agents.md` → `Knowledge/agvend-os/agents.md`
-- `CLAUDE.md` → `Knowledge/agvend-os/CLAUDE.md`
-- `GOALS.md` → `Knowledge/agvend-os/GOALS.md`
-
-**Business/ (5 files):**
-- `Knowledge/Business/Nexus-Strategy.md`
-- `Knowledge/Business/OKRs-Q1-2026.md`
-- `Knowledge/Business/Partner-Success.md`
-- `Knowledge/Business/Revenue-Operations.md`
-- `Knowledge/Business/Sales-Pipeline.md`
-
-**Company/ (1 file):**
-- `Knowledge/Company/Company-Overview.md`
-
-**Engineering/ (1 file):**
-- `Knowledge/Engineering/Engineering-Overview.md`
-
-**Industry/ (2 files):**
-- `Knowledge/Industry/Competitive-Landscape.md`
-- `Knowledge/Industry/Competitive-Pulse/2026-03-27.md`
-
-**Marketing/ (3 files):**
-- `Knowledge/Marketing/Community-Events-Strategy.md`
-- `Knowledge/Marketing/Marketing-Operations.md`
-- `Knowledge/Marketing/Positioning-Framework.md`
-
-**Partners/ (39 files — fetch ALL of them, do not skip):**
-- `Knowledge/Partners/Ag-Partners-Coop.md`
-- `Knowledge/Partners/Ag-Valley-Coop.md`
-- `Knowledge/Partners/AgState.md`
-- `Knowledge/Partners/AgroPlus.md`
-- `Knowledge/Partners/Agtegra.md`
-- `Knowledge/Partners/Atticus.md`
-- `Knowledge/Partners/Braungardt-Ag.md`
-- `Knowledge/Partners/CFE.md`
-- `Knowledge/Partners/CHS.md`
-- `Knowledge/Partners/CVA.md`
-- `Knowledge/Partners/Crystal-Valley.md`
-- `Knowledge/Partners/Five-Star-Coop.md`
-- `Knowledge/Partners/Frontier-Cooperative.md`
-- `Knowledge/Partners/GreenPoint-Ag.md`
-- `Knowledge/Partners/Growmark-Grain.md`
-- `Knowledge/Partners/Hawks-Agro.md`
-- `Knowledge/Partners/Heritage-Cooperative.md`
-- `Knowledge/Partners/Keystone-Cooperative.md`
-- `Knowledge/Partners/Kokomo-Grain.md`
-- `Knowledge/Partners/Legacy-Cooperative.md`
-- `Knowledge/Partners/MFA.md`
-- `Knowledge/Partners/MKC.md`
-- `Knowledge/Partners/Midway-Coop.md`
-- `Knowledge/Partners/NEW-Coop.md`
-- `Knowledge/Partners/NuWay-KH-Coop.md`
-- `Knowledge/Partners/Parallel-Ag.md`
-- `Knowledge/Partners/Premier-Companies.md`
-- `Knowledge/Partners/Pro-Coop.md`
-- `Knowledge/Partners/ProPoint-Cooperative.md`
-- `Knowledge/Partners/REDSTAR.md`
-- `Knowledge/Partners/Richardson-Pioneer.md`
-- `Knowledge/Partners/River-Valley-Coop.md`
-- `Knowledge/Partners/Sturgeon-Valley.md`
-- `Knowledge/Partners/Tri-Ag.md`
-- `Knowledge/Partners/Tyree-Ag.md`
-- `Knowledge/Partners/Valley-Ag.md`
-- `Knowledge/Partners/Valley-Farmers-Supply.md`
-- `Knowledge/Partners/Valley-United.md`
-- `Knowledge/Partners/Valley-Wide-Coop.md`
-
-**People/ (1 file):**
-- `Knowledge/People/Team-Roster.md`
-
-**Platform/ (1 file):**
-- `Knowledge/Platform/ERP-Integrations.md`
-
-**Product/ (8 files):**
-- `Knowledge/Product/AI-Philosophy.md`
-- `Knowledge/Product/CRM-Plus.md`
-- `Knowledge/Product/Energy-Package.md`
-- `Knowledge/Product/Goose-AI.md`
-- `Knowledge/Product/Grower-Portal-Survey-Insights.md`
-- `Knowledge/Product/Loyalty-Rewards.md`
-- `Knowledge/Product/Product-Operations.md`
-- `Knowledge/Product/Program-Management.md`
-
-**Sales/ (3 files):**
-- `Knowledge/Sales/Business-Development.md`
-- `Knowledge/Sales/GTM-Playbook.md`
-- `Knowledge/Sales/Sales-Operations.md`
-
-After fetching all files, count them. You should have 67 files total. If any are missing, go back and fetch them.
-
-> "Done — I've pulled the complete AgVend OS into your Knowledge/ folder: 67 files covering company strategy, all 39 partner profiles, product docs, sales playbooks, and more. Now I have real company context to work with during the interview."
+> "Before we start the interview, let's connect AgVend's shared company knowledge base. This way I'll have real company context — goals, products, partners, competitive intel — so I can ask you smarter questions and reference real things during our conversation."
 >
-> "**Important:** AgVend OS is a **read-only** resource. It's maintained centrally. If you notice something outdated, flag it to the team — don't edit these files directly."
+> "Remember plugins from Lesson 0? This is your first one. Here's how to add it:"
+>
+> "1. Click the **+** button just below the reply box"
+> "2. Click **Plugins**"
+> "3. Click **Add Plugin**"
+> "4. Select **Find from your organization**"
+> "5. Click the **+** next to **AgVend OS**"
 
-**STOP. Wait for them to confirm.**
+**STOP. Wait for them to confirm the plugin is added.**
 
-**If no (or still waiting):**
+> "You've just connected AgVend's entire company knowledge base — company strategy, all partner profiles, product docs, sales playbooks, competitive intel, and more. Claude can now reference all of that in every conversation."
+>
+> "**Important:** AgVend OS is maintained centrally by the team. If you notice something outdated, flag it — but you don't need to manage these files yourself. That's the power of plugins: the organization keeps them up to date, and you always have the latest version."
 
-> "No problem — I'm adding a basic AgVend company overview to your Knowledge/ folder for now. When your GitHub access comes through, we can pull the full knowledge base."
-
-Copy the template from `templates/agvend-context.md` into the student's `Knowledge/` folder.
-
-**STOP. Wait for acknowledgment, then continue to the interview.**
+**STOP. Wait for them to confirm, then continue to the interview.**
 
 ---
 
@@ -254,7 +154,7 @@ Write it in their voice. Be specific — use actual account names, competitor na
 
 ### Step 5: Two Layers of Context
 
-> "You now have two layers of business context: the **company-level** AgVend context (the files we loaded at the start) and your **personal** Business.md. Your Business.md is about YOU — your role, your accounts, your challenges. The AgVend context is about the COMPANY. Claude reads both."
+> "You now have two layers of business context: the **company-level** AgVend context (the plugin you connected at the start) and your **personal** Business.md. Your Business.md is about YOU — your role, your accounts, your challenges. The AgVend OS plugin is about the COMPANY. Claude reads both."
 
 ---
 
@@ -287,9 +187,9 @@ Write it in their voice. Be specific — use actual account names, competitor na
 - AgVend is an ag tech company providing digital solutions for agricultural retailers
 - Their platform helps ag retailers with e-commerce, digital marketing, and customer engagement
 - The GTM team includes sales, customer success, marketing, and leadership
-- Key competitors and market dynamics should be captured in the shared agvend-context.md template
+- Key competitors and market dynamics are available through the AgVend OS plugin
 
 **File naming:**
 - The file is called Business.md (not Role.md or Work.md) to match the interview framework
 - It sits at the root of the Personal OS, alongside Constitution.md
-- The shared agvend-context.md goes in Knowledge/ because it's reference material, not personal context
+- The AgVend OS plugin provides company-level context; Business.md is personal context

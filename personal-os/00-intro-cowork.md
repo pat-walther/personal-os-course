@@ -43,35 +43,65 @@ Show the image at this URL: `https://patrickwalther.surge.sh/images/chatgpt-prob
 
 ---
 
-### Step 3: What We're Going to Build Instead
+### Step 3: The Blank Slate — How Claude's Memory Actually Works
 
+> "So why does that happen? Let me explain something fundamental about how Claude works. This will change how you think about every AI conversation you have."
+>
+> "Here's the key insight: **Claude wakes up with zero memory every single conversation.** It doesn't remember yesterday. It doesn't remember last week. Every time you start a new chat, it's a completely blank slate."
+>
+> "That means the brilliant conversation you had last Tuesday? Gone. The context you spent twenty minutes explaining? Claude doesn't know it happened."
+
+**STOP. Wait for their response.**
+
+---
+
+### Step 3b: How Conversations Really Work Under the Hood
+
+> "It goes even deeper than that. Even *within* a single conversation, Claude doesn't actually remember what you said earlier. Here's what's really happening:"
+>
+> "When you send your first message, Claude reads it and responds. Simple. But when you send your second message, the system takes your first message, Claude's first response, AND your new message — and sends that entire thing back to Claude. Claude reads all of it fresh, then generates a new response."
+>
+> "When you reply a third time, it takes *everything* — all your messages, all of Claude's responses, plus your new one — and sends the whole transcript back. Claude reads the entire conversation from the top again."
+>
+> "It's not like talking to a person who remembers what you said. It's more like handing someone a transcript of your conversation every single time and saying 'read this and respond to the latest message.'"
+
+**STOP. Wait for their response.**
+
+---
+
+### Step 3c: The Context Window — Why Long Conversations Break Down
+
+> "Now here's where it gets tricky."
+
+Show the image at this URL: `https://patrickwalther.surge.sh/images/context-window-turns.png`. If the image doesn't render, describe it: "Picture three columns — Turn 1, Turn 2, Turn 3. Each turn, the input gets bigger because it includes everything from before. By Turn 3, the input is so large it fills the context window, and the output gets truncated."
+
+> "That transcript can only get so long. Claude has what's called a **context window** — think of it like a fixed-size desk. You can only fit so many papers on it. Each turn of your conversation, the stack of papers gets bigger because it includes everything from before."
+>
+> "Once the conversation gets long enough, the oldest parts start falling off the edge. Claude literally can't see them anymore."
+>
+> "You've probably already experienced this. You're deep in a conversation, and suddenly it feels like Claude forgot something you said at the beginning. It's not being difficult — it physically can't see those early messages anymore because they've been pushed out of the window."
+
+**STOP. Wait for their response.**
+
+---
+
+### Step 4: What We're Going to Build Instead
+
+> "So now you understand the two problems: Claude starts every conversation with zero memory, and even within a conversation, older context eventually disappears. **The chat is not your single source of truth.** It can't be — it's temporary by design."
+>
 > "Here's what we're building instead."
 
 Show the image at this URL: `https://patrickwalther.surge.sh/images/personal-os-solution.png`. If the image doesn't render, describe it: "Now imagine one tight loop — your project knowledge and your short chats are part of the same system. The valuable output goes back into your files automatically."
 
-> "Instead of long chats that you keep going back to, we're going to build a set of files that ARE your knowledge. Your chats become short and disposable — you use them to get work done, and the valuable output goes back into your files. The knowledge lives in documents that continuously get better, not in chat history that gets buried."
+> "Instead of relying on chat history, we're going to build a set of files that ARE your knowledge. **Your files are the source of truth — not the chat.** Files persist. They're always there. The chat disappears."
 >
-> "This is your Personal OS. It's a folder of files that tells Claude everything about you — your values, your role, your goals, your tasks. Every time you start a new conversation, Claude already knows you."
-
-**STOP. Wait for their reaction.**
-
----
-
-### Step 4: Why This Works — The Context Window
-
-> "Let me show you why this matters technically — don't worry, it's simple."
-
-Show the image at this URL: `https://patrickwalther.surge.sh/images/context-window-turns.png`. If the image doesn't render, describe it: "Picture three columns — Turn 1, Turn 2, Turn 3. Each turn, the input gets bigger because it includes everything from before. By Turn 3, the input is so large it fills the context window, and the output gets truncated."
-
-> "Every time you talk to an AI, it can only process a limited amount of information. This is called the context window. Each turn of your conversation, the input gets bigger — because the AI has to re-read everything that was said before, plus your new message."
+> "Here's the workflow: you have a conversation with Claude, you learn something valuable — a new insight, a better way to phrase your goals, an updated list of priorities. Instead of hoping you'll find that buried in a chat transcript later, you update your file. The file always has the latest, best version of your thinking. Every conversation makes your files smarter."
 >
-> "Here's the key insight: **Claude wakes up with zero memory every single conversation.** It doesn't remember yesterday. It doesn't remember last week. Every time you start a new chat, it's a blank slate."
+> "This is your Personal OS. It's a folder of files that tells Claude everything about you — your values, your role, your goals, your tasks. Every time you start a new conversation, those files get loaded in, and Claude already knows you."
 >
-> "So if you want Claude to know who you are, what you're working on, and how you like to work — you need to give it that information in a structured way. That's exactly what your Personal OS does. It's the briefing packet that Claude reads every time it wakes up."
->
-> "But you also can't make that briefing packet too long, or you'll use up all the space Claude has to actually think about your request. How you structure your Personal OS becomes extremely important."
+> "But you also can't make those files too long, or you'll use up all the space Claude has to actually think about your request. How you structure your Personal OS becomes extremely important — it's about giving Claude the *right* context, not *all* the context."
 
-**STOP. Wait for their response.** If they have questions about context windows, keep it simple — "Think of it like a desk. You can only fit so many papers on it. Your Personal OS is the most important papers, always on the desk."
+**STOP. Wait for their response.** If they have questions, keep the desk analogy going — "Your Personal OS files are the most important papers, always on the desk. Chat history is papers that pile up during the day. Starting a new chat clears the desk but keeps your important papers."
 
 ---
 
@@ -91,67 +121,53 @@ Show the image at this URL: `https://patrickwalther.surge.sh/images/context-wind
 
 ---
 
-### Step 6: Set Up Your Project
+### Step 5b: Know Your Workspace
 
-> "Important: this course requires the **Claude Desktop app** — not the browser version at claude.ai. Co-work only works in the desktop app. If you haven't installed it yet, download it from **claude.ai/download** for Mac or Windows."
-
-**STOP. Wait for confirmation that they have the desktop app.**
-
-> "Next, install the **Claude in Chrome** extension. This lets Claude read web pages, fetch lesson files, and take actions in your browser. Open this link in Chrome and click **Add to Chrome**:"
+> "Let me quickly orient you to what you're looking at. On the **right side** of your screen, you'll see a panel with three sections:"
 >
-> "**https://chromewebstore.google.com/detail/claude/fcoeoabgfenejglbffodgkkbkcdhcgfn**"
+> "**Progress** — at the top. If Claude has several tasks to do, they'll show up here so you can see what it's working on."
 >
-> "Once it's installed, go back to the Claude Desktop app. Click your initials in the bottom left > **Settings** > **Connectors** > find **Claude in Chrome** > toggle it **on**."
+> "**Files** — in the middle. This is the folder you've opened. As we build your Personal OS, you'll see new files appear here. You can click any file to open it and see what's inside."
 >
-> "**Important:** You'll need to make sure Claude in Chrome is enabled in each new conversation. When you start a new chat, click the **Connectors** dropdown at the top and make sure **Claude in Chrome** is toggled on."
+> "**Context** — at the bottom. When Claude uses connectors, skills, or plugins, they show up here while it's using them. We'll explain what those are in a moment."
 >
-> "Let me know when the extension is installed and enabled."
-
-**STOP. Wait for them to confirm.**
-
-> "Now let's set up your workspace:"
->
-> "**Step 1:** Open Finder (Mac) or File Explorer (Windows). Create a new folder wherever you like — your Desktop, Documents, wherever makes sense. Name it `Personal-OS` or `My-OS`."
->
-> "**Step 2:** In the Claude Desktop app, go to the **Co-work** tab. Grant Claude access to that folder you just created. This is how Claude gets permission to read and create files in your Personal OS."
->
-> "That's it — Claude can now touch files in your Personal OS folder, but nothing else on your machine."
->
-> "Let me know when you're set up and I can see your folder."
-
-**STOP. Wait for them to confirm.**
-
-Once confirmed, move to the next step.
-
----
-
-### Step 7: Know Your Workspace
-
-> "Before we move on, take a quick look at your screen. On the **right side** you'll see a panel with a few sections:"
->
-> "**Progress** — at the top. This shows how far along Claude is on longer tasks."
->
-> "**Your project files** — in the middle. This is the folder you just created. As we build your Personal OS, you'll see new files appear here. You can click on any file to open it and see what's inside."
->
-> "**Context** — at the bottom. This shows any connectors Claude is using (like web access or integrations you'll set up later)."
->
-> "The main area on the left is your chat — that's where we'll work together. Got it?"
+> "The main area on the the middle is your chat — that's where we'll work together. Got it?"
 
 **STOP. Wait for their response.**
 
 ---
 
-### Step 8: Get Ready for Company Context
+### Step 5c: Extending Claude — Connectors, Skills, and Plugins
 
-> "One thing to get ahead of — later in this course, you'll be able to connect AgVend's shared company knowledge base directly to Claude. It's called **AgVend OS** and it lives on GitHub. It has company context, partner profiles, product docs, competitive intel, and more."
+> "There are three ways to extend what Claude can do beyond the basics. You don't need to set any of these up right now — I just want you to know they exist."
 >
-> "To access it, you'll need a GitHub account. If you don't have one yet, go to **github.com** and create a free account — it only takes a minute."
+> "**Connectors** are ways to connect Claude to other software you use at AgVend and get data from there. For example: Slack, Google Calendar, Gmail. You probably already have your first one — **Claude in Chrome** — since we've been using it to show images today."
 >
-> "Once you have an account, go to the **system access request** channel and tag **Danil** to request access to the AgVend GitHub organization."
+> "**Skills** let you teach Claude a repeatable process it can run over and over again. We'll build some of these later in the course."
 >
-> "Don't worry if it takes a day or two to get approved — we'll check in on this in Lesson 3. You can keep going with the course while you wait."
+> "**Plugins** are a way for the organization to share a combination of skills and connectors together. We'll use one of these in Lesson 3 to load AgVend's company knowledge base."
+>
+> "You can find all of these by clicking the **+** button just below the reply box."
 
-**STOP. Wait for their response.** If they already have GitHub, great. If not, reassure them it's simple and they can do it after the session.
+**STOP. Wait for their response.**
+
+> "If you don't have the Claude in Chrome extension yet, install it here — open this link in Chrome and click **Add to Chrome**: **https://chromewebstore.google.com/detail/claude/fcoeoabgfenejglbffodgkkbkcdhcgfn**"
+>
+> "Once it's installed, click the **+** below the reply box, then **Connectors**, and make sure **Claude in Chrome** is toggled on."
+
+**STOP. Wait for them to confirm Claude in Chrome is enabled.**
+
+---
+
+### Step 6: Your Project Folder
+
+> "You've already created a folder on your machine and granted Claude access to it — that's how we're having this conversation right now. That folder is your Personal OS."
+>
+> "Here's what's going to happen as we go through this course: Claude is going to create files in that folder — your Constitution, your Business context, your Goals. It'll also update those files over time as things change. Everything lives right there on your machine."
+>
+> "You can open that folder in Finder (Mac) or File Explorer (Windows) anytime to see your files. They're just regular documents — you own them."
+
+**STOP. Wait for their response.**
 
 ---
 
