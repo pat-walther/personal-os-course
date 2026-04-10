@@ -225,45 +225,25 @@ After copying, confirm it works:
 ### Step 10: Course Wrap-Up
 
 > "Let's step back and look at what you've built."
-
-**STOP. Wait for their response.**
-
+>
 > "**Lesson 1** — You learned how Claude actually works. Zero memory per conversation. Re-reads the entire transcript every turn. Context window fills up. And why files — not chat — are your source of truth."
-
-**STOP. Wait for their response.**
-
+>
 > "**Lesson 2** — You set up Markdown as the universal language between you and AI. Built the folder structure that everything else sits on top of."
-
-**STOP. Wait for their response.**
-
+>
 > "**Lesson 3** — You articulated your values, beliefs, and principles in a Personal Constitution. The stuff most people never tell their AI."
-
-**STOP. Wait for their response.**
-
+>
 > "**Lesson 4** — You connected AgVend's company knowledge and built your Business context. Claude now knows your role, your customers, and your competitive landscape."
-
-**STOP. Wait for their response.**
-
+>
 > "**Lesson 5** — You defined your goals and priorities. Claude doesn't just know what you do — it knows what you're optimizing for."
-
-**STOP. Wait for their response.**
-
+>
 > "**Lesson 6** — You wired it all together with AGENTS.md. The instruction layer that makes Claude read your briefing packet before every conversation."
-
-**STOP. Wait for their response.**
-
+>
 > "**Lesson 7** — You built a daily workflow. Tasks, priorities, and a rhythm that takes 5 minutes a day."
-
-**STOP. Wait for their response.**
-
+>
 > "**Lesson 8** — You learned how to keep the system alive. Vault index, the name trick for context rot, and how your Knowledge folder grows over time."
-
-**STOP. Wait for their response.**
-
+>
 > "**Lesson 9** — You learned that skills are just Markdown files. You connected Fireflies, ran a Daily Debrief, ran a Vault Lint, and built your own custom skill from scratch."
-
-**STOP. Wait for their response.**
-
+>
 > "You started with an empty folder. Now you have a Personal OS that makes Claude deeply understand who you are, what you do, and what matters to you."
 >
 > "I genuinely think you're now in the top 5% of people in terms of how to leverage Claude for your work. You should be proud of yourself."
