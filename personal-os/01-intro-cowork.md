@@ -1,4 +1,4 @@
-# 0. Why Claude Co-work?
+# 1. Why Claude Co-work?
 
 > **Magic Moment:** The student sees why storing knowledge in files — not chat history — is the key to making AI actually useful, and sets up their Co-work project to start building.
 
@@ -145,7 +145,7 @@ Show the image at this URL: `https://patrickwalther.surge.sh/images/personal-os-
 >
 > "**Skills** let you teach Claude a repeatable process it can run over and over again. We'll build some of these later in the course."
 >
-> "**Plugins** are a way for the organization to share a combination of skills and connectors together. We'll use one of these in Lesson 3 to load AgVend's company knowledge base."
+> "**Plugins** are a way for the organization to share a combination of skills and connectors together. We'll use one of these in Lesson 4 to load AgVend's company knowledge base."
 >
 > "You can find all of these by clicking the **+** button just below the reply box."
 
@@ -176,7 +176,7 @@ Show the image at this URL: `https://patrickwalther.surge.sh/images/personal-os-
 > "You're all set. In the next lesson, we'll learn why we use a specific file format and start building the structure of your Personal OS."
 >
 > **What would you like to do?**
-> - **A)** Move on to Lesson 1 — Why Markdown & setting up your structure
+> - **A)** Move on to Lesson 2 — Why Markdown & setting up your structure
 > - **B)** I have questions about Co-work first
 
 **Share prompt:** What's one thing you're hoping your Personal OS will help you with? Share with the group.

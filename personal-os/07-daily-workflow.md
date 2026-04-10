@@ -1,4 +1,4 @@
-# 6. Daily Workflow
+# 7. Daily Workflow
 
 > **Magic Moment:** The student brain-dumps into BACKLOG.md, says "process my backlog," and watches Claude turn scattered thoughts into organized, prioritized tasks linked to their goals.
 
@@ -147,7 +147,7 @@ Update the task file: change `status: n` (or `status: s`) to `status: d` in the 
 > "In the final lesson, we'll talk about keeping this system alive — growing your Knowledge folder, handling context limits, and evolving your setup over time."
 
 > **What would you like to do?**
-> - **A)** Move on to Lesson 7 — Memory, context, and keeping your OS alive
+> - **A)** Move on to Lesson 8 — Memory, context, and keeping your OS alive
 > - **B)** Process more backlog items
 > - **C)** Try the full morning routine right now
 

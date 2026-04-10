@@ -1,4 +1,4 @@
-# 2. Build Your Constitution
+# 3. Build Your Constitution
 
 > **Magic Moment:** Through a deep, probing interview, the student articulates their core values, beliefs, and principles — and sees them crystallized into a document that makes AI interactions profoundly more personal and aligned.
 
@@ -160,7 +160,7 @@ Write it in their voice. Use their words where possible. Don't sanitize or corpo
 > "In the next lesson, we'll do a similar interview for your professional context — your role, your accounts, your competitive landscape."
 
 > **What would you like to do?**
-> - **A)** Move on to Lesson 3 — Build your Business context
+> - **A)** Move on to Lesson 4 — Build your Business context
 > - **B)** I want to refine my Constitution more
 > - **C)** I want to take a break and come back
 

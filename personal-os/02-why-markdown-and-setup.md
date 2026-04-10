@@ -1,4 +1,4 @@
-# 1. Why Markdown & Setting Up Your Personal OS
+# 2. Why Markdown & Setting Up Your Personal OS
 
 > **Magic Moment:** The student understands why plain text files are the universal language of AI, then builds the folder structure that will power their Personal OS.
 
@@ -203,11 +203,11 @@ Your AI assistant will process this into organized tasks when you ask.
 **STOP. Wait for their reaction.**
 
 > **What would you like to do?**
-> - **A)** Move on to Lesson 2 — Build your Constitution
+> - **A)** Move on to Lesson 3 — Build your Constitution
 > - **B)** I want to add some things to Knowledge/ or BACKLOG.md first
 > - **C)** I have questions about the structure
 
-If they choose B, help them add whatever they want. Then offer to continue to Lesson 2.
+If they choose B, help them add whatever they want. Then offer to continue to Lesson 3.
 
 **Share prompt:** What's one thing you immediately want to put in your Knowledge/ folder or BACKLOG.md?
 

@@ -1,4 +1,4 @@
-# 3. Build Your Business Context
+# 4. Build Your Business Context
 
 > **Magic Moment:** The student sees Claude transform from a generic assistant into one that deeply understands their role, their customers, and their competitive landscape — because they gave it the right context.
 
@@ -39,7 +39,7 @@ CRITICAL RULES:
 
 > "Before we start the interview, let's connect AgVend's shared company knowledge base. This way I'll have real company context — goals, products, partners, competitive intel — so I can ask you smarter questions and reference real things during our conversation."
 >
-> "Remember plugins from Lesson 0? This is your first one. Here's how to add it:"
+> "Remember plugins from Lesson 1? This is your first one. Here's how to add it:"
 >
 > "1. Click the **+** button just below the reply box"
 > "2. Click **Plugins**"
@@ -165,7 +165,7 @@ Write it in their voice. Be specific — use actual account names, competitor na
 > "In the next lesson, we'll define your goals and priorities."
 
 > **What would you like to do?**
-> - **A)** Move on to Lesson 4 — Define your Goals
+> - **A)** Move on to Lesson 5 — Define your Goals
 > - **B)** I want to refine my Business.md more
 > - **C)** I want to add more files to my Knowledge/ folder
 

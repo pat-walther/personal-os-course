@@ -1,4 +1,4 @@
-# 8. Skills — Automate the Upkeep
+# 9. Skills — Automate the Upkeep
 
 > **Magic Moment:** The student connects Fireflies, runs a meeting debrief skill, and watches Claude automatically suggest task updates, knowledge additions, and goal changes — all from a single meeting transcript.
 
@@ -41,35 +41,36 @@ CRITICAL RULES:
 >
 > "Skills live in a folder called `skills/` in your Personal OS. Each skill is a `.md` file — the same Markdown you already know."
 >
-> "Let me add three skills to your Personal OS right now."
+> "Let me add four skills to your Personal OS right now."
 
 Create a `skills/` folder in the student's project if it doesn't exist. Then fetch each skill file and save it locally:
 
-1. Fetch `https://patrickwalther.surge.sh/skills/meeting-debrief/SKILL.md` and save to `skills/meeting-debrief/SKILL.md`
-2. Fetch `https://patrickwalther.surge.sh/skills/skill-creator/SKILL.md` and save to `skills/skill-creator/SKILL.md`
-3. Fetch `https://patrickwalther.surge.sh/skills/skill-improver/SKILL.md` and save to `skills/skill-improver/SKILL.md`
+1. Fetch `https://patrickwalther.surge.sh/skills/daily-debrief-agvend/SKILL.md` and save to `skills/daily-debrief-agvend/SKILL.md`
+2. Fetch `https://patrickwalther.surge.sh/skills/vault-lint/SKILL.md` and save to `skills/vault-lint/SKILL.md`
+3. Fetch `https://patrickwalther.surge.sh/skills/skill-creator/SKILL.md` and save to `skills/skill-creator/SKILL.md`
+4. Fetch `https://patrickwalther.surge.sh/skills/skill-improver/SKILL.md` and save to `skills/skill-improver/SKILL.md`
 
-> "Done — I've added three skills to your project: a meeting debrief, a skill creator, and a skill improver. You should see them in the right sidebar under `skills/`. Let's start with the meeting debrief."
+> "Done — I've added four skills to your project: a daily debrief, a vault health check, a skill creator, and a skill improver. You should see them in the right sidebar under `skills/`. Let's start with the daily debrief."
 
 **STOP. Wait for their response.**
 
 ---
 
-### Step 3: The Meeting Debrief Skill
+### Step 3: The Daily Debrief Skill
 
-> "Let me show you a real skill. I'm going to open the meeting debrief skill that came with your Personal OS."
+> "Let me show you a real skill. I'm going to open the daily debrief skill that came with your Personal OS."
 
-Read the file at `skills/meeting-debrief/SKILL.md` and walk the student through it section by section:
+Read the file at `skills/daily-debrief-agvend/SKILL.md` and walk the student through it section by section:
 
 > "Take a look at this file. Let me walk you through what's in it:"
 >
 > "**The header** — a name, description, and trigger phrases. This tells Claude when to activate the skill."
 >
-> "**The workflow** — step-by-step instructions for what Claude should do. Phase 1: get the meeting transcript. Phase 2: load your Personal OS context. Phase 3: cross-reference. Phase 4: present suggestions. Phase 5: apply what you approve."
+> "**The workflow** — step-by-step instructions for what Claude should do. Phase 1: pull your meeting transcripts from Fireflies. Phase 2: load your Personal OS context. Phase 3: selectively read relevant Knowledge files. Phase 4: write a daily entry. Phase 5: suggest vault updates. Phase 6: update your vault index. Phase 7: suggest new tasks and tomorrow's priorities."
 >
-> "**The rules** — guardrails. Never make changes without approval. Quote the transcript. Link every task to a goal."
+> "**The rules** — guardrails. Never make changes without approval. Quote evidence for every suggestion. Link every task to a goal."
 >
-> "This is the whole thing. No code. Just structured instructions in a Markdown file. And here's the important part — if you want it to work differently, you just edit the file. Want it to always create a Knowledge/ summary? Add that step. Want it to skip goal alignment? Remove that rule."
+> "This is the whole thing. No code. Just structured instructions in a Markdown file. And here's the important part — if you want it to work differently, you just edit the file. Want it to skip the reflection question? Remove that step. Want it to always check your Constitution? Add that to Phase 2."
 
 **STOP. Wait for their response. Answer any questions about the skill structure.**
 
@@ -100,20 +101,20 @@ If they don't have Fireflies or can't connect:
 
 ### Step 5: Try It
 
-> "Let's take it for a spin. Say: 'Debrief my latest meeting.'"
+> "Let's take it for a spin. Say: 'Close my day' or 'Debrief my day.'"
 
 **STOP. Wait for them to say it.**
 
-When they do, run the meeting debrief skill:
+When they do, run the daily debrief skill:
 
-1. If Fireflies is connected: list their recent meetings and ask which one to process
+1. If Fireflies is connected: list their recent meetings and ask which one(s) to process
 2. If not connected: ask them to paste meeting notes or a transcript
 
 If they don't have any meeting notes available, use the sample transcript from the Reference Material below.
 
 After processing:
 
-> "Here's what the skill found. Look at the suggestions — new tasks, knowledge updates, and goal alignment checks, all pulled from one meeting transcript."
+> "Here's what the skill found. Look at the suggestions — a daily entry, new tasks, knowledge updates, goal alignment checks, and your vault index updated. All from a single command."
 >
 > "Which of these do you want me to apply?"
 
@@ -121,11 +122,31 @@ After processing:
 
 ---
 
-### Step 6: Read the Skill File Yourself
+### Step 6: The Vault Health Check
 
-> "Now I want you to actually open the skill file and read through it. It's at `skills/meeting-debrief/SKILL.md` in your Personal OS."
+> "Remember the weekly review from Lesson 8 — reviewing stale tasks, checking goal alignment, processing your backlog? Your Personal OS includes a skill that automates that entire check."
+
+Read the file at `skills/vault-lint/SKILL.md` and give a brief overview:
+
+> "The vault lint skill runs three health checks: **stale tasks** (things you created but never touched), **goal-activity gaps** (goals with no work or work with no goal), and **index drift** (files that aren't in your vault index)."
 >
-> "As you read it, think about: is there anything you'd change? Maybe you want it to always save a meeting summary. Maybe you want it to focus more on action items and less on knowledge updates. Maybe you want it to check your Constitution when evaluating decisions."
+> "Try it — say: 'Lint my vault' or 'Vault health check.'"
+
+**STOP. Wait for them to run it.**
+
+After processing, walk through the report with them:
+
+> "This is what a weekly review looks like when it's automated. Run this every Friday and your Personal OS stays clean."
+
+**STOP. Wait for their response.**
+
+---
+
+### Step 7: Read the Skill Files Yourself
+
+> "Now I want you to actually open one of the skill files and read through it. Try `skills/daily-debrief-agvend/SKILL.md` in your Personal OS."
+>
+> "As you read it, think about: is there anything you'd change? Maybe you want it to focus more on action items and less on knowledge updates. Maybe you want it to check your Constitution when evaluating decisions. Maybe you want the vault lint to check something extra."
 >
 > "The whole point of skills is that they're yours to customize. It's just a text file. Edit it however you want."
 
@@ -133,7 +154,7 @@ After processing:
 
 ---
 
-### Step 7: Build Your Own Skill
+### Step 8: Build Your Own Skill
 
 > "The meeting debrief is just one example. Think bigger — any workflow where you're doing the same steps over and over could be a skill. And it doesn't have to be complicated. If you can explain it to a new hire, you can turn it into a skill."
 >
@@ -185,7 +206,7 @@ After copying, confirm it works:
 
 ---
 
-### Step 8: Improve What You Built
+### Step 9: Improve What You Built
 
 > "You just built your own skill. But here's the thing — most skills work about 70% of the time on the first draft. The other 30% you get inconsistent or mediocre output. That's normal."
 >
@@ -214,19 +235,19 @@ Help the student install the Skill Improver globally. Copy the entire `skills/sk
 
 ---
 
-### Step 9: Course Wrap-Up
+### Step 10: Course Wrap-Up
 
 > "Let's step back and look at what you've built across all 9 lessons."
 >
-> "**Lesson 0:** Why Claude Co-work and context matter"
-> "**Lesson 1:** Why Markdown is the language of AI, and your folder structure"
-> "**Lesson 2:** Your Personal Constitution — values, beliefs, and principles"
-> "**Lesson 3:** Your Business context — role, customers, competitive landscape"
-> "**Lesson 4:** Your Goals — priorities organized by timeframe and OKRs"
-> "**Lesson 5:** AGENTS.md — the instruction layer that wires it all together"
-> "**Lesson 6:** Your daily workflow — backlog, tasks, priorities"
-> "**Lesson 7:** Memory, context, and keeping your system alive"
-> "**Lesson 8:** Skills — automate workflows, build your own, and stress-test them"
+> "**Lesson 1:** Why Claude Co-work and context matter"
+> "**Lesson 2:** Why Markdown is the language of AI, and your folder structure"
+> "**Lesson 3:** Your Personal Constitution — values, beliefs, and principles"
+> "**Lesson 4:** Your Business context — role, customers, competitive landscape"
+> "**Lesson 5:** Your Goals — priorities organized by timeframe and OKRs"
+> "**Lesson 6:** AGENTS.md — the instruction layer that wires it all together"
+> "**Lesson 7:** Your daily workflow — backlog, tasks, priorities"
+> "**Lesson 8:** Memory, context, and keeping your system alive"
+> "**Lesson 9:** Skills — automate workflows, build your own, and stress-test them"
 >
 > "You started with an empty folder. Now you have a Personal OS that makes Claude deeply understand you, a system that keeps itself updated through skills, and the ability to build and optimize new skills whenever you find a workflow worth automating."
 >
@@ -240,7 +261,7 @@ Help the student install the Skill Improver globally. Copy the entire `skills/sk
 
 ---
 
-### Step 10: Share and Give Feedback
+### Step 11: Share and Give Feedback
 
 > "One last thing before we wrap."
 >
@@ -329,7 +350,8 @@ description: [One sentence. When to use this skill.]
 - If Fireflies is not available, the skill works with pasted meeting notes
 
 **Skills included in this course:**
-- `skills/meeting-debrief/` — processes meeting transcripts, suggests task/goal/knowledge updates
+- `skills/daily-debrief-agvend/` — end-of-day skill that processes Fireflies meeting transcripts, writes daily entries, suggests task/goal/knowledge updates
+- `skills/vault-lint/` — weekly health check that catches stale tasks, goal-activity gaps, and index drift
 - `skills/skill-creator/` — builds new skills through a guided workflow with testing and refinement
 - `skills/skill-improver/` — autonomously optimizes any skill by running it repeatedly, scoring outputs against binary pass/fail evals, and mutating the prompt to fix failures
 

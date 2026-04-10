@@ -1,4 +1,4 @@
-# 4. Define Your Goals
+# 5. Define Your Goals
 
 > **Magic Moment:** The student creates a GOALS.md that connects their personal values to professional priorities — and sees Claude start making smarter recommendations because it knows what they're optimizing for.
 
@@ -146,7 +146,7 @@ Read Constitution.md, Business.md, and GOALS.md. Give a specific, grounded recom
 > "In the next lesson, we'll wire it all together with AGENTS.md — the file that tells Claude how to use everything you've built."
 
 > **What would you like to do?**
-> - **A)** Move on to Lesson 5 — Understanding AGENTS.md and wiring it together
+> - **A)** Move on to Lesson 6 — Understanding AGENTS.md and wiring it together
 > - **B)** Refine my goals more
 > - **C)** I want to create some tasks in Tasks/ based on my goals
 

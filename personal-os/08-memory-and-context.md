@@ -1,4 +1,4 @@
-# 7. Memory, Context, and Keeping Your OS Alive
+# 8. Memory, Context, and Keeping Your OS Alive
 
 > **Magic Moment:** The student understands why AI "forgets" and how to work with that constraint — and leaves with a concrete plan for evolving their Personal OS over time.
 
@@ -44,7 +44,7 @@ List the files in their Personal OS folder:
 
 > "Now I want to explain something practical that will make your experience much better: **when to start a new conversation.**"
 >
-> "Remember from Lesson 0 — Claude has a limited context window. As a conversation gets longer, the input grows with every turn. Eventually, Claude's performance degrades. This is sometimes called 'context rot' — the AI gets dumber and more forgetful the longer a conversation goes."
+> "Remember from Lesson 1 — Claude has a limited context window. As a conversation gets longer, the input grows with every turn. Eventually, Claude's performance degrades. This is sometimes called 'context rot' — the AI gets dumber and more forgetful the longer a conversation goes."
 >
 > "Here's the good news: because your Personal OS exists as files, starting a fresh conversation costs you nothing. Claude reads your AGENTS.md, checks your files, and you're right back where you left off. The knowledge lives in your documents, not in the chat."
 >
@@ -73,7 +73,42 @@ List the files in their Personal OS folder:
 
 ---
 
-### Step 4: Evolving Your AGENTS.md
+### Step 4: Your Vault Index
+
+> "As your Personal OS grows — more Knowledge files, more tasks, more daily entries — Claude needs a way to know what's in here without reading every single file. That's what a vault index is."
+>
+> "It's a simple catalog: one line per file, with a short description of what's in it. When Claude starts a conversation, it can scan the index and know exactly where to look for what it needs."
+>
+> "Let me generate one for you right now."
+
+Scan the student's entire Personal OS folder. Create `Knowledge/vault-index.md` with an entry for every file:
+
+```markdown
+# Vault Index
+
+One-line description of every file in the Personal OS. Claude reads this to know what exists and where to find it.
+
+## Foundation
+- `AGENTS.md` -- AI instruction manual, loaded every conversation
+- `Constitution.md` -- Personal values, beliefs, and principles
+- `Business.md` -- Professional context, role, accounts, competitive landscape
+- `GOALS.md` -- Priorities organized by timeframe
+- `BACKLOG.md` -- Brain dump inbox for unprocessed thoughts
+
+## Tasks
+- `Tasks/[filename].md` -- [one-line description per task]
+
+## Knowledge
+- `Knowledge/[filename].md` -- [one-line description per file]
+```
+
+> "Done — your vault index is at `Knowledge/vault-index.md`. It lists every file in your Personal OS with a one-line description. As you add more files, you'll want to keep this updated. In the next lesson, you'll get a skill that does this automatically."
+
+**STOP. Wait for their response.**
+
+---
+
+### Step 5: Evolving Your AGENTS.md
 
 > "Your AGENTS.md isn't set in stone. It should evolve as you learn what works and what doesn't."
 >
@@ -96,7 +131,7 @@ List the files in their Personal OS folder:
 
 ---
 
-### Step 5: The Weekly Review
+### Step 6: The Weekly Review
 
 > "Here's a practice that keeps your Personal OS healthy: a weekly review. Takes about 10 minutes."
 >
@@ -116,7 +151,7 @@ List the files in their Personal OS folder:
 
 ---
 
-### Step 6: Tips and Tricks
+### Step 7: Tips and Tricks
 
 > "A few final tips from people who use this daily:"
 >
@@ -142,20 +177,20 @@ List the files in their Personal OS folder:
 
 ---
 
-### Step 7: What's Next
+### Step 8: What's Next
 
 > "Now, if you're looking at all of this thinking 'that's a lot to keep updated' — I hear you. Maintaining your Constitution, Business context, Goals, Tasks, and Knowledge manually after every meeting and every decision sounds like work."
 >
 > "Here's the good news: **you won't have to.** The next lesson changes everything."
 >
-> "In Lesson 8, you'll learn about **skills** — reusable instruction files that automate the upkeep for you. After a meeting, you'll say 'debrief my meeting' and Claude will automatically pull the transcript, cross-reference it against your goals, suggest task updates, flag knowledge additions, and check for goal changes. All from a single command."
+> "In Lesson 9, you'll learn about **skills** — reusable instruction files that automate the upkeep for you. After a meeting, you'll say 'debrief my meeting' and Claude will automatically pull the transcript, cross-reference it against your goals, suggest task updates, flag knowledge additions, and check for goal changes. All from a single command."
 >
 > "You'll also learn how to build your own skills for any workflow you repeat — and how to stress-test them so they work reliably."
 >
 > "Ready?"
 
 > **What would you like to do?**
-> - **A)** Move on to Lesson 8 — Skills and automation
+> - **A)** Move on to Lesson 9 — Skills and automation
 > - **B)** I want to spend more time setting up my maintenance habits first
 > - **C)** I have questions about what we covered
 

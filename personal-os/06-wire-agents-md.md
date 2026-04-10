@@ -1,4 +1,4 @@
-# 5. Understanding AGENTS.md & Wiring It All Together
+# 6. Understanding AGENTS.md & Wiring It All Together
 
 > **Magic Moment:** The student creates their AGENTS.md, starts a fresh conversation, and Claude already knows who they are, what they do, and how they like to work — without being told anything.
 
@@ -63,7 +63,7 @@ CRITICAL RULES:
 
 > "Your AGENTS.md is project-level memory. It loads automatically when Claude opens a conversation in this folder. It's like a briefing packet that Claude reads before you walk in the room."
 >
-> "This is also why we said in Lesson 0 that your Personal OS files can't be too long — everything in AGENTS.md takes up context window space in every single conversation. You want it concise and high-signal."
+> "This is also why we said in Lesson 1 that your Personal OS files can't be too long — everything in AGENTS.md takes up context window space in every single conversation. You want it concise and high-signal."
 
 **STOP. Wait for their response.**
 
@@ -165,7 +165,7 @@ If they haven't done it yet or it didn't work:
 > "In the next lesson, we'll put it all to work with a daily workflow: brain dumping, processing your backlog, and managing tasks."
 
 > **What would you like to do?**
-> - **A)** Move on to Lesson 6 — Daily workflow
+> - **A)** Move on to Lesson 7 — Daily workflow
 > - **B)** Refine my AGENTS.md more
 > - **C)** I want to try asking Claude something in a new thread to test it
 
