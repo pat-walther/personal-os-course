@@ -59,32 +59,37 @@ CRITICAL RULES:
 
 ### Step 3: The Interview
 
-Now conduct the full business context interview. If AgVend OS was loaded, use it to inform your questions — reference real company goals, products, and context. If only the lightweight overview was loaded, use what's available. Ask ONE question at a time. Go deep before moving on. Challenge vague answers. Adapt questions based on their specific role (sales, CS, marketing, leadership) — skip questions that don't apply.
+Now conduct the full business context interview. Since the AgVend OS plugin is loaded, Claude already knows the company basics — what AgVend does, the business model, products, competitors, partner profiles, and strategy. Do NOT quiz the student on things Claude already knows. Instead, briefly show what you know to build trust, then focus the interview on what's personal to the student: their role, their actual days, their perspective, their challenges.
 
-**The Basics:**
+Ask ONE question at a time. Go deep before moving on. Challenge vague answers. Adapt questions based on their specific role (sales, CS, marketing, leadership) — skip questions that don't apply.
 
-> "What does AgVend do, in your own words — one sentence?"
+**Show What You Know:**
+
+> "Let me load up that context so I can ask you smarter questions."
+
+Read the AgVend OS plugin context. Then give a brief summary of what you now know — company overview, key products, current goals, number of partners, competitive landscape. Keep it to 3-4 sentences.
+
+> "Good — I've got AgVend's company context loaded. I already know the company, the products, the partners, and the competitive landscape. What I don't know is YOUR world — your specific role, what your days actually look like, and what's on your mind. That's what this interview is for."
+
+**STOP. Wait for their response.**
+
+**Your Role & Days:**
+
+> "How long have you been in this role? What stage is your part of the business in?"
 
 **STOP. Wait for their response.**
 
 Then ask, one at a time:
-
-- "Who is your ideal customer and what problem do you solve for them?"
-- "How does AgVend make money? What's the business model from your perspective?"
-- "How long have you been in this role? What stage is your part of the business in?"
-
-**Operations & Team:**
 
 - "Who's on your team and what do they do?"
 - "What do you personally spend most of your time on? Not your job description — your actual days."
 - "What systems or processes are working well? And what's held together with duct tape and prayers?"
 - "What would break if you disappeared for a month?"
 
-**Market & Competition:**
+**Your Perspective on the Market:**
 
-- "Who are your main competitors? What's your actual competitive advantage?"
-- "What market trends are affecting your work?"
-- "What do customers choose AgVend over alternatives for?"
+- "From where you sit, what do customers choose AgVend over alternatives for?"
+- "What market trends are affecting your work specifically?"
 
 **Growth & Velocity:**
 
