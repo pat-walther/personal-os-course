@@ -35,7 +35,7 @@ CRITICAL RULES:
 
 > "You may have heard the term 'AI agents' or 'AI skills' in the news lately. Entire SaaS companies have watched their valuations tank because investors believe AI skills will replace their products. There's a lot of hype around this."
 >
-> "Here's the thing: a skill is literally nothing new beyond what you've already learned in this course. It's a text file with instructions that Claude follows when you say a trigger phrase. That's it. A Markdown file."
+> "Here's the thing: a skill is literally nothing new beyond what you've already learned in this course. It's a text file with instructions that Claude follows when you say a trigger phrase. That's it. A Markdown file. Okay fine, it can also write and run code for you — but the skill itself? Just a text file."
 >
 > "Think of it as a recipe. When you say 'close my day,' Claude reads the recipe and follows the steps: pull the transcript, cross-reference against your goals, suggest task updates, flag decisions."
 >
