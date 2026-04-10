@@ -94,11 +94,21 @@ Add the line to the student's AGENTS.md under the "How to Work With Me" section:
 
 ### Step 4: Your Vault Index
 
-> "As your Personal OS grows — more Knowledge files, more tasks, more daily entries — Claude needs a way to know what's in here without reading every single file. That's what a vault index is."
+> "As your Personal OS grows — more Knowledge files, more tasks, more daily entries — Claude needs a way to know what's in here without reading every single file."
 >
-> "It's a simple catalog: one line per file, with a short description of what's in it. When Claude starts a conversation, it can scan the index and know exactly where to look for what it needs."
+> "Right now you have maybe 10 files. But imagine you have hundreds. Meeting notes, competitive research, partner profiles, process docs. If Claude had to open every file to figure out which ones matter for your question, it would blow through your context window before it even got to your actual request."
 >
-> "Let me generate one for you right now."
+> "The trick is a **vault index** — basically a table of contents for your entire Personal OS. One line per file, describing what's in it. You add a pointer in your AGENTS.md that says 'read the vault index to understand what files exist.' Now Claude can scan the index, find the 2-3 files that are relevant, and only read those."
+>
+> "This is why we keep AGENTS.md short — it loads every single conversation. If you tried to describe every file in AGENTS.md directly, it would get massive. Instead, AGENTS.md just points to the index, and the index points to everything else."
+
+**STOP. Wait for their response.**
+
+---
+
+### Step 4b: Generate the Index
+
+> "Let me generate your vault index right now."
 
 Scan the student's entire Personal OS folder. Create `Knowledge/vault-index.md` with an entry for every file:
 
@@ -112,7 +122,6 @@ One-line description of every file in the Personal OS. Claude reads this to know
 - `Constitution.md` -- Personal values, beliefs, and principles
 - `Business.md` -- Professional context, role, accounts, competitive landscape
 - `GOALS.md` -- Priorities organized by timeframe
-- `BACKLOG.md` -- Brain dump inbox for unprocessed thoughts
 
 ## Tasks
 - `Tasks/[filename].md` -- [one-line description per task]
@@ -121,7 +130,11 @@ One-line description of every file in the Personal OS. Claude reads this to know
 - `Knowledge/[filename].md` -- [one-line description per file]
 ```
 
-> "Done — your vault index is at `Knowledge/vault-index.md`. It lists every file in your Personal OS with a one-line description. As you add more files, you'll want to keep this updated. In the next lesson, you'll get a skill that does this automatically."
+Also add a pointer to the vault index in the student's AGENTS.md, under the "My Personal OS Structure" section: `- Knowledge/vault-index.md — Table of contents for all files. Read this to find what's relevant.`
+
+> "Done — your vault index is at `Knowledge/vault-index.md`, and I've added a pointer to it in your AGENTS.md. Now Claude can always find the right files without reading everything."
+>
+> "Now, this probably sounds like a lot of work to maintain — adding a line every time you create a new file. The good news: in the next lesson, you'll get a skill that updates this automatically. You won't have to touch it."
 
 **STOP. Wait for their response.**
 
