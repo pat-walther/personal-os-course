@@ -210,56 +210,75 @@ After copying, confirm it works:
 
 ---
 
-### Step 9: Improve What You Built
+### Step 9: The Skill Improver (Stretch Goal)
 
-> "You just built your own skill. But here's the thing — most skills work about 70% of the time on the first draft. The other 30% you get inconsistent or mediocre output. That's normal."
+> "One more thing before we wrap. You just built your first skill, and it probably works pretty well. But most skills work about 70% of the time on the first draft. The other 30% you get inconsistent or mediocre output."
 >
-> "Your Personal OS includes a **Skill Improver** in `skills/skill-improver/`. Just like the Skill Creator, let's install it globally so you can use it anywhere."
-
-Help the student install the Skill Improver globally. Copy the entire `skills/skill-improver/` folder to `~/.claude/skills/skill-improver/` (on Mac/Linux) or `%APPDATA%\Claude\skills\skill-improver\` (on Windows).
-
-> "Done — the Skill Improver is now installed globally. It takes any skill you've built, runs it dozens of times automatically, scores every output against pass/fail checks you define, and then tightens the prompt until that 30% disappears."
-
-**STOP. Wait for their response, then explain evaluations.**
-
-> "The key is defining what 'good' looks like. You do this with simple yes/no checks — called evaluations. For example, if you built a follow-up email skill, your evals might be:"
+> "Your Personal OS includes a **Skill Improver** in `skills/skill-improver/`. It takes any skill you've built, runs it dozens of times automatically, scores every output against pass/fail checks you define, and tightens the prompt until that 30% disappears."
 >
-> "- Does the email reference something specific from the meeting?"
-> "- Is it under 200 words?"
-> "- Does it include a clear next step or ask?"
-> "- Does it sound like a human wrote it, not a template?"
->
-> "Each check is pass/fail — no scales, no 'rate it 1-10.' That's what makes it reliable. The Skill Improver runs your skill multiple times, scores every output against your checks, then makes one targeted change to the skill, tests again, and keeps the change only if the score improves."
->
-> "Over a few rounds, your skill goes from 'works most of the time' to 'works almost every time.'"
->
-> "Say **'/Skill Improver'** and point it at the skill you just built. It'll ask you for your eval checks, then start the optimization loop."
+> "This one gets more technical, so we won't run through it in the course — but it's there for when you're ready. Think of it as the graduate-level version of skill building. You define what 'good' looks like with simple yes/no checks, and the Skill Improver optimizes automatically."
 
-**STOP. Wait for them to try it.** Let the Skill Improver skill take over. When they're done (or want to move on), continue to the wrap-up.
+**STOP. Wait for their response.**
 
 ---
 
 ### Step 10: Course Wrap-Up
 
-> "Let's step back and look at what you've built across all 9 lessons."
+> "Let's step back and look at what you've built."
+
+**STOP. Wait for their response.**
+
+> "**Lesson 1** — You learned how Claude actually works. Zero memory per conversation. Re-reads the entire transcript every turn. Context window fills up. And why files — not chat — are your source of truth."
+
+**STOP. Wait for their response.**
+
+> "**Lesson 2** — You set up Markdown as the universal language between you and AI. Built the folder structure that everything else sits on top of."
+
+**STOP. Wait for their response.**
+
+> "**Lesson 3** — You articulated your values, beliefs, and principles in a Personal Constitution. The stuff most people never tell their AI."
+
+**STOP. Wait for their response.**
+
+> "**Lesson 4** — You connected AgVend's company knowledge and built your Business context. Claude now knows your role, your customers, and your competitive landscape."
+
+**STOP. Wait for their response.**
+
+> "**Lesson 5** — You defined your goals and priorities. Claude doesn't just know what you do — it knows what you're optimizing for."
+
+**STOP. Wait for their response.**
+
+> "**Lesson 6** — You wired it all together with AGENTS.md. The instruction layer that makes Claude read your briefing packet before every conversation."
+
+**STOP. Wait for their response.**
+
+> "**Lesson 7** — You built a daily workflow. Tasks, priorities, and a rhythm that takes 5 minutes a day."
+
+**STOP. Wait for their response.**
+
+> "**Lesson 8** — You learned how to keep the system alive. Vault index, the name trick for context rot, and how your Knowledge folder grows over time."
+
+**STOP. Wait for their response.**
+
+> "**Lesson 9** — You learned that skills are just Markdown files. You connected Fireflies, ran a Daily Debrief, ran a Vault Lint, and built your own custom skill from scratch."
+
+**STOP. Wait for their response.**
+
+> "You started with an empty folder. Now you have a Personal OS that makes Claude deeply understand who you are, what you do, and what matters to you."
 >
-> "**Lesson 1:** Why Claude Co-work and context matter"
-> "**Lesson 2:** Why Markdown is the language of AI, and your folder structure"
-> "**Lesson 3:** Your Personal Constitution — values, beliefs, and principles"
-> "**Lesson 4:** Your Business context — role, customers, competitive landscape"
-> "**Lesson 5:** Your Goals — priorities organized by timeframe and OKRs"
-> "**Lesson 6:** AGENTS.md — the instruction layer that wires it all together"
-> "**Lesson 7:** Your daily workflow — tasks and priorities"
-> "**Lesson 8:** Memory, context, and keeping your system alive"
-> "**Lesson 9:** Skills — automate workflows, build your own, and stress-test them"
+> "I genuinely think you're now in the top 5% of people in terms of how to leverage Claude for your work. You should be proud of yourself."
+
+**STOP. Wait for their response.**
+
+> "A few things to remember going forward:"
 >
-> "You started with an empty folder. Now you have a Personal OS that makes Claude deeply understand you, a system that keeps itself updated through skills, and the ability to build and optimize new skills whenever you find a workflow worth automating."
+> "**To use any skill**, just type `/` and start typing the name. `/Skill Creator`, `/Daily Debrief` — or whatever you name your custom skills."
 >
-> "One thing to remember going forward: **to use any skill, just type `/` and start typing the name.** `/Skill Creator`, `/Skill Improver`, `/Meeting Debrief` — or whatever you name your custom skills. That's how you call them. The `/` tells Claude to look for a matching skill and follow its instructions."
+> "**The daily habit:** Say 'what should I work on?' every morning. Say 'create a task for [thing]' whenever something comes up. Say 'close my day' to run the Daily Debrief at the end of the day."
 >
-> "The real value starts now. Use it every day. Say 'close my day' to run the Daily Debrief. Say 'what should I work on?' every morning. Say 'create a task for [thing]' whenever something comes up. When you find yourself repeating a workflow, build a skill for it."
+> "**When you find yourself repeating a workflow**, build a skill for it. You now know how."
 >
-> "What questions do you have? And what's the first skill you're going to run?"
+> "What questions do you have?"
 
 **STOP. Wait for their response.**
 
@@ -267,18 +286,11 @@ Help the student install the Skill Improver globally. Copy the entire `skills/sk
 
 ### Step 11: Share and Give Feedback
 
-> "One last thing before we wrap."
+> "One last thing."
 >
-> "If you learned something useful or enjoyed the course, share it in the **AI Hub** channel. What you built, what surprised you, a skill you created — anything. It helps other people on the team see what's possible, and it builds momentum."
+> "If you learned something useful, share it in the **AI Hub** channel. What you built, what surprised you, a skill you created — anything. It helps other people on the team see what's possible."
 >
-> "I'd also love your honest feedback on the course itself:"
->
-> "- Did the 'why' behind each lesson come through clearly? Did you understand why we were building each piece, or did any part feel like busy work?"
-> "- Was the depth right — too shallow, too deep, or just right?"
-> "- What would you add, change, or remove?"
-> "- Any suggestions for making this better for the next group?"
->
-> "Please send your feedback directly to **Patrick** — he built this course and genuinely wants to make it better."
+> "I'd also love your honest feedback on the course — what landed, what felt unclear, what you'd change. Send it directly to **Patrick** — he built this course and genuinely wants to make it better."
 
 **STOP. Wait for their response.**
 
