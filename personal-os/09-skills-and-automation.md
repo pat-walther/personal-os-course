@@ -39,7 +39,7 @@ CRITICAL RULES:
 >
 > "You've already been using something like this without knowing it — your AGENTS.md is a skill for how Claude should behave. A skill just takes that idea further for a specific workflow."
 >
-> "Skills live in a folder called `skills/` in your Personal OS. Each skill is a `.md` file — the same Markdown you already know."
+> "A skill is just a `.md` file — the same Markdown you already know. Skills can live in a `skills/` folder in your Personal OS, they can be installed globally so they work across all your projects, or they can come from AgVend as an organization — shared skills that the whole team can use."
 >
 > "Let me add four skills to your Personal OS right now."
 
