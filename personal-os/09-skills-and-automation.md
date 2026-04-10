@@ -47,7 +47,7 @@ CRITICAL RULES:
 >
 > "Let me add four skills to your Personal OS right now."
 
-Create a `skills/` folder in the student's project if it doesn't exist. Then fetch each skill file and save it locally:
+Create a `skills/` folder and a `Daily/` folder in the student's project if they don't already exist. Then fetch each skill file and save it locally:
 
 1. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/daily-debrief-agvend/SKILL.md` and save to `skills/daily-debrief-agvend/SKILL.md`
 2. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/vault-lint/SKILL.md` and save to `skills/vault-lint/SKILL.md`
