@@ -33,12 +33,16 @@ CRITICAL RULES:
 
 ### Step 2: What Is a Skill?
 
-> "A skill is just a text file with instructions that Claude follows when you say a trigger phrase. That's it."
+> "You may have heard the term 'AI agents' or 'AI skills' in the news lately. Entire SaaS companies have watched their valuations tank because investors believe AI skills will replace their products. There's a lot of hype around this."
 >
-> "Think of it as a recipe. When you say 'debrief my meeting,' Claude reads the recipe and follows the steps: pull the transcript, cross-reference against your goals, suggest task updates, flag decisions."
+> "Here's the thing: a skill is literally nothing new beyond what you've already learned in this course. It's a text file with instructions that Claude follows when you say a trigger phrase. That's it. A Markdown file."
 >
-> "You've already been using something like this without knowing it — your AGENTS.md is a skill for how Claude should behave. A skill just takes that idea further for a specific workflow."
+> "Think of it as a recipe. When you say 'close my day,' Claude reads the recipe and follows the steps: pull the transcript, cross-reference against your goals, suggest task updates, flag decisions."
 >
+> "You've already been using something like this without knowing it — your AGENTS.md is a skill for how Claude should behave. A skill just takes that idea further for a specific, repeatable workflow."
+
+**STOP. Wait for their response.**
+
 > "A skill is just a `.md` file — the same Markdown you already know. Skills can live in a `skills/` folder in your Personal OS, they can be installed globally so they work across all your projects, or they can come from AgVend as an organization — shared skills that the whole team can use."
 >
 > "Let me add four skills to your Personal OS right now."
