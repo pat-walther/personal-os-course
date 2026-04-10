@@ -84,7 +84,7 @@ Add the line to the student's AGENTS.md under the "How to Work With Me" section:
 >
 > "You don't have to organize it perfectly. Use descriptive filenames and Claude will find what it needs."
 >
-> "For the more advanced version of this: you can connect Claude to platforms like **Fireflies** (for meeting transcripts), **Notion**, or other tools, and set it to automatically pull in new content on a schedule. Imagine your meeting notes from Fireflies automatically flowing into your Knowledge/ folder, and Claude processing them into tasks and action items without you lifting a finger. That's a stretch goal — but it's where this is heading."
+> "And here's the best part: in the last lesson, we'll build a skill that does this for you automatically. You'll connect Fireflies, say 'close my day,' and Claude will pull your meeting transcripts, process them into Knowledge files, suggest new tasks, and update your vault index — all without you lifting a finger."
 >
 > "For now, the manual version works great. What's one thing you could add to Knowledge/ right now?"
 
