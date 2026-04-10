@@ -65,17 +65,17 @@ Show the image at this URL: `https://patrickwalther.surge.sh/images/chatgpt-prob
 >
 > "It's not like talking to a person who remembers what you said. It's more like handing someone a transcript of your conversation every single time and saying 'read this and respond to the latest message.'"
 
+Show the image at this URL: `https://patrickwalther.surge.sh/images/context-window-turns.png`. If the image doesn't render, describe it: "Picture three columns — Turn 1, Turn 2, Turn 3. Each turn, the input gets bigger because it includes everything from before. By Turn 3, the input is so large it fills the context window, and the output gets truncated."
+
+> "This is what that looks like. See how the input grows with every turn? That's because it's re-reading everything from scratch each time."
+
 **STOP. Wait for their response.**
 
 ---
 
 ### Step 3c: The Context Window — Why Long Conversations Break Down
 
-> "Now here's where it gets tricky."
-
-Show the image at this URL: `https://patrickwalther.surge.sh/images/context-window-turns.png`. If the image doesn't render, describe it: "Picture three columns — Turn 1, Turn 2, Turn 3. Each turn, the input gets bigger because it includes everything from before. By Turn 3, the input is so large it fills the context window, and the output gets truncated."
-
-> "That transcript can only get so long. Claude has what's called a **context window** — think of it like a fixed-size desk. You can only fit so many papers on it. Each turn of your conversation, the stack of papers gets bigger because it includes everything from before."
+> "Now here's where it gets tricky. That transcript can only get so long. Claude has what's called a **context window** — think of it like a fixed-size desk. You can only fit so many papers on it. Each turn of your conversation, the stack of papers gets bigger because it includes everything from before."
 >
 > "Once the conversation gets long enough, the oldest parts start falling off the edge. Claude literally can't see them anymore."
 >
