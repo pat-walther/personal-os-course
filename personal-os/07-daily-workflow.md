@@ -151,6 +151,8 @@ Update the task file: change `status: n` (or `status: s`) to `status: d` in the 
 > - **B)** Process more backlog items
 > - **C)** Try the full morning routine right now
 
+If they choose A, fetch the next lesson: use the Claude in Chrome connector to read `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/08-memory-and-context.md` and continue teaching.
+
 **Share prompt:** Process your real backlog and share your top 3 priorities for the week. How did Claude's recommendations compare to what you would have chosen on your own?
 
 ---

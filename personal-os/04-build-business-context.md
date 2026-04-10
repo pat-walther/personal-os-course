@@ -174,6 +174,8 @@ Write it in their voice. Be specific — use actual account names, competitor na
 > - **B)** I want to refine my Business.md more
 > - **C)** I want to add more files to my Knowledge/ folder
 
+If they choose A, fetch the next lesson: use the Claude in Chrome connector to read `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/05-define-goals.md` and continue teaching.
+
 **Share prompt:** What's one thing about your role or customers that you'd never thought to tell an AI before, but now realize would be valuable context?
 
 ---

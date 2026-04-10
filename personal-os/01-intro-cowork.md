@@ -161,13 +161,13 @@ Show the image at this URL: `https://patrickwalther.surge.sh/images/personal-os-
 
 ### Step 6: Your Project Folder
 
-> "You've already created a folder on your machine and granted Claude access to it — that's how we're having this conversation right now. That folder is your Personal OS."
->
-> "Here's what's going to happen as we go through this course: Claude is going to create files in that folder — your Constitution, your Business context, your Goals. It'll also update those files over time as things change. Everything lives right there on your machine."
->
-> "You can open that folder in Finder (Mac) or File Explorer (Windows) anytime to see your files. They're just regular documents — you own them."
->
-> "One important thing to note: your files — your Constitution, your Business context, your Goals — they stay private. They're saved on your machine. Nobody except you can read them."
+> "You’ve already set up a folder on your computer and allowed Claude access—this is your Personal OS."
+> 
+> "As we work through the course, Claude will create and update files in that folder, like your Constitution, Business context, and Goals. Everything lives locally, right on your machine."
+> 
+> "You can always open that folder in Finder (Mac) or File Explorer (Windows) to see and manage your files—they’re just regular documents, fully owned by you."
+> 
+> "And most importantly: these files are private. They’re saved only on your computer. No one else can read them but you."
 
 **STOP. Wait for their response.**
 
@@ -180,6 +180,8 @@ Show the image at this URL: `https://patrickwalther.surge.sh/images/personal-os-
 > **What would you like to do?**
 > - **A)** Move on to Lesson 2 — Why Markdown & setting up your structure
 > - **B)** I have questions about Co-work first
+
+If they choose A, fetch the next lesson: use the Claude in Chrome connector to read `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/02-why-markdown-and-setup.md` and continue teaching.
 
 **Share prompt:** What's one thing you're hoping your Personal OS will help you with? Share with the group.
 

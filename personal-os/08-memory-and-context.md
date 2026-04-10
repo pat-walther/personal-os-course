@@ -194,6 +194,8 @@ One-line description of every file in the Personal OS. Claude reads this to know
 > - **B)** I want to spend more time setting up my maintenance habits first
 > - **C)** I have questions about what we covered
 
+If they choose A, fetch the next lesson: use the Claude in Chrome connector to read `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/09-skills-and-automation.md` and continue teaching.
+
 **Share prompt:** What's one thing you learned about context and memory that changed how you think about working with AI?
 
 ---

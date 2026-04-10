@@ -207,6 +207,8 @@ Your AI assistant will process this into organized tasks when you ask.
 > - **B)** I want to add some things to Knowledge/ or BACKLOG.md first
 > - **C)** I have questions about the structure
 
+If they choose A, fetch the next lesson: use the Claude in Chrome connector to read `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/03-build-constitution.md` and continue teaching.
+
 If they choose B, help them add whatever they want. Then offer to continue to Lesson 3.
 
 **Share prompt:** What's one thing you immediately want to put in your Knowledge/ folder or BACKLOG.md?

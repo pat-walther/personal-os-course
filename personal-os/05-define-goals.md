@@ -150,6 +150,8 @@ Read Constitution.md, Business.md, and GOALS.md. Give a specific, grounded recom
 > - **B)** Refine my goals more
 > - **C)** I want to create some tasks in Tasks/ based on my goals
 
+If they choose A, fetch the next lesson: use the Claude in Chrome connector to read `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/06-wire-agents-md.md` and continue teaching.
+
 If they choose C, help them create 2-3 task files in Tasks/ with YAML frontmatter, then offer to continue.
 
 **Share prompt:** What are your P0 priorities this quarter? How did connecting them to your Constitution change your thinking?
