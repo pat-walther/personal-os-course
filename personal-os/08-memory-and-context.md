@@ -84,7 +84,7 @@ Add the line to the student's AGENTS.md under the "How to Work With Me" section:
 >
 > "You don't have to organize it perfectly. Use descriptive filenames and Claude will find what it needs."
 >
-> "And here's the best part: in the last lesson, we'll build a skill that does this for you automatically. You'll connect Fireflies, say 'close my day,' and Claude will pull your meeting transcripts, process them into Knowledge files, suggest new tasks, and update your vault index — all without you lifting a finger."
+> "And here's the best part: in the last lesson, you'll get a skill called the **Daily Debrief**. You'll connect Fireflies, say 'close my day,' and Claude will pull your meeting transcripts, process them into Knowledge files, suggest new tasks, and update your vault index — all without you lifting a finger."
 >
 > "For now, the manual version works great. What's one thing you could add to Knowledge/ right now?"
 
