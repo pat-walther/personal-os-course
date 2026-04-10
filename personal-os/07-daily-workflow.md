@@ -1,6 +1,6 @@
 # 7. Daily Workflow
 
-> **Magic Moment:** The student brain-dumps into BACKLOG.md, says "process my backlog," and watches Claude turn scattered thoughts into organized, prioritized tasks linked to their goals.
+> **Magic Moment:** The student says "create a task for [thing]" and watches Claude turn it into a structured, prioritized task linked to their goals — then asks "what should I work on today?" and gets a focused answer.
 
 ---
 
@@ -13,37 +13,45 @@ CRITICAL RULES:
 - **Keep each message SHORT** — 3-5 sentences max. If it would be longer, split it.
 - **Use the AskUserQuestion tool** whenever you need more info or want to give them options.
 - This lesson is hands-on. The student should be DOING, not just learning.
-- Use their actual work — real tasks, real backlog items. Not hypothetical examples.
+- Use their actual work — real tasks, real situations. Not hypothetical examples.
 
 ---
 
-### Step 1: The Daily Loop
+### Step 1: Set Up Tasks
+
+Before starting, silently create the Tasks/ folder and a Kanban board file if they don't already exist:
+
+Create `Tasks/Kanban.md`:
+
+```markdown
+---
+kanban-plugin: board
+---
+
+## Not Started
+
+## In Progress
+
+## Blocked
+
+## Done
+```
+
+Then begin the lesson:
 
 > "You've built the foundation — Constitution, Business context, Goals, and AGENTS.md. Now let's put it to work with a daily workflow."
 >
-> "The loop is simple:"
+> "The system is simple: whenever something comes up — a task, a follow-up, an idea — you just tell me. Say 'create a task for [thing]' and I'll turn it into a structured task file, link it to your goals, and prioritize it."
 >
-> "1. **Brain dump** — Drop anything into BACKLOG.md. Ideas, tasks, meeting notes, random thoughts. No structure needed."
-> "2. **Process** — Tell me to 'process my backlog.' I'll turn it into organized tasks."
-> "3. **Prioritize** — Ask 'What should I work on today?' I'll check your goals and suggest priorities."
-> "4. **Do the work** — Focus on your P0s."
-> "5. **Close out** — Mark things done. Dump new thoughts into the backlog."
->
-> "Let's try it right now. Think about what's on your plate — the stuff rattling around in your head. Tasks, ideas, things you need to follow up on. Just dump it all into BACKLOG.md. Don't organize it. Don't prioritize it. Just get it out of your head."
+> "Let's try it right now. Think about something that's on your plate — a follow-up you owe someone, a project you need to start, something that's been nagging you. Tell me: 'Create a task for [thing].'"
 
-**STOP. Wait for them to add items to BACKLOG.md.** If they're stuck, prompt: "What meetings do you have this week? What follow-ups are you behind on? What's been nagging you?"
+**STOP. Wait for them to create their first task.**
 
 ---
 
-### Step 2: Process the Backlog
+### Step 2: Create the Task
 
-> "Now say the magic words: 'Process my backlog.'"
-
-**STOP. Wait for them to say it.**
-
-When they do, read BACKLOG.md and GOALS.md. For each item in the backlog:
-
-1. Create a task file in Tasks/ with YAML frontmatter:
+When they say "create a task for [thing]", create a task file in Tasks/ with YAML frontmatter:
 
 ```markdown
 ---
@@ -73,21 +81,33 @@ estimated_time: [minutes estimate]
 - [If any, otherwise omit this section]
 ```
 
-2. Assign priority by checking against GOALS.md — things that align with their top goals get higher priority.
+Use kebab-case for the filename: `follow-up-with-acme.md`, `prep-quarterly-review.md`.
 
-3. Clear the processed items from BACKLOG.md (leave the header and instructions).
+Read GOALS.md and assign priority based on goal alignment. If the task is vague, ask for clarification before creating it.
 
-> "Done. I created [X] tasks from your backlog. Here's what I made:"
+> "Done — I created that as a task. Here's what I made:"
 
-List the tasks with their priorities. Explain briefly why you assigned each priority level.
+Show the task with its priority and goal alignment. Explain briefly why you assigned that priority.
 
-> "Does the prioritization feel right? Want to promote or demote anything?"
+> "Feel right? Want to change the priority or add anything?"
 
-**STOP. Wait for their feedback.** Adjust any priorities they disagree with.
+**STOP. Wait for their feedback.** Adjust if needed.
 
 ---
 
-### Step 3: What Should I Work On?
+### Step 3: Create a Few More
+
+> "Good. Now let's build up a real task list. Think about 2-3 more things on your plate — meetings to prep for, follow-ups, projects, anything. Tell me each one and I'll create tasks for them."
+
+**STOP. Wait for them to create more tasks.** Create each one following the same format. After they've created 3-4 total:
+
+> "You now have [X] tasks in your system, all linked to your goals and prioritized. Let's put them to work."
+
+**STOP. Wait for their response.**
+
+---
+
+### Step 4: What Should I Work On?
 
 > "Now ask me: 'What should I work on today?'"
 
@@ -110,7 +130,7 @@ Read GOALS.md and all task files in Tasks/. Recommend their top 1-3 priorities f
 
 ---
 
-### Step 4: Mark Something Done
+### Step 5: Mark Something Done
 
 > "Let's close the loop. Pick one of your tasks — even if you haven't actually done it yet — and tell me to mark it as done. This way you see how the system updates."
 
@@ -122,17 +142,17 @@ Update the task file: change `status: n` (or `status: s`) to `status: d` in the 
 
 ---
 
-### Step 5: The Daily Rhythm
+### Step 6: The Daily Rhythm
 
 > "Here's how this works as a daily practice:"
 >
 > "**Morning (2 minutes):** Ask me 'What should I work on today?' I'll check your tasks and goals and give you a focused list."
 >
-> "**During the day:** Whenever something comes up — a thought, a to-do from a meeting, an idea — dump it in BACKLOG.md. Don't organize, don't prioritize. Just capture."
+> "**During the day:** Whenever something comes up — a to-do from a meeting, a follow-up, an idea — just say 'Create a task for [thing].' I'll handle the rest."
 >
-> "**End of day (2 minutes):** Tell me to 'process my backlog' and 'mark [task] as done.' I'll organize the new stuff and update your progress."
+> "**End of day (2 minutes):** Mark things done. Create tasks for anything new that came up."
 >
-> "**Weekly (10 minutes):** Ask me to 'review my tasks' and 'process my backlog.' I'll clean up stale tasks, surface things you're avoiding, and suggest priority adjustments."
+> "**Weekly (10 minutes):** Ask me to 'review my tasks.' I'll clean up stale tasks, surface things you're avoiding, and suggest priority adjustments."
 >
 > "The habit takes 5 minutes a day. The payoff is never losing a thought and always knowing what matters most."
 
@@ -144,36 +164,27 @@ Update the task file: change `status: n` (or `status: s`) to `status: d` in the 
 
 > "You have a working Personal OS. Constitution, Business context, Goals, AGENTS.md, Tasks, and a daily workflow. You're set up to use Claude as a thinking partner who deeply understands you."
 >
-> "In the final lesson, we'll talk about keeping this system alive — growing your Knowledge folder, handling context limits, and evolving your setup over time."
+> "In the next lesson, we'll talk about keeping this system alive — growing your Knowledge folder, handling context limits, and evolving your setup over time."
 
 > **What would you like to do?**
 > - **A)** Move on to Lesson 8 — Memory, context, and keeping your OS alive
-> - **B)** Process more backlog items
+> - **B)** Create more tasks
 > - **C)** Try the full morning routine right now
 
 If they choose A, fetch the next lesson: use the Claude in Chrome connector to read `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/08-memory-and-context.md` and continue teaching.
 
-**Share prompt:** Process your real backlog and share your top 3 priorities for the week. How did Claude's recommendations compare to what you would have chosen on your own?
-
----
-
-### Going Further: Visual Task Board
-
-> "One more thing — if you use **Obsidian**, you can add a visual Kanban board to your Tasks folder. Install the Obsidian Kanban plugin, then create a file called `Tasks/Kanban.md` with `kanban-plugin: board` in the YAML frontmatter and section headings for your lanes (`## Not Started`, `## In Progress`, `## Blocked`, `## Done`). Each card is a wiki-link to a task file: `- [ ] [[task-filename|Task title]] #P1 #category`."
->
-> "This gives you a drag-and-drop board view alongside your task files. The files hold the detail; the board gives you the visual overview. It's completely optional — the system works fine without it."
+**Share prompt:** Create your real tasks and share your top 3 priorities for the week. How did Claude's recommendations compare to what you would have chosen on your own?
 
 ---
 
 ## Reference Material
 
-**Backlog processing rules (for Claude's reference):**
-- Each backlog item becomes one task file in Tasks/
+**Task creation rules (for Claude's reference):**
+- Each task becomes one file in Tasks/
 - Use kebab-case for file names: `follow-up-with-acme.md`, `prep-quarterly-review.md`
 - Assign priority by checking alignment with GOALS.md
 - If an item is vague, make the task title specific: "Think about pricing" → "Draft pricing options for Q2"
 - If an item is too big, break it into 2-3 smaller tasks
-- Clear processed items from BACKLOG.md — keep the file clean
 - Check for duplicates in existing Tasks/ before creating new ones
 
 **YAML frontmatter fields:**
@@ -196,10 +207,9 @@ If they choose A, fetch the next lesson: use the Claude in Chrome connector to r
 - No dates in filenames — use YAML frontmatter for dates
 
 **Common commands the student should learn:**
-- "Process my backlog"
+- "Create a task for [thing]"
 - "What should I work on today?"
 - "Mark [task] as done"
 - "Show me my P0 tasks"
 - "Review my tasks for the week"
 - "What am I behind on?"
-- "Create a task for [thing]"

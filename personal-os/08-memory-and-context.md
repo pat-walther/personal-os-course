@@ -30,7 +30,6 @@ List the files in their Personal OS folder:
 > "- **GOALS.md** — Your priorities and what you're optimizing for"
 > "- **Tasks/** — Your organized work items"
 > "- **Knowledge/** — Your reference material"
-> "- **BACKLOG.md** — Your brain dump inbox"
 >
 > "This is a real system. Not a toy, not a demo. Every time you start a conversation with Claude in this folder, it knows who you are, what you do, and what matters to you."
 >

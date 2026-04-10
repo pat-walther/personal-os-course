@@ -123,10 +123,16 @@ Read GOALS.md for my current priorities and what I'm optimizing for.
 ## My Personal OS Structure
 - Knowledge/ — Reference material, notes, research. Search here when I ask about a topic.
 - Tasks/ — Active work items. Check here to understand what I'm working on.
-- BACKLOG.md — My inbox for ideas and brain dumps. Process when I ask.
 - Constitution.md — Who I am at my core. Read for values-aligned advice.
 - Business.md — My professional context. Read for role-specific advice.
 - GOALS.md — What I'm optimizing for. Read before suggesting priorities.
+
+## Task Flow
+When I say "create a task for [thing]" or ask you to track something:
+1. Create a task file in Tasks/ with YAML frontmatter (title, category, priority, status, created_date)
+2. Assign priority by checking against GOALS.md
+3. If the task is vague, ask me to clarify before creating it
+4. Use kebab-case filenames: `follow-up-with-acme.md`
 ```
 
 > "Here's your AGENTS.md. Take a look — does the 'How to Work With Me' section feel right? Anything to add or change?"
