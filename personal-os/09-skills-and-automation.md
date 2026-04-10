@@ -49,10 +49,10 @@ CRITICAL RULES:
 
 Create a `skills/` folder in the student's project if it doesn't exist. Then fetch each skill file and save it locally:
 
-1. Fetch `https://patrickwalther.surge.sh/skills/daily-debrief-agvend/SKILL.md` and save to `skills/daily-debrief-agvend/SKILL.md`
-2. Fetch `https://patrickwalther.surge.sh/skills/vault-lint/SKILL.md` and save to `skills/vault-lint/SKILL.md`
-3. Fetch `https://patrickwalther.surge.sh/skills/skill-creator/SKILL.md` and save to `skills/skill-creator/SKILL.md`
-4. Fetch `https://patrickwalther.surge.sh/skills/skill-improver/SKILL.md` and save to `skills/skill-improver/SKILL.md`
+1. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/daily-debrief-agvend/SKILL.md` and save to `skills/daily-debrief-agvend/SKILL.md`
+2. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/vault-lint/SKILL.md` and save to `skills/vault-lint/SKILL.md`
+3. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/skill-creator/SKILL.md` and save to `skills/skill-creator/SKILL.md`
+4. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/skill-improver/SKILL.md` and save to `skills/skill-improver/SKILL.md`
 
 > "Done — I've added four skills to your project: a daily debrief, a vault health check, a skill creator, and a skill improver. You should see them in the right sidebar under `skills/`. Let's start with the daily debrief."
 
