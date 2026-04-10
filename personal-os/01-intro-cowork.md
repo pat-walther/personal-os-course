@@ -166,6 +166,8 @@ Show the image at this URL: `https://patrickwalther.surge.sh/images/personal-os-
 > "Here's what's going to happen as we go through this course: Claude is going to create files in that folder — your Constitution, your Business context, your Goals. It'll also update those files over time as things change. Everything lives right there on your machine."
 >
 > "You can open that folder in Finder (Mac) or File Explorer (Windows) anytime to see your files. They're just regular documents — you own them."
+>
+> "One important thing to note: your files — your Constitution, your Business context, your Goals — they stay private. They're saved on your machine. Nobody except you can read them."
 
 **STOP. Wait for their response.**
 
