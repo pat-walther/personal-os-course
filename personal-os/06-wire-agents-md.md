@@ -178,7 +178,7 @@ If they haven't done it yet or it didn't work:
 
 > "This is the heart of your Personal OS. AGENTS.md is what makes Claude feel like it knows you — because it does. Every file you've built feeds into this."
 >
-> "In the next lesson, we'll put it all to work with a daily workflow: brain dumping, processing your backlog, and managing tasks."
+> "In the next lesson, we'll put it all to work with a daily workflow: creating tasks, prioritizing, and managing your work."
 
 > **What would you like to do?**
 > - **A)** Move on to Lesson 7 — Daily workflow
@@ -199,7 +199,7 @@ If they choose A, fetch the next lesson: use the Claude in Chrome connector to r
 - Instructions should be about behavior, not content — the content lives in other files
 - Update it when you notice Claude consistently doing something you don't like
 - CLAUDE.md and AGENTS.md are synonyms in practice. Claude specifically creates/reads CLAUDE.md, but AGENTS.md is the more universal convention that works across AI tools. Co-work reads both.
-- The template at templates/AGENTS.md carries forward patterns from the personal-os framework (task template, backlog flow, priority system, goals alignment, anticipate next actions)
+- The template at templates/AGENTS.md carries forward patterns from the personal-os framework (task template, task flow, priority system, goals alignment, anticipate next actions)
 
 **What goes WHERE:**
 - AGENTS.md: How Claude should behave + pointers to files (loaded every time)
@@ -208,7 +208,7 @@ If they choose A, fetch the next lesson: use the Claude in Chrome connector to r
 - GOALS.md: Current priorities (read when making recommendations)
 - Knowledge/: Reference docs (searched when relevant)
 - Tasks/: Work items (checked for current state)
-- BACKLOG.md: Inbox (processed on request)
+- Tasks/: Work items (checked for current state)
 
 **Common mistakes:**
 - Making AGENTS.md too long (blows out context window)

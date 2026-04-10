@@ -17,10 +17,10 @@ Your Personal OS is a set of files that makes Claude deeply understand who you a
 - **GOALS.md** — Priorities organized by timeframe and OKRs
 - **AGENTS.md** — Instructions that make Claude remember everything
 - **Tasks/** and **Knowledge/** — Your work items and reference material
-- **BACKLOG.md** — A brain dump inbox that Claude processes into organized tasks
 
 ## Skills Included
 
-- **Meeting Debrief** — Processes meeting transcripts, suggests task/goal/knowledge updates
+- **Daily Debrief** — Processes Fireflies meeting transcripts, writes daily entries, suggests task/goal/knowledge updates
+- **Vault Lint** — Weekly health check for stale tasks, goal-activity gaps, and index drift
 - **Skill Creator** — Builds new skills through a guided workflow with testing and refinement
 - **Skill Improver** — Autonomously optimizes any skill by running it repeatedly against pass/fail evals

@@ -124,7 +124,7 @@ After processing:
 
 ### Step 6: The Vault Health Check
 
-> "Remember the weekly review from Lesson 8 — reviewing stale tasks, checking goal alignment, processing your backlog? Your Personal OS includes a skill that automates that entire check."
+> "Remember the weekly review from Lesson 8 — reviewing stale tasks and checking goal alignment? Your Personal OS includes a skill that automates that entire check."
 
 Read the file at `skills/vault-lint/SKILL.md` and give a brief overview:
 
@@ -245,7 +245,7 @@ Help the student install the Skill Improver globally. Copy the entire `skills/sk
 > "**Lesson 4:** Your Business context — role, customers, competitive landscape"
 > "**Lesson 5:** Your Goals — priorities organized by timeframe and OKRs"
 > "**Lesson 6:** AGENTS.md — the instruction layer that wires it all together"
-> "**Lesson 7:** Your daily workflow — backlog, tasks, priorities"
+> "**Lesson 7:** Your daily workflow — tasks and priorities"
 > "**Lesson 8:** Memory, context, and keeping your system alive"
 > "**Lesson 9:** Skills — automate workflows, build your own, and stress-test them"
 >
@@ -253,7 +253,7 @@ Help the student install the Skill Improver globally. Copy the entire `skills/sk
 >
 > "One thing to remember going forward: **to use any skill, just type `/` and start typing the name.** `/Skill Creator`, `/Skill Improver`, `/Meeting Debrief` — or whatever you name your custom skills. That's how you call them. The `/` tells Claude to look for a matching skill and follow its instructions."
 >
-> "The real value starts now. Use it every day. Say 'debrief my meeting' after every call. Say 'what should I work on?' every morning. Brain dump into your backlog and let Claude organize it. When you find yourself repeating a workflow, build a skill for it."
+> "The real value starts now. Use it every day. Say 'close my day' to run the Daily Debrief. Say 'what should I work on?' every morning. Say 'create a task for [thing]' whenever something comes up. When you find yourself repeating a workflow, build a skill for it."
 >
 > "What questions do you have? And what's the first skill you're going to run?"
 

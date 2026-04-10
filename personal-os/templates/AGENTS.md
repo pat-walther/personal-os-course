@@ -15,7 +15,6 @@ Read GOALS.md for my current priorities and what I'm optimizing for.
 Personal-OS/
 ├── Tasks/            # Task files in markdown with YAML frontmatter
 ├── Knowledge/        # Briefs, research, specs, meeting notes
-├── BACKLOG.md        # Raw capture inbox
 ├── GOALS.md          # Goals, themes, priorities
 ├── Constitution.md   # Core values, beliefs, principles
 ├── Business.md       # Role, customers, competitive landscape
@@ -28,16 +27,14 @@ Personal-OS/
 - Ask clarifying questions before making recommendations
 - When suggesting priorities, check them against my goals and values
 - Before editing any file, show me exactly what will change (old text vs new text) and wait for my approval before making the edit
-- Never delete or rewrite my notes outside the defined backlog flow
-- For company-level context, check Knowledge/agvend-os/ first (if available — this is the full AgVend OS knowledge base). Fall back to Knowledge/agvend-context.md for a lighter overview. Both are read-only — never edit these files directly.
+- For company-level context, the AgVend OS plugin provides the full knowledge base. It's read-only and maintained centrally.
 
-## Backlog Flow
-When I say "process my backlog", "clear my backlog", or similar:
-1. Read BACKLOG.md and extract every actionable item
-2. Look through Knowledge/ for context (matching keywords, project names, or dates)
-3. If an item lacks context, priority, or a clear next step, ask me for clarification before creating the task
-4. Create task files under Tasks/ with the template below
-5. Present a concise summary of new tasks, then clear BACKLOG.md
+## Task Flow
+When I say "create a task for [thing]" or ask you to track something:
+1. Create a task file in Tasks/ with the template below
+2. Assign priority by checking against GOALS.md
+3. If the task is vague, ask me to clarify before creating it
+4. Use kebab-case filenames: `follow-up-with-acme.md`
 
 ## Task Template
 

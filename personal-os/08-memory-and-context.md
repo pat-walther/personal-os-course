@@ -169,8 +169,7 @@ Also add a pointer to the vault index in the student's AGENTS.md, under the "My 
 >
 > "**Every week, ask Claude:**"
 > "1. 'Review my tasks — what's stale, what's done, what needs reprioritizing?'"
-> "2. 'Process my backlog'"
-> "3. 'Are my goals still current?'"
+> "2. 'Are my goals still current?'"
 >
 > "**Every month:**"
 > "- Read through your Constitution.md — still feel accurate?"
@@ -187,13 +186,11 @@ Also add a pointer to the vault index in the student's AGENTS.md, under the "My 
 
 > "A few final tips from people who use this daily:"
 >
-> "**Tip 1: Use BACKLOG.md liberally.** The best ideas come at the worst times. Just dump them. Don't try to organize in the moment."
+> "**Tip 1: Name files descriptively.** `competitive-analysis-q1-2026.md` beats `notes.md`. Claude uses filenames to decide what's relevant."
 >
-> "**Tip 2: Name files descriptively.** `competitive-analysis-q1-2026.md` beats `notes.md`. Claude uses filenames to decide what's relevant."
+> "**Tip 2: Don't over-engineer it.** If your Personal OS starts feeling like work, simplify. Drop folders you don't use. Merge files that overlap."
 >
-> "**Tip 3: Don't over-engineer it.** If your Personal OS starts feeling like work, simplify. Drop folders you don't use. Merge files that overlap."
->
-> "**Tip 4: Share what works.** If you find a workflow or AGENTS.md instruction that's great, share it with the team. These systems get better through collective learning."
+> "**Tip 3: Share what works.** If you find a workflow or AGENTS.md instruction that's great, share it with the team. These systems get better through collective learning."
 >
 > "And a few tips specifically for better AI memory:"
 >
@@ -242,8 +239,8 @@ If they choose A, fetch the next lesson: use the Claude in Chrome connector to r
 - If a chat starts giving weird answers, start fresh
 
 **Maintenance cadence:**
-- Daily: backlog capture, task completion, morning priorities (5 min)
-- Weekly: task review, backlog processing, stale task cleanup (10 min)
+- Daily: morning priorities, task creation, mark done (5 min)
+- Weekly: task review, stale task cleanup (10 min)
 - Monthly: goals refresh, business context update, Constitution check (15 min)
 - Quarterly: major goals revision, AGENTS.md overhaul, archive old tasks (30 min)
 
@@ -252,7 +249,7 @@ If they choose A, fetch the next lesson: use the Claude in Chrome connector to r
 - "Claude ignores my files" → Make sure the project has folder access granted
 - "My context window fills up fast" → AGENTS.md is probably too long. Trim it.
 - "Tasks are getting stale" → Schedule a weekly review habit
-- "I stopped using it" → Simplify. Use only BACKLOG.md and GOALS.md if the full system is too much.
+- "I stopped using it" → Simplify. Use only GOALS.md and Tasks/ if the full system is too much.
 
 **What makes a great Personal OS:**
 - Concise — every file earns its space

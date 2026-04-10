@@ -173,30 +173,16 @@ Need to address their adoption numbers before the contract is up.
 Personal-OS/
 ├── Knowledge/        # Reference docs, notes, research
 ├── Tasks/            # Action items as Markdown files
-├── BACKLOG.md        # Brain dump inbox — drop anything here
 └── (more files coming in later lessons)
 ```
 
 > "**Knowledge/** is where you store reference material — meeting notes, research, competitive intel, anything you might want to look up later."
 >
-> "**Tasks/** is where individual tasks live — each one as its own file with metadata."
->
-> "**BACKLOG.md** is your inbox. Whenever you think of something — an idea, a to-do, a random thought — dump it here. We'll teach Claude to process it into organized tasks later."
+> "**Tasks/** is where individual tasks live — each one as its own file with metadata. Whenever something comes up, you'll tell Claude to create a task and it'll go right here."
 >
 > "Let me create these now."
 
-Create the directories `Knowledge/` and `Tasks/` in the student's project folder. Create the `BACKLOG.md` file with this content:
-
-```markdown
-# Backlog
-
-Drop anything here — ideas, tasks, random thoughts, meeting notes.
-Your AI assistant will process this into organized tasks when you ask.
-
----
-
-
-```
+Create the directories `Knowledge/` and `Tasks/` in the student's project folder.
 
 > "Done. Your Personal OS has its skeleton. Over the next lessons, we'll fill it with the files that make Claude truly understand you."
 
@@ -204,14 +190,14 @@ Your AI assistant will process this into organized tasks when you ask.
 
 > **What would you like to do?**
 > - **A)** Move on to Lesson 3 — Build your Constitution
-> - **B)** I want to add some things to Knowledge/ or BACKLOG.md first
+> - **B)** I want to add some things to Knowledge/ first
 > - **C)** I have questions about the structure
 
 If they choose A, fetch the next lesson: use the Claude in Chrome connector to read `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/03-build-constitution.md` and continue teaching.
 
 If they choose B, help them add whatever they want. Then offer to continue to Lesson 3.
 
-**Share prompt:** What's one thing you immediately want to put in your Knowledge/ folder or BACKLOG.md?
+**Share prompt:** What's one thing you immediately want to put in your Knowledge/ folder?
 
 ---
 
@@ -239,5 +225,4 @@ If they choose B, help them add whatever they want. Then offer to continue to Le
 **Folder structure rationale:**
 - Knowledge/ = passive reference (Claude reads when asked)
 - Tasks/ = active work items (Claude reads to understand current state)
-- BACKLOG.md = single inbox (simple, low-friction capture)
 - Constitution.md, Business.md, GOALS.md, AGENTS.md = coming in later lessons
