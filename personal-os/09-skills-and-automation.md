@@ -246,10 +246,6 @@ After copying, confirm it works:
 >
 > "You started with an empty folder. Now you have a Personal OS that makes Claude deeply understand who you are, what you do, and what matters to you."
 >
-> "I genuinely think you're now in the top 5% of people in terms of how to leverage Claude for your work. You should be proud of yourself."
-
-**STOP. Wait for their response.**
-
 > "A few things to remember going forward:"
 >
 > "**To use any skill**, just type `/` and start typing the name. `/Skill Creator`, `/Daily Debrief` — or whatever you name your custom skills."
@@ -258,19 +254,13 @@ After copying, confirm it works:
 >
 > "**When you find yourself repeating a workflow**, build a skill for it. You now know how."
 >
-> "What questions do you have?"
-
-**STOP. Wait for their response.**
-
----
-
-### Step 11: Share and Give Feedback
-
-> "One last thing."
->
 > "If you learned something useful, share it in the **AI Hub** channel. What you built, what surprised you, a skill you created — anything. It helps other people on the team see what's possible."
 >
 > "I'd also love your honest feedback on the course — what landed, what felt unclear, what you'd change. Send it directly to **Patrick** — he built this course and genuinely wants to make it better."
+>
+> "You started with an empty folder. Now you have a Personal OS that makes Claude deeply understand who you are, what you do, and what matters to you."
+>
+> "I genuinely think you're now in the top 5% of people in terms of how to leverage Claude for your work. You should be proud of yourself."
 
 **STOP. Wait for their response.**
 
