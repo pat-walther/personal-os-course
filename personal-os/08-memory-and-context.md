@@ -53,6 +53,26 @@ List the files in their Personal OS folder:
 
 ---
 
+### Step 2b: The Name Trick
+
+> "Here's a tiny trick to know when a conversation is getting too long."
+>
+> "We're going to add one line to your AGENTS.md — something like: 'Always address me as [their preferred name].' It could be your first name, a nickname, 'Mr. Smith' — whatever you want."
+>
+> "The minute Claude stops using your name, you know it's starting to forget the instructions from the beginning of the conversation. That's your signal: time to start a fresh thread."
+>
+> "How should I address you?"
+
+**STOP. Wait for their answer.**
+
+Add the line to the student's AGENTS.md under the "How to Work With Me" section: `- Always address me as [their answer]`
+
+> "Done — I've added that to your AGENTS.md. From now on, if you notice Claude stops calling you by your name, start a new conversation. Simple early warning system."
+
+**STOP. Wait for their response.**
+
+---
+
 ### Step 3: Growing Your Knowledge Folder
 
 > "Your Knowledge/ folder is where your Personal OS gets smarter over time. Here are the kinds of things that belong there:"
