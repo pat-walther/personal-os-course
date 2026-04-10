@@ -33,35 +33,46 @@ CRITICAL RULES:
 
 ### Step 2: How It Works
 
-> "Let me show you what's actually happening behind the scenes."
+> "Let me show you what AGENTS.md actually does. It's the hub of your Personal OS — Claude reads it first, every conversation, and it tells Claude two things: how to behave and where to find your deeper context."
 
 ```
-  ┌─────────────────────────────────────────────┐
-  │              Claude's Memory                 │
-  ├──────────────────────┬──────────────────────┤
-  │                      │                      │
-  │    Global Memory     │   Project Memory     │
-  │                      │                      │
-  │  Your Claude app     │   AGENTS.md in       │
-  │  settings/prefs      │   your project       │
-  │                      │   folder             │
-  │  • Applies to ALL    │  • Applies to THIS   │
-  │    conversations     │    project only      │
-  │  • Personal prefs    │  • Your instructions │
-  │  • Global rules      │  • File references   │
-  │                      │                      │
-  └──────────┬───────────┴──────────┬───────────┘
-             │                      │
-             ▼                      ▼
-  ┌─────────────────────────────────────────────┐
-  │                                             │
-  │   Both get loaded at the start of every     │
-  │   conversation — before you say anything    │
-  │                                             │
-  └─────────────────────────────────────────────┘
+  Your Personal OS Folder/
+  ├── AGENTS.md  ◄── Claude reads this FIRST, every conversation
+  │     ├── "Be direct, challenge my thinking..."  (instructions)
+  │     ├── "Read Constitution.md for my values"   (pointer)
+  │     ├── "Read Business.md for my role"         (pointer)
+  │     └── "Read GOALS.md for my priorities"      (pointer)
+  │
+  ├── Constitution.md    ◄── read when Claude needs your values
+  ├── Business.md        ◄── read when Claude needs your role context
+  ├── GOALS.md           ◄── read when Claude needs your priorities
+  ├── Tasks/             ◄── read when Claude needs your current work
+  ├── Knowledge/         ◄── searched when relevant topics come up
+  └── BACKLOG.md         ◄── processed when you ask
 ```
 
-> "Your AGENTS.md is project-level memory. It loads automatically when Claude opens a conversation in this folder. It's like a briefing packet that Claude reads before you walk in the room."
+> "See how AGENTS.md sits at the top? It's like a table of contents. The instructions tell Claude how to work with you — your preferred tone, format, rules. The pointers tell Claude where to find the heavy content: your Constitution, your Business context, your Goals. That way AGENTS.md stays short, but Claude can access everything."
+
+**STOP. Wait for their response.**
+
+---
+
+### Step 2b: Which AGENTS.md Loads?
+
+> "One important thing: which AGENTS.md Claude reads depends on which folder you open."
+
+```
+  Personal-OS/
+  ├── AGENTS.md  ◄── Claude reads THIS one when you open this folder
+
+  Another-Project/
+  ├── AGENTS.md  ◄── Different folder = different instructions
+
+  No AGENTS.md?
+  └── Claude starts with zero context (blank slate)
+```
+
+> "Your Personal OS has an AGENTS.md. A different project could have a completely different one with its own rules. And if a folder has no AGENTS.md at all? Claude starts with nothing — like we talked about in Lesson 1, it's a blank slate."
 >
 > "This is also why we said in Lesson 1 that your Personal OS files can't be too long — everything in AGENTS.md takes up context window space in every single conversation. You want it concise and high-signal."
 
