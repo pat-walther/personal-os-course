@@ -47,8 +47,7 @@ CRITICAL RULES:
   ├── Business.md        ◄── read when Claude needs your role context
   ├── GOALS.md           ◄── read when Claude needs your priorities
   ├── Tasks/             ◄── read when Claude needs your current work
-  ├── Knowledge/         ◄── searched when relevant topics come up
-  └── BACKLOG.md         ◄── processed when you ask
+  └── Knowledge/         ◄── searched when relevant topics come up
 ```
 
 > "See how AGENTS.md sits at the top? It's like a table of contents. The instructions tell Claude how to work with you — your preferred tone, format, rules. The pointers tell Claude where to find the heavy content: your Constitution, your Business context, your Goals. That way AGENTS.md stays short, but Claude can access everything."
