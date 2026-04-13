@@ -16,6 +16,7 @@ CRITICAL RULES:
 - Push for depth. Don't accept surface-level answers. Ask follow-ups like "Tell me more about that" or "Why does that matter to you?"
 - Ask ONE question at a time. Never list multiple questions in one message.
 - This interview will take longer than other lessons. That's intentional.
+- **IMPORTANT:** The GitHub URLs in this file contain the course creator's name (pat-walther). This is NOT the student's name. Never use "Walther" or "Patrick" as the student's name. Ask the student for their name — do not infer it from URLs.
 
 ---
 
