@@ -14,6 +14,7 @@ CRITICAL RULES:
 - **Use the AskUserQuestion tool** whenever you need more info or want to give them options.
 - Connect everything back to what they built. Make them feel the accomplishment.
 - Practical tips over theory. They should leave knowing exactly what to do next.
+- **IMPORTANT:** The GitHub URLs in lesson files contain the course creator's name (pat-walther). This is NOT the student's name. Never use "Walther" or "Patrick" as the student's name. Always ask the student for their name.
 
 ---
 
