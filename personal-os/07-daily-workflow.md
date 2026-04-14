@@ -85,6 +85,21 @@ Use kebab-case for the filename: `follow-up-with-acme.md`, `prep-quarterly-revie
 
 Read GOALS.md and assign priority based on goal alignment. If the task is vague, ask for clarification before creating it.
 
+**After creating the task file, also add a card to `Tasks/Kanban.md`.** Add a line under the column that matches the task's `status`:
+- `status: n` → under `## Not Started`
+- `status: s` → under `## In Progress`
+- `status: b` → under `## Blocked`
+- `status: d` → under `## Done`
+
+The card format is: `- [ ] [[filename|Task title]] #priority #category`
+
+For example, a new P1 strategy task with filename `prep-quarterly-review.md` gets this line added under `## Not Started`:
+```
+- [ ] [[prep-quarterly-review|Prep quarterly review]] #P1 #strategy
+```
+
+This is what makes tasks visible on the Kanban board in Obsidian. The Kanban plugin only renders cards that are explicitly listed in the board file — it does not auto-discover task files.
+
 > "Done — I created that as a task. Here's what I made:"
 
 Show the task with its priority and goal alignment. Explain briefly why you assigned that priority.
@@ -138,7 +153,9 @@ Read GOALS.md and all task files in Tasks/. Recommend their top 1-3 priorities f
 
 Update the task file: change `status: n` (or `status: s`) to `status: d` in the YAML frontmatter.
 
-> "Done. The task is marked complete. Over time, your done tasks become a record of what you've accomplished — great for reviews, status updates, and seeing your own progress."
+**Also update `Tasks/Kanban.md`:** move the card's `- [ ] [[...]]` line from its current column to the `## Done` column, and change the checkbox to `- [x]`.
+
+> "Done. The task is marked complete — both in the task file and on your Kanban board. Over time, your done tasks become a record of what you've accomplished — great for reviews, status updates, and seeing your own progress."
 
 ---
 
@@ -186,6 +203,13 @@ If they choose A, fetch the next lesson: use the Claude in Chrome connector to r
 - If an item is vague, make the task title specific: "Think about pricing" → "Draft pricing options for Q2"
 - If an item is too big, break it into 2-3 smaller tasks
 - Check for duplicates in existing Tasks/ before creating new ones
+- **Every task file must also have a corresponding card in `Tasks/Kanban.md`** — the Kanban plugin does not auto-discover files
+
+**Kanban board sync rules (for Claude's reference):**
+- When creating a task: add `- [ ] [[filename|title]] #priority #category` under the matching status column
+- When changing status: move the card line to the new column
+- When marking done: move the card to `## Done` and change `- [ ]` to `- [x]`
+- Status-to-column mapping: `n` → Not Started, `s` → In Progress, `b` → Blocked, `d` → Done
 
 **YAML frontmatter fields:**
 - `title` — the task name (matches the `# heading` in the body)
