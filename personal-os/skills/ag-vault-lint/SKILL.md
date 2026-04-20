@@ -1,5 +1,5 @@
 ---
-name: vault-lint
+name: ag-vault-lint
 description: Weekly health check on your Personal OS. Checks for stale tasks, goal-activity gaps, and index drift. Use when you say "lint my vault", "vault health check", "clean up", or as part of your weekly review.
 ---
 
@@ -13,7 +13,7 @@ Run 3 health checks against the Personal OS vault and present a structured repor
 
 Read all of the following in parallel:
 
-- `AGENTS.md`
+- `CLAUDE.md`
 - `GOALS.md`
 - `Knowledge/vault-index.md`
 - Every `.md` file in `Tasks/`

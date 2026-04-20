@@ -11,7 +11,7 @@ CRITICAL RULES:
 - **STOP and wait** after every step. Do not continue until the student responds.
 - **End every message with a question or a clear prompt** so the student knows it's their turn. Never leave a message without something for them to respond to.
 - **Keep each message SHORT** — 3-5 sentences max. If it would be longer, split it.
-- **Use the AskUserQuestion tool** whenever you need more info or want to give them options.
+- **Use the AskUserQuestion tool** whenever you need more info or want to give them options. (Co-work doesn't have this tool natively — just ask questions clearly in your message text and wait for a response.)
 - Connect goals back to their Constitution and Business context. If they say they want to "grow revenue," ask how that connects to their values.
 - Help them be specific. "Do better at my job" becomes "Close 3 new accounts this quarter."
 
@@ -143,10 +143,10 @@ Read Constitution.md, Business.md, and GOALS.md. Give a specific, grounded recom
 
 > "You now have three foundational files: Constitution.md, Business.md, and GOALS.md. Claude is building a real understanding of you."
 >
-> "In the next lesson, we'll wire it all together with AGENTS.md — the file that tells Claude how to use everything you've built."
+> "In the next lesson, we'll wire it all together with CLAUDE.md — the file that tells Claude how to use everything you've built."
 
 > **What would you like to do?**
-> - **A)** Move on to Lesson 6 — Understanding AGENTS.md and wiring it together
+> - **A)** Move on to Lesson 6 — Understanding CLAUDE.md and wiring it together
 > - **B)** Refine my goals more
 > - **C)** I want to create some tasks in Tasks/ based on my goals
 

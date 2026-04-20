@@ -11,7 +11,7 @@ CRITICAL RULES:
 - **STOP and wait** after every step. Do not continue until the student responds.
 - **End every message with a question or a clear prompt** so the student knows it's their turn. Never leave a message without something for them to respond to.
 - **Keep each message SHORT** — 3-5 sentences max. If it would be longer, split it.
-- **Use the AskUserQuestion tool** whenever you need more info or want to give them options.
+- **Use the AskUserQuestion tool** whenever you need more info or want to give them options. (Co-work doesn't have this tool natively — just ask questions clearly in your message text and wait for a response.)
 - This lesson has a hands-on connector setup. Walk them through it patiently.
 - When showing the skill file, let them read it and ask questions. Don't rush past it.
 
@@ -19,7 +19,7 @@ CRITICAL RULES:
 
 ### Step 1: The Maintenance Problem (That Isn't One Anymore)
 
-> "You've built an incredible Personal OS over these lessons. Constitution, Business context, Goals, AGENTS.md, Tasks, Knowledge — it all works together. But here's the thing people usually worry about:"
+> "You've built an incredible Personal OS over these lessons. Constitution, Business context, Goals, CLAUDE.md, Tasks, Knowledge — it all works together. But here's the thing people usually worry about:"
 >
 > "How do I keep it updated?"
 >
@@ -39,22 +39,45 @@ CRITICAL RULES:
 >
 > "Think of it as a recipe. When you say 'close my day,' Claude reads the recipe and follows the steps: pull the transcript, cross-reference against your goals, suggest task updates, flag decisions."
 >
-> "You've already been using something like this without knowing it — your AGENTS.md is a skill for how Claude should behave. A skill just takes that idea further for a specific, repeatable workflow."
+> "You've already been using something like this without knowing it — your CLAUDE.md is a skill for how Claude should behave. A skill just takes that idea further for a specific, repeatable workflow."
 
 **STOP. Wait for their response.**
 
 > "A skill is just a `.md` file — the same Markdown you already know. Skills can live in a `skills/` folder in your Personal OS, they can be installed globally so they work across all your projects, or they can come from AgVend as an organization — shared skills that the whole team can use."
 >
-> "Let me add four skills to your Personal OS right now."
+> "AgVend has already shared four skills with your organization. Let's add them now."
+>
+> "1. Click the **+** button just below the reply box"
+> "2. Click **Skills**"
+> "3. Click **Manage Skills**"
+> "4. You should see the shared AgVend skills listed there. Add all four:"
+>
+> "- **ag-daily-debrief** — end-of-day skill that processes your meetings and updates your Personal OS"
+> "- **ag-vault-lint** — weekly health check that catches stale tasks, goal gaps, and index drift"
+> "- **ag-skill-creator** — builds new skills through a guided workflow"
+> "- **ag-skill-improver** — optimizes existing skills by testing and scoring them"
+>
+> "Once they're added, you can use any of them by typing **/** and starting to type the name. Try it — type `/` and you should see them in the list."
 
-Create a `skills/` folder and a `Daily/` folder in the student's project if they don't already exist. Then fetch each skill file and save it locally:
+**STOP. Wait for them to confirm the skills are added.**
 
-1. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/daily-debrief-agvend/SKILL.md` and save to `skills/daily-debrief-agvend/SKILL.md`
-2. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/vault-lint/SKILL.md` and save to `skills/vault-lint/SKILL.md`
-3. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/skill-creator/SKILL.md` and save to `skills/skill-creator/SKILL.md`
-4. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/skill-improver/SKILL.md` and save to `skills/skill-improver/SKILL.md`
+If the shared skills don't appear (e.g., they haven't been published to the org yet), use the fallback: have them click each link directly to add the skills:
 
-> "Done — I've added four skills to your project: a daily debrief, a vault health check, a skill creator, and a skill improver. You should see them in the right sidebar under `skills/`. Let's start with the daily debrief."
+1. `https://claude.ai/customize/skills?selectedId=skill_01Eu9CaryALVwViJdys9mzbx`
+2. `https://claude.ai/customize/skills?selectedId=skill_017mt4m1V1Zs6sf8kS9LUunz`
+3. `https://claude.ai/customize/skills?selectedId=skill_01UMKGLQz8FQPULvvdiJpz72`
+4. `https://claude.ai/customize/skills?selectedId=skill_016XHJN94Wd3D7RdKrfu6SKe`
+
+If links also don't work, fetch the skills from GitHub and save them locally:
+
+1. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/ag-daily-debrief/SKILL.md` and save to `skills/ag-daily-debrief/SKILL.md`
+2. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/ag-vault-lint/SKILL.md` and save to `skills/ag-vault-lint/SKILL.md`
+3. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/ag-skill-creator/SKILL.md` and save to `skills/ag-skill-creator/SKILL.md`
+4. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/ag-skill-improver/SKILL.md` and save to `skills/ag-skill-improver/SKILL.md`
+
+Create a `skills/` folder and a `Daily/` folder in the student's project if they don't already exist.
+
+> "You're all set — four skills are ready to use. Let's start with the daily debrief."
 
 **STOP. Wait for their response.**
 
@@ -64,7 +87,7 @@ Create a `skills/` folder and a `Daily/` folder in the student's project if they
 
 > "Let me show you a real skill. I'm going to open the daily debrief skill that came with your Personal OS."
 
-Read the file at `skills/daily-debrief-agvend/SKILL.md` and walk the student through it section by section:
+Read the file at `skills/ag-daily-debrief/SKILL.md` and walk the student through it section by section:
 
 > "Take a look at this file. Let me walk you through what's in it:"
 >
@@ -130,7 +153,7 @@ After processing:
 
 > "Remember the weekly review from Lesson 8 — reviewing stale tasks and checking goal alignment? Your Personal OS includes a skill that automates that entire check."
 
-Read the file at `skills/vault-lint/SKILL.md` and give a brief overview:
+Read the file at `skills/ag-vault-lint/SKILL.md` and give a brief overview:
 
 > "The vault lint skill runs three health checks: **stale tasks** (things you created but never touched), **goal-activity gaps** (goals with no work or work with no goal), and **index drift** (files that aren't in your vault index)."
 >
@@ -148,7 +171,7 @@ After processing, walk through the report with them:
 
 ### Step 7: Read the Skill Files Yourself
 
-> "Now I want you to actually open one of the skill files and read through it. Try `skills/daily-debrief-agvend/SKILL.md` in your Personal OS."
+> "Now I want you to actually open one of the skill files and read through it. Try `skills/ag-daily-debrief/SKILL.md` in your Personal OS."
 >
 > "As you read it, think about: is there anything you'd change? Maybe you want it to focus more on action items and less on knowledge updates. Maybe you want it to check your Constitution when evaluating decisions. Maybe you want the vault lint to check something extra."
 >
@@ -192,21 +215,19 @@ After processing, walk through the report with them:
 
 **STOP. Wait for them to pick a workflow they want to automate.**
 
-> "Great. Now here's the cool part — there's a skill that builds skills for you. Your Personal OS includes a **Skill Creator** in the `skills/skill-creator/` folder. But first, we need to install it so Claude can use it from anywhere — not just this project."
+> "Great. Now here's the cool part — there's a skill that builds skills for you. Remember the **ag-skill-creator** you added earlier? That's all you need."
 >
-> "Let's install it globally. This means it'll be available in every Claude conversation, not just your Personal OS project."
-
-Help the student install the Skill Creator globally. Copy the entire `skills/skill-creator/` folder to `~/.claude/skills/skill-creator/` (on Mac/Linux) or `%APPDATA%\Claude\skills\skill-creator\` (on Windows). Walk them through it:
-
-> "I'm going to copy the Skill Creator into your global skills folder so it's always available. On Mac, that's `~/.claude/skills/`. Once it's there, you can use it in any project."
-
-After copying, confirm it works:
-
-> "It's installed. Now all you have to do is say: **'/Skill Creator'** and then describe what you want to build. It'll walk you through the whole process — figuring out what the skill should do, writing the instructions, creating test prompts to make sure it works, and refining it based on your feedback."
+> "All you have to do is type **`/ag-skill-creator`** and then describe what you want to build. It'll walk you through the whole process — figuring out what the skill should do, writing the instructions, creating test prompts to make sure it works, and refining it based on your feedback."
 >
-> "Let's try it. Say '/Skill Creator' and tell it what workflow you want to automate."
+> "Let's try it. Type `/ag-skill-creator` and tell it what workflow you want to automate."
 
 **STOP. Wait for them to use the Skill Creator.** Let the Skill Creator skill take over the conversation. It will guide them through drafting, testing, and refining their skill. When they've finished creating their skill, continue to the next step.
+
+If `/ag-skill-creator` doesn't trigger or the skill isn't available, fall back to the local install method: copy the `skills/ag-skill-creator/` folder from the student's project to `~/.claude/skills/ag-skill-creator/` (on Mac/Linux) or `%APPDATA%\Claude\skills\ag-skill-creator\` (on Windows), then have them try `/ag-skill-creator` again. If the skill files aren't in the project either, fetch them from GitHub:
+
+1. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/ag-skill-creator/SKILL.md` and save to `skills/ag-skill-creator/SKILL.md`
+
+Then copy to the global skills folder and retry.
 
 ---
 
@@ -214,7 +235,7 @@ After copying, confirm it works:
 
 > "One more thing before we wrap. You just built your first skill, and it probably works pretty well. But most skills work about 70% of the time on the first draft. The other 30% you get inconsistent or mediocre output."
 >
-> "Your Personal OS includes a **Skill Improver** in `skills/skill-improver/`. It takes any skill you've built, runs it dozens of times automatically, scores every output against pass/fail checks you define, and tightens the prompt until that 30% disappears."
+> "Your Personal OS includes a **Skill Improver** in `skills/ag-skill-improver/`. It takes any skill you've built, runs it dozens of times automatically, scores every output against pass/fail checks you define, and tightens the prompt until that 30% disappears."
 >
 > "This one gets more technical, so we won't run through it in the course — but it's there for when you're ready. Think of it as the graduate-level version of skill building. You define what 'good' looks like with simple yes/no checks, and the Skill Improver optimizes automatically."
 
@@ -236,7 +257,7 @@ After copying, confirm it works:
 >
 > "**Lesson 5** — You defined your goals and priorities. Claude doesn't just know what you do — it knows what you're optimizing for."
 >
-> "**Lesson 6** — You wired it all together with AGENTS.md. The instruction layer that makes Claude read your briefing packet before every conversation."
+> "**Lesson 6** — You wired it all together with CLAUDE.md. The instruction layer that makes Claude read your briefing packet before every conversation."
 >
 > "**Lesson 7** — You built a daily workflow. Tasks, priorities, and a rhythm that takes 5 minutes a day."
 >
@@ -248,7 +269,7 @@ After copying, confirm it works:
 >
 > "A few things to remember going forward:"
 >
-> "**To use any skill**, just type `/` and start typing the name. `/Skill Creator`, `/Daily Debrief` — or whatever you name your custom skills."
+> "**To use any skill**, just type `/` and start typing the name. `/ag-skill-creator`, `/ag-daily-debrief` — or whatever you name your custom skills."
 >
 > "**The daily habit:** Say 'what should I work on?' every morning. Say 'create a task for [thing]' whenever something comes up. Say 'close my day' to run the Daily Debrief at the end of the day."
 >
@@ -336,15 +357,20 @@ description: [One sentence. When to use this skill.]
 - If Fireflies is not available, the skill works with pasted meeting notes
 
 **Skills included in this course:**
-- `skills/daily-debrief-agvend/` — end-of-day skill that processes Fireflies meeting transcripts, writes daily entries, suggests task/goal/knowledge updates
-- `skills/vault-lint/` — weekly health check that catches stale tasks, goal-activity gaps, and index drift
-- `skills/skill-creator/` — builds new skills through a guided workflow with testing and refinement
-- `skills/skill-improver/` — autonomously optimizes any skill by running it repeatedly, scoring outputs against binary pass/fail evals, and mutating the prompt to fix failures
+- `skills/ag-daily-debrief/` — end-of-day skill that processes Fireflies meeting transcripts, writes daily entries, suggests task/goal/knowledge updates
+- `skills/ag-vault-lint/` — weekly health check that catches stale tasks, goal-activity gaps, and index drift
+- `skills/ag-skill-creator/` — builds new skills through a guided workflow with testing and refinement
+- `skills/ag-skill-improver/` — autonomously optimizes any skill by running it repeatedly, scoring outputs against binary pass/fail evals, and mutating the prompt to fix failures
 
 **How skills work:**
-- Skills are stored in the `skills/` folder of the Personal OS
+- Skills can be shared by the organization (available under + > Skills > Manage Skills) or created locally in the `skills/` folder
 - Each skill is a Markdown file (SKILL.md) with a name, description, trigger phrases, a workflow, and rules
-- Claude reads skill files when a trigger phrase is used (e.g., "debrief my meeting" or "/Skill Creator")
+- Claude reads skill files when a trigger phrase is used (e.g., "debrief my meeting" or "/ag-daily-debrief")
 - The student can also manually say "use the [skill name] skill"
-- Skills follow the same AGENTS.md rules as everything else
+- Skills follow the same CLAUDE.md rules as everything else
 - Skills are fully customizable — they're just text files. Edit them to change the workflow
+
+**Skill installation (for Claude's reference):**
+- Primary method: Organization shared skills via + > Skills > Manage Skills
+- Fallback 1: Direct links to skill pages on claude.ai/customize/skills
+- Fallback 2: Download from GitHub and save to local `skills/` folder

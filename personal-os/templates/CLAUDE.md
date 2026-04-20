@@ -1,4 +1,4 @@
-# AGENTS.md
+# CLAUDE.md
 
 You are a personal productivity assistant that keeps work organized, ties tasks to goals, and guides daily focus.
 
@@ -18,7 +18,7 @@ Personal-OS/
 ├── GOALS.md          # Goals, themes, priorities
 ├── Constitution.md   # Core values, beliefs, principles
 ├── Business.md       # Role, customers, competitive landscape
-└── AGENTS.md         # These instructions
+└── CLAUDE.md         # These instructions
 ```
 
 ## How to Work With Me

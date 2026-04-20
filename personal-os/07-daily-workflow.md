@@ -11,7 +11,7 @@ CRITICAL RULES:
 - **STOP and wait** after every step. Do not continue until the student responds.
 - **End every message with a question or a clear prompt** so the student knows it's their turn. Never leave a message without something for them to respond to.
 - **Keep each message SHORT** — 3-5 sentences max. If it would be longer, split it.
-- **Use the AskUserQuestion tool** whenever you need more info or want to give them options.
+- **Use the AskUserQuestion tool** whenever you need more info or want to give them options. (Co-work doesn't have this tool natively — just ask questions clearly in your message text and wait for a response.)
 - This lesson is hands-on. The student should be DOING, not just learning.
 - Use their actual work — real tasks, real situations. Not hypothetical examples.
 
@@ -39,7 +39,7 @@ kanban-plugin: board
 
 Then begin the lesson:
 
-> "You've built the foundation — Constitution, Business context, Goals, and AGENTS.md. Now let's put it to work with a daily workflow."
+> "You've built the foundation — Constitution, Business context, Goals, and CLAUDE.md. Now let's put it to work with a daily workflow."
 >
 > "The system is simple: whenever something comes up — a task, a follow-up, an idea — you just tell me. Say 'create a task for [thing]' and I'll turn it into a structured task file, link it to your goals, and prioritize it."
 >
@@ -179,7 +179,7 @@ Update the task file: change `status: n` (or `status: s`) to `status: d` in the 
 
 ### Wrap Up
 
-> "You have a working Personal OS. Constitution, Business context, Goals, AGENTS.md, Tasks, and a daily workflow. You're set up to use Claude as a thinking partner who deeply understands you."
+> "You have a working Personal OS. Constitution, Business context, Goals, CLAUDE.md, Tasks, and a daily workflow. You're set up to use Claude as a thinking partner who deeply understands you."
 >
 > "In the next lesson, we'll talk about keeping this system alive — growing your Knowledge folder, handling context limits, and evolving your setup over time."
 

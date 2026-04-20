@@ -11,7 +11,7 @@ CRITICAL RULES:
 - **STOP and wait** after every step. Do not continue until the student responds.
 - **End every message with a question or a clear prompt** so the student knows it's their turn. Never leave a message without something for them to respond to.
 - **Keep each message SHORT** — 3-5 sentences max. If it would be longer, split it.
-- **Use the AskUserQuestion tool** whenever you need more info or want to give them options.
+- **Use the AskUserQuestion tool** whenever you need more info or want to give them options. (Co-work doesn't have this tool natively — just ask questions clearly in your message text and wait for a response.)
 - Connect everything back to what they built. Make them feel the accomplishment.
 - Practical tips over theory. They should leave knowing exactly what to do next.
 - **IMPORTANT:** The GitHub URLs in lesson files contain the course creator's name (pat-walther). This is NOT the student's name. Never use "Walther" or "Patrick" as the student's name. Always ask the student for their name.
@@ -25,7 +25,7 @@ CRITICAL RULES:
 List the files in their Personal OS folder:
 
 > "You now have:"
-> "- **AGENTS.md** — Your AI instruction manual, loaded every conversation"
+> "- **CLAUDE.md** — Your AI instruction manual, loaded every conversation"
 > "- **Constitution.md** — Your values, beliefs, and principles"
 > "- **Business.md** — Your professional context"
 > "- **GOALS.md** — Your priorities and what you're optimizing for"
@@ -46,7 +46,7 @@ List the files in their Personal OS folder:
 >
 > "Remember from Lesson 1 — Claude has a limited context window. As a conversation gets longer, the input grows with every turn. Eventually, Claude's performance degrades. This is sometimes called 'context rot' — the AI gets dumber and more forgetful the longer a conversation goes."
 >
-> "Here's the good news: because your Personal OS exists as files, starting a fresh conversation costs you nothing. Claude reads your AGENTS.md, checks your files, and you're right back where you left off. The knowledge lives in your documents, not in the chat."
+> "Here's the good news: because your Personal OS exists as files, starting a fresh conversation costs you nothing. Claude reads your CLAUDE.md, checks your files, and you're right back where you left off. The knowledge lives in your documents, not in the chat."
 >
 > "**Rule of thumb:** Start a new conversation for each new topic or task. Long, rambling conversations make Claude worse. Short, focused conversations keep Claude sharp."
 
@@ -58,7 +58,7 @@ List the files in their Personal OS folder:
 
 > "Here's a tiny trick to know when a conversation is getting too long."
 >
-> "We're going to add one line to your AGENTS.md — something like: 'Always address me as [their preferred name].' It could be your first name, a nickname, 'Mr. Smith' — whatever you want."
+> "We're going to add one line to your CLAUDE.md — something like: 'Always address me as [their preferred name].' It could be your first name, a nickname, 'Mr. Smith' — whatever you want."
 >
 > "The minute Claude stops using your name, you know it's starting to forget the instructions from the beginning of the conversation. That's your signal: time to start a fresh thread."
 >
@@ -66,9 +66,9 @@ List the files in their Personal OS folder:
 
 **STOP. Wait for their answer.**
 
-Add the line to the student's AGENTS.md under the "How to Work With Me" section: `- Always address me as [their answer]`
+Add the line to the student's CLAUDE.md under the "How to Work With Me" section: `- Always address me as [their answer]`
 
-> "Done — I've added that to your AGENTS.md. From now on, if you notice Claude stops calling you by your name, start a new conversation. Simple early warning system."
+> "Done — I've added that to your CLAUDE.md. From now on, if you notice Claude stops calling you by your name, start a new conversation. Simple early warning system."
 
 **STOP. Wait for their response.**
 
@@ -99,9 +99,9 @@ Add the line to the student's AGENTS.md under the "How to Work With Me" section:
 >
 > "Right now you have maybe 10 files. But imagine you have hundreds. Meeting notes, competitive research, partner profiles, process docs. If Claude had to open every file to figure out which ones matter for your question, it would blow through your context window before it even got to your actual request."
 >
-> "The trick is a **vault index** — basically a table of contents for your entire Personal OS. One line per file, describing what's in it. You add a pointer in your AGENTS.md that says 'read the vault index to understand what files exist.' Now Claude can scan the index, find the 2-3 files that are relevant, and only read those."
+> "The trick is a **vault index** — basically a table of contents for your entire Personal OS. One line per file, describing what's in it. You add a pointer in your CLAUDE.md that says 'read the vault index to understand what files exist.' Now Claude can scan the index, find the 2-3 files that are relevant, and only read those."
 >
-> "This is why we keep AGENTS.md short — it loads every single conversation. If you tried to describe every file in AGENTS.md directly, it would get massive. Instead, AGENTS.md just points to the index, and the index points to everything else."
+> "This is why we keep CLAUDE.md short — it loads every single conversation. If you tried to describe every file in CLAUDE.md directly, it would get massive. Instead, CLAUDE.md just points to the index, and the index points to everything else."
 
 **STOP. Wait for their response.**
 
@@ -119,7 +119,7 @@ Scan the student's entire Personal OS folder. Create `Knowledge/vault-index.md` 
 One-line description of every file in the Personal OS. Claude reads this to know what exists and where to find it.
 
 ## Foundation
-- `AGENTS.md` -- AI instruction manual, loaded every conversation
+- `CLAUDE.md` -- AI instruction manual, loaded every conversation
 - `Constitution.md` -- Personal values, beliefs, and principles
 - `Business.md` -- Professional context, role, accounts, competitive landscape
 - `GOALS.md` -- Priorities organized by timeframe
@@ -131,9 +131,9 @@ One-line description of every file in the Personal OS. Claude reads this to know
 - `Knowledge/[filename].md` -- [one-line description per file]
 ```
 
-Also add a pointer to the vault index in the student's AGENTS.md, under the "My Personal OS Structure" section: `- Knowledge/vault-index.md — Table of contents for all files. Read this to find what's relevant.`
+Also add a pointer to the vault index in the student's CLAUDE.md, under the "My Personal OS Structure" section: `- Knowledge/vault-index.md — Table of contents for all files. Read this to find what's relevant.`
 
-> "Done — your vault index is at `Knowledge/vault-index.md`, and I've added a pointer to it in your AGENTS.md. Now Claude can always find the right files without reading everything."
+> "Done — your vault index is at `Knowledge/vault-index.md`, and I've added a pointer to it in your CLAUDE.md. Now Claude can always find the right files without reading everything."
 >
 > "Now, this probably sounds like a lot of work to maintain — adding a line every time you create a new file. The good news: in the next lesson, you'll get a skill that updates this automatically. You won't have to touch it."
 
@@ -141,24 +141,24 @@ Also add a pointer to the vault index in the student's AGENTS.md, under the "My 
 
 ---
 
-### Step 5: Evolving Your AGENTS.md
+### Step 5: Evolving Your CLAUDE.md
 
-> "Your AGENTS.md isn't set in stone. It should evolve as you learn what works and what doesn't."
+> "Your CLAUDE.md isn't set in stone. It should evolve as you learn what works and what doesn't."
 >
-> "**Signs it's time to update AGENTS.md:**"
+> "**Signs it's time to update CLAUDE.md:**"
 > "- Claude keeps making the same mistake → add a rule about it"
-> "- You keep repeating the same instruction → move it into AGENTS.md"
+> "- You keep repeating the same instruction → move it into CLAUDE.md"
 > "- Your priorities shifted → update the pointers or working style preferences"
 > "- You discovered a new workflow → add it to the instructions"
 >
-> "**Signs your AGENTS.md is too long:**"
+> "**Signs your CLAUDE.md is too long:**"
 > "- Claude seems to ignore parts of it → it's beyond what fits in context"
 > "- You haven't updated it in months → some of it is probably stale"
 > "- It has detailed content instead of pointers → move content to other files"
 >
-> "Remember: shorter is better. AGENTS.md gets loaded in EVERY conversation. Every word in it is a word that can't be used for your actual request."
+> "Remember: shorter is better. CLAUDE.md gets loaded in EVERY conversation. Every word in it is a word that can't be used for your actual request."
 >
-> "Take a look at your AGENTS.md now. Anything you'd already want to change based on your experience today?"
+> "Take a look at your CLAUDE.md now. Anything you'd already want to change based on your experience today?"
 
 **STOP. Wait for their response.** Make any changes they suggest.
 
@@ -191,11 +191,11 @@ Also add a pointer to the vault index in the student's AGENTS.md, under the "My 
 >
 > "**Tip 2: Don't over-engineer it.** If your Personal OS starts feeling like work, simplify. Drop folders you don't use. Merge files that overlap."
 >
-> "**Tip 3: Share what works.** If you find a workflow or AGENTS.md instruction that's great, share it with the team. These systems get better through collective learning."
+> "**Tip 3: Share what works.** If you find a workflow or CLAUDE.md instruction that's great, share it with the team. These systems get better through collective learning."
 >
 > "And a few tips specifically for better AI memory:"
 >
-> "**Be specific in AGENTS.md.** Vague instructions get vague results. 'Be helpful' does nothing. 'Challenge my assumptions before agreeing with my plan' changes behavior."
+> "**Be specific in CLAUDE.md.** Vague instructions get vague results. 'Be helpful' does nothing. 'Challenge my assumptions before agreeing with my plan' changes behavior."
 >
 > "**Update GOALS.md regularly.** Stale goals lead to wrong priorities. If Claude keeps suggesting things that don't matter anymore, your goals file is probably out of date."
 >
@@ -235,7 +235,7 @@ If they choose A, fetch the next lesson: use the Claude in Chrome connector to r
 **Context window management (for Claude's reference):**
 - Start new conversations for new topics — don't let threads get stale
 - Files persist, chats don't — the value lives in documents
-- AGENTS.md loads every time — keep it short (under 500 words)
+- CLAUDE.md loads every time — keep it short (under 500 words)
 - Long chats degrade performance — this is "context rot"
 - If a chat starts giving weird answers, start fresh
 
@@ -243,12 +243,12 @@ If they choose A, fetch the next lesson: use the Claude in Chrome connector to r
 - Daily: morning priorities, task creation, mark done (5 min)
 - Weekly: task review, stale task cleanup (10 min)
 - Monthly: goals refresh, business context update, Constitution check (15 min)
-- Quarterly: major goals revision, AGENTS.md overhaul, archive old tasks (30 min)
+- Quarterly: major goals revision, CLAUDE.md overhaul, archive old tasks (30 min)
 
 **Common failure modes and fixes:**
-- "Claude doesn't seem to know me" → Check that AGENTS.md exists in the project root
+- "Claude doesn't seem to know me" → Check that CLAUDE.md exists in the project root
 - "Claude ignores my files" → Make sure the project has folder access granted
-- "My context window fills up fast" → AGENTS.md is probably too long. Trim it.
+- "My context window fills up fast" → CLAUDE.md is probably too long. Trim it.
 - "Tasks are getting stale" → Schedule a weekly review habit
 - "I stopped using it" → Simplify. Use only GOALS.md and Tasks/ if the full system is too much.
 

@@ -15,7 +15,7 @@ Your Personal OS is a set of files that makes Claude deeply understand who you a
 - **Constitution.md** — Your values, beliefs, and principles
 - **Business.md** — Your role, customers, and competitive landscape
 - **GOALS.md** — Priorities organized by timeframe and OKRs
-- **AGENTS.md** — Instructions that make Claude remember everything
+- **CLAUDE.md** — Instructions that make Claude remember everything
 - **Tasks/** and **Knowledge/** — Your work items and reference material
 
 ## Skills Included

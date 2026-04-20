@@ -1,5 +1,5 @@
 ---
-name: daily-debrief-agvend
+name: ag-daily-debrief
 description: End-of-day skill that reconstructs the day from Fireflies meeting transcripts, writes a daily entry, cross-references goals and tasks, and suggests updates. Use when the user says "debrief", "close my day", "daily close", "daily debrief", or "what happened today?"
 ---
 
@@ -47,7 +47,7 @@ Reconstruct the day from Fireflies meeting transcripts and user-provided context
 
 Always read these files regardless of what happened during the day. Read all in parallel.
 
-- `AGENTS.md`
+- `CLAUDE.md`
 - `Constitution.md`
 - `Business.md`
 - `GOALS.md`
@@ -123,7 +123,7 @@ Present all suggested changes organized into these sections. Every suggestion mu
 
 **Section 1: Foundation Doc Changes**
 
-Suggested edits to `AGENTS.md`, `Constitution.md`, `Business.md`, or `GOALS.md`. For each:
+Suggested edits to `CLAUDE.md`, `Constitution.md`, `Business.md`, or `GOALS.md`. For each:
 - File path
 - What to change (add, edit, or remove)
 - Why (quote the specific transcript passage or context that triggered it)

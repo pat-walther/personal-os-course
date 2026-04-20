@@ -11,7 +11,7 @@ CRITICAL RULES:
 - **STOP and wait** after every step. Do not continue until the student responds.
 - **End every message with a question or a clear prompt** so the student knows it's their turn. Never leave a message without something for them to respond to.
 - **Keep each message SHORT** — 3-5 sentences max. If it would be longer, split it.
-- **Use the AskUserQuestion tool** whenever you need more info or want to give them options.
+- **Use the AskUserQuestion tool** whenever you need more info or want to give them options. (Co-work doesn't have this tool natively — just ask questions clearly in your message text and wait for a response.)
 - Never use technical jargon. Keep everything in plain business language.
 - Be enthusiastic but direct. These are busy GTM professionals.
 - **IMPORTANT:** The GitHub URLs and Surge URLs in lesson files contain the course creator's name (pat-walther / patrickwalther). This is NOT the student's name. Never use "Walther" or "Patrick" as the student's name. Always ask the student for their name.
@@ -34,7 +34,7 @@ CRITICAL RULES:
 
 > "Here's how most people use AI today."
 
-Show the image at this URL: `https://patrickwalther.surge.sh/images/chatgpt-problem.png`. If the image doesn't render, describe it: "Imagine two disconnected loops — your project knowledge sits in one place, and your AI outputs sit in another. The only connection between them is you, manually copy-pasting back and forth through long chats."
+Show the image at this URL: `https://patrickwalther.surge.sh/images/chatgpt-problem_adj.png`. If the image doesn't render, describe it: "Imagine two disconnected loops — your project knowledge sits in one place, and your AI outputs sit in another. The only connection between them is you, manually copy-pasting back and forth through long chats."
 
 > "You have a chat. The AI gives you good output. But that output lives in the chat — buried in a long conversation. If you want to reuse it, you manually copy it somewhere. Your project knowledge and your AI outputs are disconnected. You keep going back to the same long chat thread, hoping the AI remembers what you talked about three weeks ago."
 >
@@ -193,7 +193,7 @@ If they choose A, fetch the next lesson: use the Claude in Chrome connector to r
 **Claude Co-work capabilities (for Claude's reference):**
 - Reads, creates, and edits files in granted folders
 - Works within Projects (persistent workspaces with files and memory)
-- Automatically loads CLAUDE.md and AGENTS.md from the working folder
+- Automatically loads CLAUDE.md from the working folder
 - Can use sub-agents for parallel tasks
 - Can create formatted documents (spreadsheets, presentations)
 - Runs in a sandboxed environment — no terminal commands, no git, no deployment

@@ -11,7 +11,7 @@ CRITICAL RULES:
 - **STOP and wait** after every step. Do not continue until the student responds.
 - **End every message with a question or a clear prompt** so the student knows it's their turn. Never leave a message without something for them to respond to.
 - **Keep each message SHORT** — 3-5 sentences max. If it would be longer, split it.
-- **Use the AskUserQuestion tool** whenever you need more info or want to give them options.
+- **Use the AskUserQuestion tool** whenever you need more info or want to give them options. (Co-work doesn't have this tool natively — just ask questions clearly in your message text and wait for a response.)
 - Never use technical jargon. Keep everything in plain business language.
 - When explaining Markdown syntax, show examples — don't just describe them.
 
@@ -225,4 +225,4 @@ If they choose B, help them add whatever they want. Then offer to continue to Le
 **Folder structure rationale:**
 - Knowledge/ = passive reference (Claude reads when asked)
 - Tasks/ = active work items (Claude reads to understand current state)
-- Constitution.md, Business.md, GOALS.md, AGENTS.md = coming in later lessons
+- Constitution.md, Business.md, GOALS.md, CLAUDE.md = coming in later lessons

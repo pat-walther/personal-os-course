@@ -1,6 +1,6 @@
-# 6. Understanding AGENTS.md & Wiring It All Together
+# 6. Understanding CLAUDE.md & Wiring It All Together
 
-> **Magic Moment:** The student creates their AGENTS.md, starts a fresh conversation, and Claude already knows who they are, what they do, and how they like to work — without being told anything.
+> **Magic Moment:** The student creates their CLAUDE.md, starts a fresh conversation, and Claude already knows who they are, what they do, and how they like to work — without being told anything.
 
 ---
 
@@ -11,21 +11,21 @@ CRITICAL RULES:
 - **STOP and wait** after every step. Do not continue until the student responds.
 - **End every message with a question or a clear prompt** so the student knows it's their turn. Never leave a message without something for them to respond to.
 - **Keep each message SHORT** — 3-5 sentences max. If it would be longer, split it.
-- **Use the AskUserQuestion tool** whenever you need more info or want to give them options.
+- **Use the AskUserQuestion tool** whenever you need more info or want to give them options. (Co-work doesn't have this tool natively — just ask questions clearly in your message text and wait for a response.)
 - This is the lesson where everything clicks. Build toward the "fresh thread" test as the payoff.
 - Don't use the term "system prompt" with the student. Keep it in plain language.
 
 ---
 
-### Step 1: What Is AGENTS.md?
+### Step 1: What Is CLAUDE.md?
 
 > "You've built three powerful files — your Constitution, Business context, and Goals. But right now, Claude doesn't automatically know to read them. Every new conversation, you'd have to say 'Hey, read my Constitution and Business files first.'"
 >
-> "That's where AGENTS.md comes in. Think of it as a **README for your AI assistant** — a dedicated, predictable place to provide the context and instructions that help Claude work with you."
+> "That's where CLAUDE.md comes in. Think of it as a **README for your AI assistant** — a dedicated, predictable place to provide the context and instructions that help Claude work with you."
 >
-> "Here's the key: when Claude starts a conversation in a folder that has an AGENTS.md file, it automatically reads that file first. Every time. No prompting required."
+> "Here's the key: **CLAUDE.md is a special filename.** When Claude starts a conversation in a folder that has a CLAUDE.md file, it automatically reads that file first. Every time. No prompting required."
 >
-> "Quick note: you might also hear about a file called **CLAUDE.md**. In practice, Claude creates a CLAUDE.md file for its memory. For now, think of AGENTS.md and CLAUDE.md as synonyms — they do the same thing. Most AI tools look for AGENTS.md, Claude specifically also looks for CLAUDE.md. We'll use AGENTS.md since it works everywhere."
+> "Quick note: you might also hear about a file called **AGENTS.md**. Some other AI tools look for AGENTS.md instead. We're using CLAUDE.md because it's the one Claude is guaranteed to auto-load — it just works, every time, no configuration needed."
 
 **STOP. Wait for their response.**
 
@@ -33,11 +33,11 @@ CRITICAL RULES:
 
 ### Step 2: How It Works
 
-> "Let me show you what AGENTS.md actually does. It's the hub of your Personal OS — Claude reads it first, every conversation, and it tells Claude two things: how to behave and where to find your deeper context."
+> "Let me show you what CLAUDE.md actually does. It's the hub of your Personal OS — Claude reads it first, every conversation, and it tells Claude two things: how to behave and where to find your deeper context."
 
 ```
   Your Personal OS Folder/
-  ├── AGENTS.md  ◄── Claude reads this FIRST, every conversation
+  ├── CLAUDE.md  ◄── Claude reads this FIRST, every conversation
   │     ├── "Be direct, challenge my thinking..."  (instructions)
   │     ├── "Read Constitution.md for my values"   (pointer)
   │     ├── "Read Business.md for my role"         (pointer)
@@ -50,44 +50,44 @@ CRITICAL RULES:
   └── Knowledge/         ◄── searched when relevant topics come up
 ```
 
-> "See how AGENTS.md sits at the top? It's like a table of contents. The instructions tell Claude how to work with you — your preferred tone, format, rules. The pointers tell Claude where to find the heavy content: your Constitution, your Business context, your Goals. That way AGENTS.md stays short, but Claude can access everything."
+> "See how CLAUDE.md sits at the top? It's like a table of contents. The instructions tell Claude how to work with you — your preferred tone, format, rules. The pointers tell Claude where to find the heavy content: your Constitution, your Business context, your Goals. That way CLAUDE.md stays short, but Claude can access everything."
 
 **STOP. Wait for their response.**
 
 ---
 
-### Step 2b: Which AGENTS.md Loads?
+### Step 2b: Which CLAUDE.md Loads?
 
-> "One important thing: which AGENTS.md Claude reads depends on which folder you open."
+> "One important thing: which CLAUDE.md Claude reads depends on which folder you open."
 
 ```
   Personal-OS/
-  ├── AGENTS.md  ◄── Claude reads THIS one when you open this folder
+  ├── CLAUDE.md  ◄── Claude reads THIS one when you open this folder
 
   Another-Project/
-  ├── AGENTS.md  ◄── Different folder = different instructions
+  ├── CLAUDE.md  ◄── Different folder = different instructions
 
-  No AGENTS.md?
+  No CLAUDE.md?
   └── Claude starts with zero context (blank slate)
 ```
 
-> "Your Personal OS has an AGENTS.md. A different project could have a completely different one with its own rules. And if a folder has no AGENTS.md at all? Claude starts with nothing — like we talked about in Lesson 1, it's a blank slate."
+> "Your Personal OS has a CLAUDE.md. A different project could have a completely different one with its own rules. And if a folder has no CLAUDE.md at all? Claude starts with nothing — like we talked about in Lesson 1, it's a blank slate."
 >
-> "This is also why we said in Lesson 1 that your Personal OS files can't be too long — everything in AGENTS.md takes up context window space in every single conversation. You want it concise and high-signal."
+> "This is also why we said in Lesson 1 that your Personal OS files can't be too long — everything in CLAUDE.md takes up context window space in every single conversation. You want it concise and high-signal."
 
 **STOP. Wait for their response.**
 
 ---
 
-### Step 3: What Goes in AGENTS.md?
+### Step 3: What Goes in CLAUDE.md?
 
-> "AGENTS.md has two jobs:"
+> "CLAUDE.md has two jobs:"
 >
 > "**1. Instructions** — How you want Claude to behave. Your preferred tone, format, rules, and working style."
 >
-> "**2. Pointers** — References to your other files. Instead of pasting your whole Constitution into AGENTS.md, you point to it: 'Read Constitution.md for my values and principles.' This keeps AGENTS.md short while giving Claude access to everything."
+> "**2. Pointers** — References to your other files. Instead of pasting your whole Constitution into CLAUDE.md, you point to it: 'Read Constitution.md for my values and principles.' This keeps CLAUDE.md short while giving Claude access to everything."
 >
-> "Think of it this way: AGENTS.md is the table of contents. Your other files are the chapters. Claude reads the table of contents every time, and looks up chapters when it needs them."
+> "Think of it this way: CLAUDE.md is the table of contents. Your other files are the chapters. Claude reads the table of contents every time, and looks up chapters when it needs them."
 >
 > "What are some behaviors you'd want Claude to always follow when working with you? For example: tone, response length, how it handles disagreement, what format it uses."
 
@@ -95,14 +95,14 @@ CRITICAL RULES:
 
 ---
 
-### Step 4: Build AGENTS.md Together
+### Step 4: Build CLAUDE.md Together
 
-> "Let me draft your AGENTS.md based on everything we've built together."
+> "Let me draft your CLAUDE.md based on everything we've built together."
 
-Create `AGENTS.md` in the student's project folder. Use this structure but customize it based on what they've said:
+Create `CLAUDE.md` in the student's project folder. Use this structure but customize it based on what they've said:
 
 ```markdown
-# AGENTS.md
+# CLAUDE.md
 
 ## Who I Am
 Read Constitution.md for my core values, beliefs, and principles.
@@ -134,7 +134,7 @@ When I say "create a task for [thing]" or ask you to track something:
 4. Use kebab-case filenames: `follow-up-with-acme.md`
 ```
 
-> "Here's your AGENTS.md. Take a look — does the 'How to Work With Me' section feel right? Anything to add or change?"
+> "Here's your CLAUDE.md. Take a look — does the 'How to Work With Me' section feel right? Anything to add or change?"
 
 **STOP. Wait for their feedback.** Make any changes they request.
 
@@ -150,11 +150,11 @@ When I say "create a task for [thing]" or ask you to track something:
 
 If they report that Claude knew about them:
 
-> "That's AGENTS.md in action. Claude read your briefing packet before you said a word. It knows your values, your role, your goals — all because of the files you built."
+> "That's CLAUDE.md in action. Claude read your briefing packet before you said a word. It knows your values, your role, your goals — all because of the files you built."
 
 If they haven't done it yet or it didn't work:
 
-> "When you start a new conversation in this project later, try asking 'What do you know about me?' You'll see Claude already knows your values, your role, and your goals — without you saying anything. That's AGENTS.md working."
+> "When you start a new conversation in this project later, try asking 'What do you know about me?' You'll see Claude already knows your values, your role, and your goals — without you saying anything. That's CLAUDE.md working."
 
 ---
 
@@ -162,7 +162,7 @@ If they haven't done it yet or it didn't work:
 
 > "Let me zoom out and show you the full architecture of what you've built:"
 >
-> "**Layer 1: AGENTS.md — The Instruction Layer.** Loaded every conversation. Tells Claude how to behave and where to find context. Keep this short."
+> "**Layer 1: CLAUDE.md — The Instruction Layer.** Loaded every conversation. Tells Claude how to behave and where to find context. Keep this short."
 >
 > "**Layer 2: GOALS.md — The Priority Layer.** Claude reads this to understand what matters to you. When deciding between tasks or recommendations, it checks your goals."
 >
@@ -176,33 +176,33 @@ If they haven't done it yet or it didn't work:
 
 ### Wrap Up
 
-> "This is the heart of your Personal OS. AGENTS.md is what makes Claude feel like it knows you — because it does. Every file you've built feeds into this."
+> "This is the heart of your Personal OS. CLAUDE.md is what makes Claude feel like it knows you — because it does. Every file you've built feeds into this."
 >
 > "In the next lesson, we'll put it all to work with a daily workflow: creating tasks, prioritizing, and managing your work."
 
 > **What would you like to do?**
 > - **A)** Move on to Lesson 7 — Daily workflow
-> - **B)** Refine my AGENTS.md more
+> - **B)** Refine my CLAUDE.md more
 > - **C)** I want to try asking Claude something in a new thread to test it
 
 If they choose A, fetch the next lesson: use the Claude in Chrome connector to read `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/07-daily-workflow.md` and continue teaching.
 
-**Share prompt:** Start a new chat and ask Claude a work question without any context. How did it do compared to before you had AGENTS.md?
+**Share prompt:** Start a new chat and ask Claude a work question without any context. How did it do compared to before you had CLAUDE.md?
 
 ---
 
 ## Reference Material
 
-**AGENTS.md best practices (for Claude's reference):**
+**CLAUDE.md best practices (for Claude's reference):**
 - Keep it under 500 words. Every word costs context window space in every conversation.
 - Use pointers ("Read Constitution.md") instead of pasting content inline
 - Instructions should be about behavior, not content — the content lives in other files
 - Update it when you notice Claude consistently doing something you don't like
-- CLAUDE.md and AGENTS.md are synonyms in practice. Claude specifically creates/reads CLAUDE.md, but AGENTS.md is the more universal convention that works across AI tools. Co-work reads both.
-- The template at templates/AGENTS.md carries forward patterns from the personal-os framework (task template, task flow, priority system, goals alignment, anticipate next actions)
+- CLAUDE.md is the special filename that Claude auto-loads. Some other AI tools use AGENTS.md instead. We use CLAUDE.md because it's guaranteed to load in Claude Co-work.
+- The template at templates/CLAUDE.md carries forward patterns from the personal-os framework (task template, task flow, priority system, goals alignment, anticipate next actions)
 
 **What goes WHERE:**
-- AGENTS.md: How Claude should behave + pointers to files (loaded every time)
+- CLAUDE.md: How Claude should behave + pointers to files (loaded every time)
 - Constitution.md: Deep personal context (read on demand)
 - Business.md: Professional context (read on demand)
 - GOALS.md: Current priorities (read when making recommendations)
@@ -211,7 +211,7 @@ If they choose A, fetch the next lesson: use the Claude in Chrome connector to r
 - Tasks/: Work items (checked for current state)
 
 **Common mistakes:**
-- Making AGENTS.md too long (blows out context window)
-- Putting task lists in AGENTS.md (they belong in Tasks/)
-- Not updating AGENTS.md when preferences change
+- Making CLAUDE.md too long (blows out context window)
+- Putting task lists in CLAUDE.md (they belong in Tasks/)
+- Not updating CLAUDE.md when preferences change
 - Duplicating content that already exists in other files

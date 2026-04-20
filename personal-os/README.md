@@ -19,7 +19,7 @@ A lesson-based course that teaches AgVend's GTM team how to build their own Pers
 | 3 | Build your Constitution | Constitution.md — your values, beliefs, and principles |
 | 4 | Build your Business context | Business.md — your role, accounts, and competitive landscape |
 | 5 | Define your Goals | GOALS.md — priorities by timeframe |
-| 6 | Understanding AGENTS.md & wiring it together | AGENTS.md that connects everything |
+| 6 | Understanding CLAUDE.md & wiring it together | CLAUDE.md that connects everything |
 | 7 | Daily workflow | Task creation, prioritization, daily rhythms |
 | 8 | Memory, context, and keeping your OS alive | Vault index, a system that grows with you |
 | 9 | Skills — automate the upkeep | Daily Debrief, Vault Lint, and your own custom skill |
@@ -27,7 +27,7 @@ A lesson-based course that teaches AgVend's GTM team how to build their own Pers
 ## Templates
 
 Pre-built files to get you started are in `templates/`:
-- `AGENTS.md` — AgVend-framed template with placeholders
+- `CLAUDE.md` — AgVend-framed template with placeholders
 - `agvend-context.md` — Pre-filled company context
 
 ## Requirements

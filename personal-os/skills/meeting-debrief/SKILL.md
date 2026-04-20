@@ -37,7 +37,7 @@ If Fireflies is not connected, ask the user to paste their meeting notes or tran
 
 Read these files to understand who you are and what matters to you:
 
-- **AGENTS.md** — your working preferences and instructions
+- **CLAUDE.md** — your working preferences and instructions
 - **Constitution.md** — your values and principles
 - **Business.md** — your role, customers, competitive landscape
 - **GOALS.md** — your current priorities and OKRs
@@ -107,7 +107,7 @@ List areas that were reviewed where nothing needs updating. This confirms covera
 ### Phase 5: Apply Approved Changes
 
 After the user reviews and approves specific suggestions:
-1. Create new task files in Tasks/ with YAML frontmatter (use the template from AGENTS.md)
+1. Create new task files in Tasks/ with YAML frontmatter (use the template from CLAUDE.md)
 2. Create or update Knowledge/ files
 3. Update GOALS.md if approved
 4. Update task statuses if approved — change `status` in YAML frontmatter
@@ -120,7 +120,7 @@ After the user reviews and approves specific suggestions:
 
 - **Never make changes without approval.** All output is suggestions first. Wait for explicit approval before any edit.
 - **Quote the transcript.** Every suggested change must cite the specific discussion that triggered it.
-- **Respect AGENTS.md rules.** Follow all working preferences defined there.
+- **Respect CLAUDE.md rules.** Follow all working preferences defined there.
 - **Task-goal alignment.** Every new task must link to a goal. Flag orphan tasks explicitly.
 - **Be concise.** Present suggestions clearly — don't dump the entire transcript back. Summarize what matters.
 - **One meeting at a time.** Don't process multiple meetings in a single debrief unless asked.
