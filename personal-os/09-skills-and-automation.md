@@ -45,23 +45,23 @@ CRITICAL RULES:
 
 > "A skill is just a `.md` file — the same Markdown you already know. Skills can live in a `skills/` folder in your Personal OS, they can be installed globally so they work across all your projects, or they can come from AgVend as an organization — shared skills that the whole team can use."
 >
-> "AgVend has already shared four skills with your organization. Let me walk you through adding them."
+> "AgVend has already shared four skills with the team. You just need to activate them. Here's how:"
 >
 > "1. Click the **+** button just below the reply box"
 > "2. Click **Skills**"
 > "3. Click **Manage Skills**"
-> "4. You should see the shared AgVend skills listed there. Add all four:"
+> "4. You should see these four AgVend skills. Toggle them on:"
 >
 > "- **ag-daily-debrief** — end-of-day skill that processes your meetings and updates your Personal OS"
 > "- **ag-vault-lint** — weekly health check that catches stale tasks, goal gaps, and index drift"
 > "- **ag-skill-creator** — builds new skills through a guided workflow"
 > "- **ag-skill-improver** — optimizes existing skills by testing and scoring them"
 >
-> "Once they're added, you can use any of them by typing **/** and starting to type the name. Try it — type `/` and you should see them in the list."
+> "Once they're added, you can invoke any of them by typing **/** and starting to type the name."
 >
-> "Go ahead — let me know when you've added them."
+> "Go ahead and add them now — let me know when you're done."
 
-**CRITICAL: Do NOT fetch skills from GitHub or create skill files yourself. The student MUST add the skills through the Manage Skills UI. Wait for the student to confirm they've added them. Do not proceed until they respond.**
+**CRITICAL: This is a step the STUDENT does themselves in the UI. You cannot do this for them. Do NOT fetch skills from GitHub. Do NOT create skill files or folders. Do NOT try to download anything. Just give the student the instructions above and WAIT for them to confirm. Do not proceed until they respond.**
 
 **STOP. Wait for them to confirm the skills are added.**
 
