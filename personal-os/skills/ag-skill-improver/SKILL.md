@@ -23,7 +23,7 @@ Take any existing skill, define what "good output" looks like as binary yes/no c
 4. Keeps mutations that improve the score, discards the rest
 5. Repeats until the score ceiling is hit or the user stops it
 
-**Output:** An improved SKILL.md + `changelog.md` of every mutation attempted + a `results.md` score log.
+**Output:** An improved SKILL.md + `changelog.md` of every mutation attempted + a live HTML dashboard you can watch in your browser.
 
 ---
 
@@ -90,17 +90,33 @@ Create these files:
 
 **`autoresearch-[skill-name]/[user-chosen-name].md`** — the working copy you will mutate. Ask the user what to name it (e.g., "daily-debrief-v2", "vault-lint-optimized").
 
-**`autoresearch-[skill-name]/results.md`** — score tracking:
+**`autoresearch-[skill-name]/results.json`** — score tracking data that powers the dashboard:
 
-```markdown
-# Autoresearch Results: [skill-name]
-
-| Experiment | Score | Max | Pass Rate | Status | Description |
-|---|---|---|---|---|---|
-| 0 | — | — | —% | baseline | original skill — no changes |
+```json
+{
+  "skill_name": "[name]",
+  "status": "running",
+  "current_experiment": 0,
+  "baseline_score": 0,
+  "best_score": 0,
+  "experiments": [],
+  "eval_breakdown": []
+}
 ```
 
 **`autoresearch-[skill-name]/changelog.md`** — mutation log (starts empty, you'll append after each experiment).
+
+**`autoresearch-[skill-name]/dashboard.html`** — a live HTML dashboard the user can open in their browser. Generate it as a single self-contained HTML file with inline CSS and JavaScript. Use Chart.js loaded from CDN for the line chart. The JS should fetch `results.json` and re-render on a 10-second auto-refresh interval.
+
+The dashboard must show:
+- A score progression line chart (experiment number on X axis, pass rate % on Y axis)
+- A colored bar for each experiment: green = keep, red = discard, blue = baseline
+- A table of all experiments with: experiment #, score, pass rate, status, description
+- Per-eval breakdown: which evals pass most/least across all runs
+- Current status: "Running experiment [N]..." or "Complete"
+- Clean styling with soft colors (white background, pastel accents, clean sans-serif font)
+
+After creating the dashboard, tell the user where it is so they can open it in their browser. Update `results.json` after every experiment so the dashboard stays current. When the run finishes, update `status` to `"complete"`.
 
 ---
 
@@ -110,7 +126,7 @@ Run the skill AS-IS before changing anything. This is experiment #0.
 
 1. For each test input, read the working copy skill and follow its instructions to complete the task
 2. After each run, score the output against every eval — pass or fail
-3. Record the results in `results.md`
+3. Record the results in `results.json` and update the dashboard
 4. Present the baseline score to the user
 
 **How to "run" the skill in Co-work:**
@@ -159,7 +175,7 @@ This is the core autoresearch loop.
    - Score stayed the same → **DISCARD.** Revert `[user-chosen-name].md` to previous version. The change added complexity without improvement.
    - Score got worse → **DISCARD.** Revert `[user-chosen-name].md` to previous version.
 
-6. **Log the result** — update `results.md` and append to `changelog.md`.
+6. **Log the result** — update `results.json` (so the dashboard refreshes) and append to `changelog.md`.
 
 7. **Show the user** a brief update: what you changed, whether it helped, current score.
 
@@ -203,20 +219,21 @@ When the loop stops, present:
 4. **Top 3 changes that helped most** (from the changelog)
 5. **Remaining failure patterns** (what the skill still gets wrong, if anything)
 6. **The improved `[user-chosen-name].md`** (in the working directory — the original SKILL.md is untouched)
-7. **Location of `results.md` and `changelog.md`** for reference
+7. **Location of `dashboard.html`, `results.json`, and `changelog.md`** for reference
 
 ---
 
 ## output format
 
-The skill produces three files in `autoresearch-[skill-name]/`:
+The skill produces five files in `autoresearch-[skill-name]/`:
 
 ```
 autoresearch-[skill-name]/
-├── results.md           # score table for every experiment
-├── changelog.md         # detailed mutation log
+├── dashboard.html         # live browser dashboard (auto-refreshes from results.json)
+├── results.json           # score data powering the dashboard
+├── changelog.md           # detailed mutation log
 ├── [user-chosen-name].md  # the improved skill
-└── SKILL.md.baseline    # original skill before optimization
+└── SKILL.md.baseline      # original skill before optimization
 ```
 
 **The original SKILL.md is NEVER modified.** The improved version lives in `[user-chosen-name].md`. The user can review and manually apply changes if they choose. Do NOT offer to overwrite the original.
