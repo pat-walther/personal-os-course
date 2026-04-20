@@ -45,7 +45,7 @@ CRITICAL RULES:
 
 > "A skill is just a `.md` file — the same Markdown you already know. Skills can live in a `skills/` folder in your Personal OS, they can be installed globally so they work across all your projects, or they can come from AgVend as an organization — shared skills that the whole team can use."
 >
-> "AgVend has already shared four skills with your organization. Let's add them now."
+> "AgVend has already shared four skills with your organization. Let me walk you through adding them."
 >
 > "1. Click the **+** button just below the reply box"
 > "2. Click **Skills**"
@@ -58,24 +58,34 @@ CRITICAL RULES:
 > "- **ag-skill-improver** — optimizes existing skills by testing and scoring them"
 >
 > "Once they're added, you can use any of them by typing **/** and starting to type the name. Try it — type `/` and you should see them in the list."
+>
+> "Go ahead — let me know when you've added them."
+
+**CRITICAL: Do NOT fetch skills from GitHub or create skill files yourself. The student MUST add the skills through the Manage Skills UI. Wait for the student to confirm they've added them. Do not proceed until they respond.**
 
 **STOP. Wait for them to confirm the skills are added.**
 
-If the shared skills don't appear (e.g., they haven't been published to the org yet), use the fallback: have them click each link directly to add the skills:
+If the student reports they can't find the skills in Manage Skills, THEN and ONLY THEN use this fallback — share these direct links and ask the student to open them in their browser:
 
-1. `https://claude.ai/customize/skills?selectedId=skill_01Eu9CaryALVwViJdys9mzbx`
-2. `https://claude.ai/customize/skills?selectedId=skill_017mt4m1V1Zs6sf8kS9LUunz`
-3. `https://claude.ai/customize/skills?selectedId=skill_01UMKGLQz8FQPULvvdiJpz72`
-4. `https://claude.ai/customize/skills?selectedId=skill_016XHJN94Wd3D7RdKrfu6SKe`
+> "No problem — try opening these links directly in your browser. Each one will add a skill to your account:"
+>
+> 1. `https://claude.ai/customize/skills?selectedId=skill_01Eu9CaryALVwViJdys9mzbx`
+> 2. `https://claude.ai/customize/skills?selectedId=skill_017mt4m1V1Zs6sf8kS9LUunz`
+> 3. `https://claude.ai/customize/skills?selectedId=skill_01UMKGLQz8FQPULvvdiJpz72`
+> 4. `https://claude.ai/customize/skills?selectedId=skill_016XHJN94Wd3D7RdKrfu6SKe`
+>
+> "Let me know when you've added them."
 
-If links also don't work, fetch the skills from GitHub and save them locally:
+**STOP. Wait for their response. Do NOT proceed to fetch from GitHub yet.**
+
+If the student reports the links also don't work, ONLY THEN fetch the skills from GitHub as a last resort:
+
+Create a `skills/` folder and a `Daily/` folder in the student's project if they don't already exist. Then fetch each skill file:
 
 1. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/ag-daily-debrief/SKILL.md` and save to `skills/ag-daily-debrief/SKILL.md`
 2. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/ag-vault-lint/SKILL.md` and save to `skills/ag-vault-lint/SKILL.md`
 3. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/ag-skill-creator/SKILL.md` and save to `skills/ag-skill-creator/SKILL.md`
 4. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/ag-skill-improver/SKILL.md` and save to `skills/ag-skill-improver/SKILL.md`
-
-Create a `skills/` folder and a `Daily/` folder in the student's project if they don't already exist.
 
 > "You're all set — four skills are ready to use. Let's start with the daily debrief."
 
