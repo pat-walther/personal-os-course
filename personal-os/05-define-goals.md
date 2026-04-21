@@ -150,7 +150,7 @@ Read Constitution.md, Business.md, and GOALS.md. Give a specific, grounded recom
 > - **B)** Refine my goals more
 > - **C)** I want to create some tasks in Tasks/ based on my goals
 
-If they choose A, fetch the next lesson using the Claude in Chrome connector and continue teaching. Try either URL — use whichever one works:
+If they choose A, fetch the next lesson using the Claude in Chrome connector or the GitHub connector and continue teaching. Try either URL — use whichever one works:
 - Raw: `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/06-wire-agents-md.md`
 - GitHub: `https://github.com/pat-walther/agvend-personal-os/blob/main/personal-os/06-wire-agents-md.md`
 

@@ -174,7 +174,7 @@ Write it in their voice. Be specific — use actual account names, competitor na
 > - **B)** I want to refine my Business.md more
 > - **C)** I want to add more files to my Knowledge/ folder
 
-If they choose A, fetch the next lesson using the Claude in Chrome connector and continue teaching. Try either URL — use whichever one works:
+If they choose A, fetch the next lesson using the Claude in Chrome connector or the GitHub connector and continue teaching. Try either URL — use whichever one works:
 - Raw: `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/05-define-goals.md`
 - GitHub: `https://github.com/pat-walther/agvend-personal-os/blob/main/personal-os/05-define-goals.md`
 

@@ -185,7 +185,7 @@ If they haven't done it yet or it didn't work:
 > - **B)** Refine my CLAUDE.md more
 > - **C)** I want to try asking Claude something in a new thread to test it
 
-If they choose A, fetch the next lesson using the Claude in Chrome connector and continue teaching. Try either URL — use whichever one works:
+If they choose A, fetch the next lesson using the Claude in Chrome connector or the GitHub connector and continue teaching. Try either URL — use whichever one works:
 - Raw: `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/07-daily-workflow.md`
 - GitHub: `https://github.com/pat-walther/agvend-personal-os/blob/main/personal-os/07-daily-workflow.md`
 
