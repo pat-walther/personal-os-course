@@ -224,7 +224,9 @@ Also add a pointer to the vault index in the student's CLAUDE.md, under the "My 
 > - **B)** I want to spend more time setting up my maintenance habits first
 > - **C)** I have questions about what we covered
 
-If they choose A, fetch the next lesson: use the Claude in Chrome connector to read `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/09-skills-and-automation.md` and continue teaching.
+If they choose A, fetch the next lesson and continue teaching. Try either URL — use whichever one works:
+- Raw: `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/09-skills-and-automation.md`
+- GitHub: `https://github.com/pat-walther/agvend-personal-os/blob/main/personal-os/09-skills-and-automation.md`
 
 **Share prompt:** What's one thing you learned about context and memory that changed how you think about working with AI?
 

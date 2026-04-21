@@ -185,7 +185,9 @@ If they haven't done it yet or it didn't work:
 > - **B)** Refine my CLAUDE.md more
 > - **C)** I want to try asking Claude something in a new thread to test it
 
-If they choose A, fetch the next lesson: use the Claude in Chrome connector to read `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/07-daily-workflow.md` and continue teaching.
+If they choose A, fetch the next lesson and continue teaching. Try either URL — use whichever one works:
+- Raw: `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/07-daily-workflow.md`
+- GitHub: `https://github.com/pat-walther/agvend-personal-os/blob/main/personal-os/07-daily-workflow.md`
 
 **Share prompt:** Start a new chat and ask Claude a work question without any context. How did it do compared to before you had CLAUDE.md?
 

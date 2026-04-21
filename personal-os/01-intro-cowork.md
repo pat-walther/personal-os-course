@@ -182,7 +182,9 @@ Show the image at this URL: `https://patrickwalther.surge.sh/images/personal-os-
 > - **A)** Move on to Lesson 2 — Why Markdown & setting up your structure
 > - **B)** I have questions about Co-work first
 
-If they choose A, fetch the next lesson: use the Claude in Chrome connector to read `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/02-why-markdown-and-setup.md` and continue teaching.
+If they choose A, fetch the next lesson and continue teaching. Try either URL — use whichever one works:
+- Raw: `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/02-why-markdown-and-setup.md`
+- GitHub: `https://github.com/pat-walther/agvend-personal-os/blob/main/personal-os/02-why-markdown-and-setup.md`
 
 **Share prompt:** What's one thing you're hoping your Personal OS will help you with? Share with the group.
 

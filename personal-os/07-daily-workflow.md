@@ -188,7 +188,9 @@ Update the task file: change `status: n` (or `status: s`) to `status: d` in the 
 > - **B)** Create more tasks
 > - **C)** Try the full morning routine right now
 
-If they choose A, fetch the next lesson: use the Claude in Chrome connector to read `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/08-memory-and-context.md` and continue teaching.
+If they choose A, fetch the next lesson and continue teaching. Try either URL — use whichever one works:
+- Raw: `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/08-memory-and-context.md`
+- GitHub: `https://github.com/pat-walther/agvend-personal-os/blob/main/personal-os/08-memory-and-context.md`
 
 **Share prompt:** Create your real tasks and share your top 3 priorities for the week. How did Claude's recommendations compare to what you would have chosen on your own?
 

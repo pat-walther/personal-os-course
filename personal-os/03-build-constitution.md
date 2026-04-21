@@ -165,7 +165,9 @@ Write it in their voice. Use their words where possible. Don't sanitize or corpo
 > - **B)** I want to refine my Constitution more
 > - **C)** I want to take a break and come back
 
-If they choose A, fetch the next lesson: use the Claude in Chrome connector to read `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/04-build-business-context.md` and continue teaching.
+If they choose A, fetch the next lesson and continue teaching. Try either URL — use whichever one works:
+- Raw: `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/04-build-business-context.md`
+- GitHub: `https://github.com/pat-walther/agvend-personal-os/blob/main/personal-os/04-build-business-context.md`
 
 **Share prompt:** What was the hardest question in the Constitution interview? What did you learn about yourself?
 
