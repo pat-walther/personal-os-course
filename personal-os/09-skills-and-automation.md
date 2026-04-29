@@ -93,13 +93,19 @@ Create a `skills/` folder and a `Daily/` folder in the student's project if they
 
 ---
 
-### Step 3: The Daily Debrief Skill
+### Step 3: Preview a Skill
 
-> "Let me show you a real skill. I'm going to open the daily debrief skill that came with your Personal OS."
+> "Now let's see what a skill actually looks like. In the reply box below, type **`/ag-daily-debrief`**. As you start typing, you'll see it appear as a blue suggestion — click on it."
+>
+> "A popup will open showing you the skill file. This is the entire skill — take a moment to read through what's written in there. When you're done, let me know and I'll walk you through the key parts."
 
-Read the file at `skills/ag-daily-debrief/SKILL.md` and walk the student through it section by section:
+**STOP. Wait for them to confirm they've read the skill popup.**
 
-> "Take a look at this file. Let me walk you through what's in it:"
+---
+
+### Step 4: The Daily Debrief Skill
+
+> "Now that you've seen the raw skill file, let me break down what's actually in it:"
 >
 > "**The header** — a name, description, and trigger phrases. This tells Claude when to activate the skill."
 >
@@ -113,30 +119,42 @@ Read the file at `skills/ag-daily-debrief/SKILL.md` and walk the student through
 
 ---
 
-### Step 4: Connect Fireflies
+### Step 5: Connect Your Tools
 
-> "The meeting debrief skill works best when it can pull transcripts directly from Fireflies — the meeting recording tool. Let's connect it."
+> "Now let's talk about **Connectors** — this is where Cowork gets really powerful."
 >
-> "Here's what to do:"
+> "Up until now, you've been working inside Claude's chat. You write a prompt, you get an answer, and then *you're* the one moving the work between systems — pasting into Gmail, copying into Docs, updating Slack. You're the middleman."
+>
+> "Connectors flip that. When you connect Claude to the platforms you actually work in — Fireflies, Google Drive, Slack, and others — Cowork can read from them and write to them directly. You describe an outcome, not a prompt, and Cowork does the work *between* the work. It pulls the transcript, cross-references your goals, drafts the update, and puts it where it needs to go."
+>
+> "That's the real shift. The job stops being 'write prompts and move the output.' It starts being 'decide what should happen.'"
+
+**STOP. Wait for their response.**
+
+> "Let's start by connecting the tools that matter most for your daily workflow. Here's how:"
 >
 > "1. In the Claude chat, click the **+** button at the bottom"
 > "2. Go to **Connectors** > **Manage Connectors**"
-> "3. Find **Fireflies** and click **Add**"
-> "4. Authorize with your Fireflies account"
 >
-> "Once connected, Claude can automatically list your recent meetings and pull transcripts — no copy-pasting needed."
+> "From here, connect everything you use day-to-day. The key ones:"
 >
-> "Go ahead and set that up. Let me know when it's connected."
+> "- **Fireflies** — so the daily debrief skill can pull your meeting transcripts automatically"
+> "- **Google Drive** — so Cowork can read and create documents, spreadsheets, and slides"
+> "- **Slack** — so Cowork can read channels and send messages on your behalf"
+>
+> "Connect as many as you want — the more Cowork can reach, the more it can do for you without you being the middleman."
+>
+> "Go ahead and connect at least Fireflies if you have it, plus any others you use. Let me know when you're done."
 
 **STOP. Wait for them to confirm.**
 
 If they don't have Fireflies or can't connect:
 
-> "No problem — the skill also works if you paste meeting notes or a transcript directly. You can always connect Fireflies later."
+> "No problem — the daily debrief skill also works if you paste meeting notes or a transcript directly. You can always connect Fireflies later. But do connect Google Drive and Slack if you can — those unlock a lot of what makes skills powerful."
 
 ---
 
-### Step 5: Try It
+### Step 6: Try It
 
 > "Let's take it for a spin. Say: 'Close my day' or 'Debrief my day.'"
 
@@ -159,7 +177,7 @@ After processing:
 
 ---
 
-### Step 6: The Vault Health Check
+### Step 7: The Vault Health Check
 
 > "Remember the weekly review from Lesson 8 — reviewing stale tasks and checking goal alignment? Your Personal OS includes a skill that automates that entire check."
 
@@ -179,7 +197,7 @@ After processing, walk through the report with them:
 
 ---
 
-### Step 7: Read the Skill Files Yourself
+### Step 8: Read the Skill Files Yourself
 
 > "Now I want you to actually open one of the skill files and read through it. Try `skills/ag-daily-debrief/SKILL.md` in your Personal OS."
 >
@@ -191,7 +209,7 @@ After processing, walk through the report with them:
 
 ---
 
-### Step 8: Build Your Own Skill
+### Step 9: Build Your Own Skill
 
 > "The meeting debrief is just one example. Think bigger — any workflow where you're doing the same steps over and over could be a skill. And it doesn't have to be complicated. If you can explain it to a new hire, you can turn it into a skill."
 >
@@ -241,7 +259,7 @@ Then copy to the global skills folder and retry.
 
 ---
 
-### Step 9: The Skill Improver (Stretch Goal)
+### Step 10: The Skill Improver (Stretch Goal)
 
 > "One more thing before we wrap. You just built your first skill, and it probably works pretty well. But most skills work about 70% of the time on the first draft. The other 30% you get inconsistent or mediocre output."
 >
@@ -253,7 +271,7 @@ Then copy to the global skills folder and retry.
 
 ---
 
-### Step 10: Course Wrap-Up
+### Step 11: Course Wrap-Up
 
 > "Let's step back and look at what you've built."
 >
