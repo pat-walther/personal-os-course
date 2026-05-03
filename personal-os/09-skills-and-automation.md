@@ -52,10 +52,10 @@ CRITICAL RULES:
 > "3. Click **Manage Skills**"
 > "4. You should see these four AgVend skills. Toggle them on:"
 >
-> "- **ag-daily-debrief** — end-of-day skill that processes your meetings and updates your Personal OS"
-> "- **ag-vault-lint** — weekly health check that catches stale tasks, goal gaps, and index drift"
-> "- **ag-skill-creator** — builds new skills through a guided workflow"
-> "- **ag-skill-improver** — optimizes existing skills by testing and scoring them"
+> "- **agv-daily-debrief** — end-of-day skill that processes your meetings and updates your Personal OS"
+> "- **agv-vault-lint** — weekly health check that catches stale tasks, goal gaps, and index drift"
+> "- **agv-skill-creator** — builds new skills through a guided workflow"
+> "- **agv-skill-improver** — optimizes existing skills by testing and scoring them"
 >
 > "Once they're added, you can invoke any of them by typing **/** and starting to type the name."
 >
@@ -82,10 +82,10 @@ If the student reports the links also don't work, ONLY THEN fetch the skills fro
 
 Create a `skills/` folder and a `Daily/` folder in the student's project if they don't already exist. Then fetch each skill file:
 
-1. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/ag-daily-debrief/SKILL.md` and save to `skills/ag-daily-debrief/SKILL.md`
-2. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/ag-vault-lint/SKILL.md` and save to `skills/ag-vault-lint/SKILL.md`
-3. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/ag-skill-creator/SKILL.md` and save to `skills/ag-skill-creator/SKILL.md`
-4. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/ag-skill-improver/SKILL.md` and save to `skills/ag-skill-improver/SKILL.md`
+1. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/agv-daily-debrief/SKILL.md` and save to `skills/agv-daily-debrief/SKILL.md`
+2. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/agv-vault-lint/SKILL.md` and save to `skills/agv-vault-lint/SKILL.md`
+3. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/agv-skill-creator/SKILL.md` and save to `skills/agv-skill-creator/SKILL.md`
+4. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/agv-skill-improver/SKILL.md` and save to `skills/agv-skill-improver/SKILL.md`
 
 > "You're all set — four skills are ready to use. Let's start with the daily debrief."
 
@@ -95,7 +95,7 @@ Create a `skills/` folder and a `Daily/` folder in the student's project if they
 
 ### Step 3: Preview a Skill
 
-> "Now let's see what a skill actually looks like. In the reply box below, type **`/ag-daily-debrief`**. As you start typing, you'll see it appear as a blue suggestion — click on it."
+> "Now let's see what a skill actually looks like. In the reply box below, type **`/agv-daily-debrief`**. As you start typing, you'll see it appear as a blue suggestion — click on it."
 >
 > "A popup will open showing you the skill file. This is the entire skill — take a moment to read through what's written in there. When you're done, let me know and I'll walk you through the key parts."
 
@@ -181,7 +181,7 @@ After processing:
 
 > "Remember the weekly review from Lesson 8 — reviewing stale tasks and checking goal alignment? Your Personal OS includes a skill that automates that entire check."
 
-Read the file at `skills/ag-vault-lint/SKILL.md` and give a brief overview:
+Read the file at `skills/agv-vault-lint/SKILL.md` and give a brief overview:
 
 > "The vault lint skill runs three health checks: **stale tasks** (things you created but never touched), **goal-activity gaps** (goals with no work or work with no goal), and **index drift** (files that aren't in your vault index)."
 >
@@ -199,7 +199,7 @@ After processing, walk through the report with them:
 
 ### Step 8: Read the Skill Files Yourself
 
-> "Now I want you to actually open one of the skill files and read through it. Try `skills/ag-daily-debrief/SKILL.md` in your Personal OS."
+> "Now I want you to actually open one of the skill files and read through it. Try `skills/agv-daily-debrief/SKILL.md` in your Personal OS."
 >
 > "As you read it, think about: is there anything you'd change? Maybe you want it to focus more on action items and less on knowledge updates. Maybe you want it to check your Constitution when evaluating decisions. Maybe you want the vault lint to check something extra."
 >
@@ -243,17 +243,17 @@ After processing, walk through the report with them:
 
 **STOP. Wait for them to pick a workflow they want to automate.**
 
-> "Great. Now here's the cool part — there's a skill that builds skills for you. Remember the **ag-skill-creator** you added earlier? That's all you need."
+> "Great. Now here's the cool part — there's a skill that builds skills for you. Remember the **agv-skill-creator** you added earlier? That's all you need."
 >
-> "All you have to do is type **`/ag-skill-creator`** and then describe what you want to build. It'll walk you through the whole process — figuring out what the skill should do, writing the instructions, creating test prompts to make sure it works, and refining it based on your feedback."
+> "All you have to do is type **`/agv-skill-creator`** and then describe what you want to build. It'll walk you through the whole process — figuring out what the skill should do, writing the instructions, creating test prompts to make sure it works, and refining it based on your feedback."
 >
-> "Let's try it. Type `/ag-skill-creator` and tell it what workflow you want to automate."
+> "Let's try it. Type `/agv-skill-creator` and tell it what workflow you want to automate."
 
 **STOP. Wait for them to use the Skill Creator.** Let the Skill Creator skill take over the conversation. It will guide them through drafting, testing, and refining their skill. When they've finished creating their skill, continue to the next step.
 
-If `/ag-skill-creator` doesn't trigger or the skill isn't available, fall back to the local install method: copy the `skills/ag-skill-creator/` folder from the student's project to `~/.claude/skills/ag-skill-creator/` (on Mac/Linux) or `%APPDATA%\Claude\skills\ag-skill-creator\` (on Windows), then have them try `/ag-skill-creator` again. If the skill files aren't in the project either, fetch them from GitHub:
+If `/agv-skill-creator` doesn't trigger or the skill isn't available, fall back to the local install method: copy the `skills/agv-skill-creator/` folder from the student's project to `~/.claude/skills/agv-skill-creator/` (on Mac/Linux) or `%APPDATA%\Claude\skills\agv-skill-creator\` (on Windows), then have them try `/agv-skill-creator` again. If the skill files aren't in the project either, fetch them from GitHub:
 
-1. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/ag-skill-creator/SKILL.md` and save to `skills/ag-skill-creator/SKILL.md`
+1. Fetch `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/skills/agv-skill-creator/SKILL.md` and save to `skills/agv-skill-creator/SKILL.md`
 
 Then copy to the global skills folder and retry.
 
@@ -263,7 +263,7 @@ Then copy to the global skills folder and retry.
 
 > "One more thing before we wrap. You just built your first skill, and it probably works pretty well. But most skills work about 70% of the time on the first draft. The other 30% you get inconsistent or mediocre output."
 >
-> "Your Personal OS includes a **Skill Improver** in `skills/ag-skill-improver/`. It takes any skill you've built, runs it dozens of times automatically, scores every output against pass/fail checks you define, and tightens the prompt until that 30% disappears."
+> "Your Personal OS includes a **Skill Improver** in `skills/agv-skill-improver/`. It takes any skill you've built, runs it dozens of times automatically, scores every output against pass/fail checks you define, and tightens the prompt until that 30% disappears."
 >
 > "This one gets more technical, so we won't run through it in the course — but it's there for when you're ready. Think of it as the graduate-level version of skill building. You define what 'good' looks like with simple yes/no checks, and the Skill Improver optimizes automatically."
 
@@ -297,7 +297,7 @@ Then copy to the global skills folder and retry.
 >
 > "A few things to remember going forward:"
 >
-> "**To use any skill**, just type `/` and start typing the name. `/ag-skill-creator`, `/ag-daily-debrief` — or whatever you name your custom skills."
+> "**To use any skill**, just type `/` and start typing the name. `/agv-skill-creator`, `/agv-daily-debrief` — or whatever you name your custom skills."
 >
 > "**The daily habit:** Say 'what should I work on?' every morning. Say 'create a task for [thing]' whenever something comes up. Say 'close my day' to run the Daily Debrief at the end of the day."
 >
@@ -385,15 +385,15 @@ description: [One sentence. When to use this skill.]
 - If Fireflies is not available, the skill works with pasted meeting notes
 
 **Skills included in this course:**
-- `skills/ag-daily-debrief/` — end-of-day skill that processes Fireflies meeting transcripts, writes daily entries, suggests task/goal/knowledge updates
-- `skills/ag-vault-lint/` — weekly health check that catches stale tasks, goal-activity gaps, and index drift
-- `skills/ag-skill-creator/` — builds new skills through a guided workflow with testing and refinement
-- `skills/ag-skill-improver/` — autonomously optimizes any skill by running it repeatedly, scoring outputs against binary pass/fail evals, and mutating the prompt to fix failures
+- `skills/agv-daily-debrief/` — end-of-day skill that processes Fireflies meeting transcripts, writes daily entries, suggests task/goal/knowledge updates
+- `skills/agv-vault-lint/` — weekly health check that catches stale tasks, goal-activity gaps, and index drift
+- `skills/agv-skill-creator/` — builds new skills through a guided workflow with testing and refinement
+- `skills/agv-skill-improver/` — autonomously optimizes any skill by running it repeatedly, scoring outputs against binary pass/fail evals, and mutating the prompt to fix failures
 
 **How skills work:**
 - Skills can be shared by the organization (available under + > Skills > Manage Skills) or created locally in the `skills/` folder
 - Each skill is a Markdown file (SKILL.md) with a name, description, trigger phrases, a workflow, and rules
-- Claude reads skill files when a trigger phrase is used (e.g., "debrief my meeting" or "/ag-daily-debrief")
+- Claude reads skill files when a trigger phrase is used (e.g., "debrief my meeting" or "/agv-daily-debrief")
 - The student can also manually say "use the [skill name] skill"
 - Skills follow the same CLAUDE.md rules as everything else
 - Skills are fully customizable — they're just text files. Edit them to change the workflow

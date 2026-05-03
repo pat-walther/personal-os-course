@@ -1,5 +1,5 @@
 ---
-name: ag-daily-debrief
+name: agv-daily-debrief
 description: End-of-day skill that reconstructs the day from Fireflies meeting transcripts, writes a daily entry, cross-references goals and tasks, and suggests updates. Use when the user says "debrief", "close my day", "daily close", "daily debrief", or "what happened today?"
 ---
 
