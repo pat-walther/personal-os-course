@@ -151,8 +151,8 @@ Read Constitution.md, Business.md, and GOALS.md. Give a specific, grounded recom
 > - **C)** I want to create some tasks in Tasks/ based on my goals
 
 If they choose A, fetch the next lesson using the Claude in Chrome connector or the GitHub connector and continue teaching. Try either URL — use whichever one works:
-- Raw: `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/06-wire-agents-md.md`
-- GitHub: `https://github.com/pat-walther/agvend-personal-os/blob/main/personal-os/06-wire-agents-md.md`
+- Raw: `https://raw.githubusercontent.com/pat-walther/personal-os-course/main/personal-os/06-wire-agents-md.md`
+- GitHub: `https://github.com/pat-walther/personal-os-course/blob/main/personal-os/06-wire-agents-md.md`
 
 If they choose C, help them create 2-3 task files in Tasks/ with YAML frontmatter, then offer to continue.
 

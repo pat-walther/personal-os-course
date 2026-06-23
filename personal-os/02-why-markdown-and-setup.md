@@ -194,8 +194,8 @@ Create the directories `Knowledge/` and `Tasks/` in the student's project folder
 > - **C)** I have questions about the structure
 
 If they choose A, fetch the next lesson using the Claude in Chrome connector or the GitHub connector and continue teaching. Try either URL — use whichever one works:
-- Raw: `https://raw.githubusercontent.com/pat-walther/agvend-personal-os/main/personal-os/03-build-constitution.md`
-- GitHub: `https://github.com/pat-walther/agvend-personal-os/blob/main/personal-os/03-build-constitution.md`
+- Raw: `https://raw.githubusercontent.com/pat-walther/personal-os-course/main/personal-os/03-build-constitution.md`
+- GitHub: `https://github.com/pat-walther/personal-os-course/blob/main/personal-os/03-build-constitution.md`
 
 If they choose B, help them add whatever they want. Then offer to continue to Lesson 3.
 

@@ -1,5 +1,5 @@
 ---
-name: agv-skill-improver
+name: skill-improver
 description: "Optimize any skill by running it repeatedly, scoring outputs against binary evals, mutating the prompt, and keeping improvements. Based on Karpathy's autoresearch methodology. Adapted for Claude Co-work (no terminal, no subagents). Use when: optimize this skill, improve this skill, run autoresearch on, make this skill better, self-improve skill, benchmark skill, eval my skill, run evals on. Outputs: an improved SKILL.md, a results log, and a changelog of every mutation tried."
 ---
 

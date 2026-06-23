@@ -1,5 +1,5 @@
 ---
-name: agv-vault-lint
+name: vault-lint
 description: Weekly health check on your Personal OS. Checks for stale tasks, goal-activity gaps, and index drift. Use when you say "lint my vault", "vault health check", "clean up", or as part of your weekly review.
 ---
 
